@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.local
+__pycache__/
+playwright-report/
+test-results/
+.playwright-mcp/
+.env*
+*.pdf
+*.log
+attachments/
