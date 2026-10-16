@@ -33,6 +33,8 @@ button { touch-action: manipulation; }
 .skip-link:focus { top: 12px; }
 .app-shell { height: 100dvh; min-height: 520px; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; }
 .app-shell.has-notice { grid-template-rows: auto auto auto minmax(0, 1fr) auto; }
+.app-shell.is-intro { grid-template-rows: auto minmax(0, 1fr); }
+.app-shell.is-intro.has-notice { grid-template-rows: auto auto minmax(0, 1fr); }
 .app-shell.is-paused { grid-template-rows: auto auto minmax(0, 1fr); }
 .app-shell.is-paused.has-notice { grid-template-rows: auto auto auto minmax(0, 1fr); }
 .app-shell.is-results { grid-template-rows: auto minmax(0, 1fr); }
@@ -142,6 +144,20 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .explanation-heading .icon { width: 20px; height: 20px; }
 .explanation-text { font-size: 15px; line-height: 1.8; color: #3d4c59; }
 .explanation-text p { margin: 16px 0; }
+.intro-content { display: grid; place-items: center; min-height: 0; flex: 1; padding: 36px 24px; overflow-y: auto; background: #f5f8fc; }
+.intro-card { width: 100%; max-width: 740px; padding: 38px 42px; background: white; border: 1px solid #dae4ed; border-radius: 13px; box-shadow: 0 4px 20px #173e6410; }
+.intro-eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--teal); font-size: 12px; font-weight: 600; letter-spacing: .3px; }
+.intro-eyebrow .icon { width: 18px; height: 18px; }
+.intro-card h1 { margin: 18px 0 15px; font-size: 32px; line-height: 1.25; letter-spacing: -.7px; color: var(--navy); }
+.intro-description { margin: 0; color: #617487; font-size: 15px; line-height: 1.8; }
+.intro-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 25px 0 22px; }
+.intro-facts > div { padding: 16px 19px; background: #eef5fb; border-radius: 7px; }
+.intro-facts strong { display: block; font-size: 27px; color: var(--teal); font-variant-numeric: tabular-nums; }
+.intro-facts span { display: block; margin-top: 3px; font-size: 12px; color: #647c90; line-height: 1.6; }
+.intro-guidance { margin: 0 0 23px; color: #647487; font-size: 13px; line-height: 1.75; }
+.start-button { min-width: 170px; min-height: 49px; border-radius: 25px; font-size: 16px; padding-inline: 24px; }
+.start-button .icon { width: 16px; height: 16px; }
+.intro-timer-note { margin: 13px 0 0; font-size: 12px; line-height: 1.7; color: #728294; }
 .paused-content { display: grid; place-items: center; min-height: 0; flex: 1; padding: 36px 24px; overflow-y: auto; background: #f6f9fc; }
 .paused-card { width: 100%; max-width: 440px; padding: 32px 25px; border: 1px solid #dae4ed; border-radius: 12px; background: #fff; text-align: center; }
 .paused-icon { display: inline-grid; place-items: center; width: 62px; height: 62px; border-radius: 50%; background: #eaf2fa; color: var(--teal); }
@@ -273,7 +289,7 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 @media (max-width: 820px) {
   html { scroll-padding-bottom: 145px; }
   .app-shell, .app-shell.has-notice, .app-shell.is-results, .app-shell.is-results.has-notice { display: flex; flex-direction: column; height: auto; min-height: 100dvh; }
-  .app-shell:not(.is-results):not(.is-paused) { padding-bottom: calc(130px + env(safe-area-inset-bottom)); }
+  .app-shell:not(.is-results):not(.is-paused):not(.is-intro) { padding-bottom: calc(130px + env(safe-area-inset-bottom)); }
   .top-bar { padding: 14px 22px; min-height: 74px; gap: 14px; }
   .brand strong { font-size: 20px; }
   .brand > div > span { font-size: 9px; letter-spacing: 1.6px; }
@@ -334,6 +350,15 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .top-bar:has(.pause-control) .top-actions { margin-left: auto; }
   .top-actions:has(.button-secondary):not(:has(.pause-control)) .directions-button { display: none; }
   .directions-button { width: 30px; }
+  .intro-content { padding: 24px 17px; }
+  .intro-card { padding: 27px 23px; }
+  .intro-card h1 { font-size: 27px; }
+  .intro-description { font-size: 14px; }
+  .intro-facts { gap: 9px; margin-block: 22px; }
+  .intro-facts > div { padding: 13px 14px; }
+  .intro-facts strong { font-size: 24px; }
+  .intro-facts span { font-size: 11px; }
+  .start-button { width: 100%; }
   .section-bar { padding: 20px 18px 16px; }
   .section-heading h1 { font-size: 22px; }
   .practice-label { font-size: 11px; }

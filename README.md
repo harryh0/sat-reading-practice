@@ -54,13 +54,15 @@ The importer reads only the Reading and Writing pages, matches each module/quest
 
 ## Practice behavior
 
+- A fresh attempt opens an introduction with a **Start test** button. No passage, question, choices, or elapsed timer is displayed before starting. Waiting or refreshing the introduction never counts as test time.
+- **Start test** opens the first question and starts elapsed time at zero. Existing started, paused, or completed attempts continue to resume/review normally; the update does not reset saved answers or elapsed time.
 - Choose one answer per question, change it, or clear it. Use native radio-button keyboard controls, Prev/Next, the module selector, or the question navigator.
 - Bookmark questions for review; the navigator can filter to unanswered or marked questions.
 - Time counts **up without a limit**. It never auto-submits. While running, time includes refreshes, closed tabs, and time away. Hiding the timer does not pause it.
 - **Pause** at the top right stops elapsed-time accumulation, hides the passage/question/answers and question navigation, and blocks submission. **Resume** restores the same question and selections without resetting time. Paused time, including time away, is excluded; a paused attempt stays paused after refresh.
 - Answers, bookmarks, the current question, pause state, accumulated paused duration, timer visibility, and the completed attempt are saved to `localStorage` in this browser. Existing saved attempts are upgraded without losing progress. Storage failures are shown explicitly. There is no backend, account, analytics, external font, or upload of personal progress.
 - Submission confirms unanswered and marked counts, stops the timer, and locks answers. The score is **X out of 66**, with unanswered questions counted as incorrect. Every question can then be reviewed with its full supplied explanation.
-- Starting another attempt requires confirmation and clears the previous attempt. There is no attempt history or cross-device synchronization.
+- Starting another attempt requires confirmation, clears the previous attempt, and returns to the introduction. Time remains stopped until **Start test** is selected again. There is no attempt history or cross-device synchronization.
 
 This is a fixed, nonadaptive practice section, not an official proctored/adaptive SAT or a scaled-score estimator. Browser storage is specific to the browser and URL origin; use the same URL to resume. Clearing site data removes saved progress.
 

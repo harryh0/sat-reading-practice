@@ -6,7 +6,7 @@ export const STORAGE_KEY = 'sat-reading-practice:test-11:v1'
 export interface Attempt {
   version: 1
   testId: string
-  startedAt: number
+  startedAt: number | null
   submittedAt: number | null
   pausedAt: number | null
   pausedDurationMs: number
@@ -18,11 +18,11 @@ export interface Attempt {
 
 export type QuestionStatus = 'unanswered' | 'answered' | 'correct' | 'incorrect'
 
-export function createAttempt(now = Date.now()): Attempt {
+export function createAttempt(): Attempt {
   return {
     version: 1,
     testId: practiceTest.id,
-    startedAt: now,
+    startedAt: null,
     submittedAt: null,
     pausedAt: null,
     pausedDurationMs: 0,
@@ -41,15 +41,15 @@ function isTimestamp(value: unknown): value is number {
   return typeof value === 'number' && Number.isSafeInteger(value) && value > 0
 }
 
-type LegacyAttempt = Omit<Attempt, 'pausedAt' | 'pausedDurationMs'>
+type BaseAttempt = Omit<Attempt, 'pausedAt' | 'pausedDurationMs'>
 
-function isLegacyAttempt(value: unknown): value is LegacyAttempt {
+function isBaseAttempt(value: unknown): value is BaseAttempt {
   if (
     !isRecord(value) ||
     value.version !== 1 ||
     value.testId !== practiceTest.id ||
-    !isTimestamp(value.startedAt) ||
-    !(value.submittedAt === null || (isTimestamp(value.submittedAt) && value.submittedAt >= value.startedAt)) ||
+    !(value.startedAt === null || isTimestamp(value.startedAt)) ||
+    !(value.submittedAt === null || (isTimestamp(value.submittedAt) && isTimestamp(value.startedAt) && value.submittedAt >= value.startedAt)) ||
     !isRecord(value.answers) ||
     !Array.isArray(value.marked) ||
     typeof value.currentQuestionId !== 'string' ||
@@ -66,13 +66,24 @@ function isLegacyAttempt(value: unknown): value is LegacyAttempt {
 
 export function isAttempt(value: unknown): value is Attempt {
   if (
-    !isLegacyAttempt(value) ||
+    !isBaseAttempt(value) ||
     !('pausedAt' in value) ||
     !('pausedDurationMs' in value) ||
     typeof value.pausedDurationMs !== 'number' ||
     !Number.isSafeInteger(value.pausedDurationMs) ||
     value.pausedDurationMs < 0
   ) return false
+
+  if (value.startedAt === null) {
+    return (
+      value.submittedAt === null &&
+      value.pausedAt === null &&
+      value.pausedDurationMs === 0 &&
+      Object.keys(value.answers).length === 0 &&
+      value.marked.length === 0 &&
+      value.currentQuestionId === questions[0].id
+    )
+  }
 
   const earliestEnd = value.startedAt + value.pausedDurationMs
   return (
@@ -86,38 +97,45 @@ interface StorageReader {
   getItem(key: string): string | null
 }
 
-export function readAttempt(getStorage: () => StorageReader, now = Date.now()): { attempt: Attempt; notice: string | null } {
+export function readAttempt(getStorage: () => StorageReader): { attempt: Attempt; notice: string | null } {
   let saved: string | null
   try {
     saved = getStorage().getItem(STORAGE_KEY)
   } catch {
     return {
-      attempt: createAttempt(now),
+      attempt: createAttempt(),
       notice: 'This browser is blocking saved progress. You can practice in this tab, but your answers may be lost when it closes.',
     }
   }
-  if (saved === null) return { attempt: createAttempt(now), notice: null }
+  if (saved === null) return { attempt: createAttempt(), notice: null }
 
   let parsed: unknown
   try {
     parsed = JSON.parse(saved)
   } catch {
     return {
-      attempt: createAttempt(now),
-      notice: 'The saved attempt could not be read. A new attempt has been started on this device.',
+      attempt: createAttempt(),
+      notice: 'The saved attempt could not be read. A new attempt is ready to start on this device.',
     }
   }
   if (isAttempt(parsed)) return { attempt: parsed, notice: null }
-  if (isLegacyAttempt(parsed) && !('pausedAt' in parsed) && !('pausedDurationMs' in parsed)) {
+  if (isBaseAttempt(parsed) && isTimestamp(parsed.startedAt) && !('pausedAt' in parsed) && !('pausedDurationMs' in parsed)) {
     return { attempt: { ...parsed, pausedAt: null, pausedDurationMs: 0 }, notice: null }
   }
   return {
-    attempt: createAttempt(now),
-    notice: 'The saved attempt is damaged or belongs to a different test version. A new attempt has been started.',
+    attempt: createAttempt(),
+    notice: 'The saved attempt is damaged or belongs to a different test version. A new attempt is ready to start.',
   }
 }
 
-function requireActive(attempt: Attempt) {
+export function startAttempt(attempt: Attempt, now = Date.now()): Attempt {
+  if (attempt.startedAt !== null) return attempt
+  if (!isTimestamp(now)) throw new Error('The test cannot start with an invalid timestamp.')
+  return { ...attempt, startedAt: now }
+}
+
+function requireActive(attempt: Attempt): asserts attempt is Attempt & { startedAt: number; submittedAt: null } {
+  if (attempt.startedAt === null) throw new Error('Start the test before interacting with questions.')
   if (attempt.submittedAt !== null) throw new Error('A submitted attempt is read-only. Start a new attempt to change answers.')
 }
 
@@ -145,6 +163,7 @@ export function markQuestion(attempt: Attempt, id: string): Attempt {
 }
 
 export function navigateTo(attempt: Attempt, id: string): Attempt {
+  if (attempt.startedAt === null) throw new Error('Start the test before changing questions.')
   if (attempt.pausedAt !== null) throw new Error('Resume practice before changing questions.')
   getQuestion(id)
   return { ...attempt, currentQuestionId: id }
@@ -167,6 +186,7 @@ export function resumeAttempt(attempt: Attempt, now = Date.now()): Attempt {
 }
 
 export function submitAttempt(attempt: Attempt, now = Date.now()): Attempt {
+  if (attempt.startedAt === null) throw new Error('Start the test before submitting.')
   if (attempt.submittedAt !== null) return attempt
   const submittedAt = Math.max(attempt.startedAt + attempt.pausedDurationMs, attempt.pausedAt ?? 0, now)
   return {
@@ -178,6 +198,7 @@ export function submitAttempt(attempt: Attempt, now = Date.now()): Attempt {
 }
 
 export function elapsedMilliseconds(attempt: Attempt, now = Date.now()): number {
+  if (attempt.startedAt === null) return 0
   return Math.max(0, (attempt.submittedAt ?? attempt.pausedAt ?? now) - attempt.startedAt - attempt.pausedDurationMs)
 }
 

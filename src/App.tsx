@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import {
   answerQuestion, createAttempt, elapsedMilliseconds, formatElapsed, markQuestion,
-  navigateTo, pauseAttempt, questionStatus, readAttempt, resumeAttempt, STORAGE_KEY, submitAttempt, summarize,
+  navigateTo, pauseAttempt, questionStatus, readAttempt, resumeAttempt, startAttempt, STORAGE_KEY, submitAttempt, summarize,
 } from './attempt.ts'
 import type { Attempt } from './attempt.ts'
 import { getQuestion, isChoiceId, modules, questions } from './content.ts'
@@ -67,7 +67,7 @@ function Dialog({ title, children, onDismiss, wide = false }: {
 function Timer({ attempt, onToggle }: { attempt: Attempt; onToggle: () => void }) {
   const [, setTick] = useState(0)
   useEffect(() => {
-    if (attempt.submittedAt !== null || attempt.pausedAt !== null) return
+    if (attempt.startedAt === null || attempt.submittedAt !== null || attempt.pausedAt !== null) return
     const interval = window.setInterval(() => setTick((tick) => tick + 1), 1_000)
     return () => window.clearInterval(interval)
   }, [attempt.startedAt, attempt.submittedAt, attempt.pausedAt])
@@ -82,6 +82,25 @@ function Timer({ attempt, onToggle }: { attempt: Attempt; onToggle: () => void }
         {attempt.timerHidden ? 'Show timer' : 'Hide timer'}
       </button>
     </div>
+  )
+}
+
+function Introduction({ onStart }: { onStart: () => void }) {
+  return (
+    <main className="intro-content" id="main-content" tabIndex={-1} aria-labelledby="intro-heading">
+      <section className="intro-card">
+        <span className="intro-eyebrow"><Icon name="book" />Your practice session</span>
+        <h1 id="intro-heading" tabIndex={-1}>Reading and Writing Practice</h1>
+        <p className="intro-description">Read each passage, choose the best answer, and move freely between questions. When you finish, review your score and answer explanations.</p>
+        <div className="intro-facts">
+          <div><strong>{questions.length}</strong><span>questions</span></div>
+          <div><strong>{modules.length}</strong><span>modules, 33 questions each</span></div>
+        </div>
+        <p className="intro-guidance">Mark questions to revisit, or pause whenever you need a break.</p>
+        <button className="button button-primary start-button" onClick={onStart}>Start test<Icon name="right" /></button>
+        <p className="intro-timer-note">Your timer begins only when you select Start test.</p>
+      </section>
+    </main>
   )
 }
 
@@ -327,6 +346,7 @@ export default function App() {
   const shouldFocus = useRef(false)
   const question = getQuestion(attempt.currentQuestionId)
   const currentIndex = questions.findIndex((item) => item.id === question.id)
+  const unstarted = attempt.startedAt === null
   const submitted = attempt.submittedAt !== null
   const paused = attempt.pausedAt !== null
   const summary = summarize(attempt)
@@ -347,12 +367,18 @@ export default function App() {
 
   useEffect(() => {
     if (!shouldFocus.current) return
-    const mobileQuestion = screen === 'exam' && !paused && window.matchMedia('(max-width: 820px)').matches
-    const target = document.getElementById(screen === 'results' ? 'results-heading' : paused ? 'paused-heading' : mobileQuestion ? 'main-content' : 'question-heading')
+    const mobileQuestion = !unstarted && screen === 'exam' && !paused && window.matchMedia('(max-width: 820px)').matches
+    const target = document.getElementById(unstarted ? 'intro-heading' : screen === 'results' ? 'results-heading' : paused ? 'paused-heading' : mobileQuestion ? 'main-content' : 'question-heading')
     target?.focus({ preventScroll: mobileQuestion })
     if (mobileQuestion) target?.scrollIntoView({ block: 'start' })
     shouldFocus.current = false
-  }, [attempt.currentQuestionId, paused, screen])
+  }, [attempt.currentQuestionId, unstarted, paused, screen])
+
+  function beginTest() {
+    shouldFocus.current = true
+    setAttempt((current) => startAttempt(current))
+    setScreen('exam')
+  }
 
   function goTo(id: string) {
     shouldFocus.current = true
@@ -394,19 +420,21 @@ export default function App() {
   }
 
   return (
-    <div className={`app-shell ${screen === 'results' ? 'is-results' : ''} ${paused ? 'is-paused' : ''} ${notice ? 'has-notice' : ''}`}>
+    <div className={`app-shell ${unstarted ? 'is-intro' : screen === 'results' ? 'is-results' : ''} ${paused ? 'is-paused' : ''} ${notice ? 'has-notice' : ''}`}>
       <a className="skip-link" href="#main-content">Skip to test content</a>
       <header className="top-bar">
         <div className="brand"><span className="brand-icon"><Icon name="book" /></span><div><strong>Practice Test</strong><span>READING AND WRITING</span></div></div>
         <div className="top-actions">
           <button className="directions-button" aria-label="Directions" onClick={() => setModal('directions')}><Icon name="info" /><span>Directions</span></button>
-          {submitted && screen === 'exam' && <button className="button button-secondary" onClick={() => { shouldFocus.current = true; setScreen('results') }}>View score</button>}
-          <button className="button button-teal" disabled={paused} onClick={() => setModal(submitted ? 'restart' : 'submit')}>{submitted ? 'New attempt' : 'Submit section'}</button>
-          {!submitted && <button className="button button-secondary pause-control" aria-label={paused ? 'Resume practice' : 'Pause practice'} aria-controls="main-content" onClick={togglePause}><Icon name={paused ? 'play' : 'pause'} /><span>{paused ? 'Resume' : 'Pause'}</span></button>}
+          {!unstarted && <>
+            {submitted && screen === 'exam' && <button className="button button-secondary" onClick={() => { shouldFocus.current = true; setScreen('results') }}>View score</button>}
+            <button className="button button-teal" disabled={paused} onClick={() => setModal(submitted ? 'restart' : 'submit')}>{submitted ? 'New attempt' : 'Submit section'}</button>
+            {!submitted && <button className="button button-secondary pause-control" aria-label={paused ? 'Resume practice' : 'Pause practice'} aria-controls="main-content" onClick={togglePause}><Icon name={paused ? 'play' : 'pause'} /><span>{paused ? 'Resume' : 'Pause'}</span></button>}
+          </>}
         </div>
       </header>
       {notice && <div className="storage-notice" role="alert"><Icon name="info" /><span>{notice}</span><button className="icon-button" onClick={() => setNotice(null)} aria-label="Dismiss saved-progress notice"><Icon name="close" /></button></div>}
-      {screen === 'exam' ? (
+      {unstarted ? <Introduction onStart={beginTest} /> : screen === 'exam' ? (
         <>
           <section className="section-bar" aria-label="Section information">
             <div className="section-heading"><span className={`practice-label ${paused ? 'is-paused' : ''}`}><i />{submitted ? 'Answer review' : paused ? 'Paused' : 'Untimed practice'}</span><h1>Reading and Writing</h1></div>
@@ -456,13 +484,14 @@ export default function App() {
       {modal === 'restart' && (
         <Dialog title="Start a new attempt?" onDismiss={() => setModal(null)}>
           <p>This will clear the saved answers, review marks, score, and elapsed time for your current attempt on this device.</p>
-          <p>The same 66 Reading and Writing questions will be ready to try again.</p>
+          <p>You will return to the introduction with the same 66 questions. The timer will begin only when you select Start test.</p>
           <div className="dialog-actions"><button className="button button-secondary" onClick={() => setModal(null)}>Keep current attempt</button><button className="button button-primary" onClick={restart}>Start new attempt</button></div>
         </Dialog>
       )}
       {modal === 'directions' && (
         <Dialog title="Reading and Writing directions" onDismiss={() => setModal(null)} wide>
           <div className="directions-content">
+            <p>Select <strong>Start test</strong> on the introduction screen to begin. The first question and elapsed timer appear when you start.</p>
             <p>Read each passage and question carefully, then choose the single best answer from the four choices. A passage may include a graph or a set of notes.</p>
             <div className="directions-facts"><div><strong>66 questions</strong><span>2 modules / 33 questions each</span></div><div><strong>Elapsed timer</strong><span>Tracks time until you submit</span></div></div>
             <p>Use <strong>Prev</strong> and <strong>Next</strong> to move through the section, or open the question navigator to jump directly to a question. You can move freely between the two modules and mark questions to revisit.</p>
