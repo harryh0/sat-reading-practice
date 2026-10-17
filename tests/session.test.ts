@@ -492,7 +492,8 @@ test('switching through all eight real datasets independently saves paused attem
     update(session, (_, current) => ({ ...current, timerHidden: entry.number % 2 === 0 }))
     now += 5_000
     expected.set(entry.id, pauseAttempt(active(session).attempt, now))
-    const running = [...storage.values.entries()].filter(([key]) => key !== SELECTED_TEST_STORAGE_KEY).map(([, value]) => JSON.parse(value) as Attempt)
+    const attemptKeys = new Set(realCatalog.map((entry) => attemptStorageKey(entry.id)))
+    const running = [...storage.values.entries()].filter(([key]) => attemptKeys.has(key)).map(([, value]) => JSON.parse(value) as Attempt)
     assert.equal(running.filter((current) => current.startedAt !== null && current.pausedAt === null && current.submittedAt === null).length, 1)
   }
   setNow(now)

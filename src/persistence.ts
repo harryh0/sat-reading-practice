@@ -3,10 +3,14 @@ import type { Attempt } from './attempt.ts'
 import { DEFAULT_TEST_ID } from './catalog.ts'
 import type { TestCatalogEntry } from './catalog.ts'
 import type { TestContent } from './content.ts'
+import { emptyHistory, isResultHistory, mergeHistories } from './history.ts'
+import type { ResultHistory } from './history.ts'
 
 export const LEGACY_STORAGE_KEY = 'sat-reading-practice:test-11:v1'
 export const SELECTED_TEST_STORAGE_KEY = 'reading-writing-practice:selected-test:v1'
-export const SAVE_FAILURE_NOTICE = 'Your progress or test selection could not be saved on this device. Keep this tab open so you do not lose your answers, and use Retry saving to try again.'
+export const PRACTICE_VIEW_STORAGE_KEY = 'reading-writing-practice:view:v1'
+export const SAVE_FAILURE_NOTICE = 'Your progress, completed history, or navigation could not be saved on this device. Keep this tab open so you do not lose your work, and use Retry saving to try again.'
+export type PracticeView = 'practice' | 'tests'
 
 export interface ProgressStorage {
   getItem(key: string): string | null
@@ -87,6 +91,74 @@ export function readSelectedTest(catalog: readonly TestCatalogEntry[], getStorag
 export function writeSelectedTest(testId: string, getStorage: GetStorage): boolean {
   try {
     getStorage().setItem(SELECTED_TEST_STORAGE_KEY, testId)
+    return true
+  } catch {
+    return false
+  }
+}
+
+export function historyStorageKey(testId: string): string {
+  return `reading-writing-practice:history:${testId}:v1`
+}
+
+export interface HistoryReadResult {
+  readonly history: ResultHistory
+  readonly status: 'restored' | 'new' | 'invalid' | 'unavailable'
+  readonly notice: string | null
+}
+
+export function readHistory(testId: string, getStorage: StorageReader): HistoryReadResult {
+  let raw: string | null
+  try {
+    raw = getStorage().getItem(historyStorageKey(testId))
+  } catch {
+    return { history: emptyHistory(testId), status: 'unavailable', notice: 'Completed history could not be read. Existing saved results have not been overwritten.' }
+  }
+  if (raw === null) return { history: emptyHistory(testId), status: 'new', notice: null }
+  let value: unknown
+  try {
+    value = JSON.parse(raw)
+  } catch {
+    return { history: emptyHistory(testId), status: 'invalid', notice: 'Saved completed history is unreadable. It has been preserved rather than replaced.' }
+  }
+  if (!isResultHistory(value, testId)) {
+    return { history: emptyHistory(testId), status: 'invalid', notice: 'Saved completed history did not pass validation. It has been preserved rather than replaced.' }
+  }
+  return { history: value, status: 'restored', notice: null }
+}
+
+export function writeMergedHistory(history: ResultHistory, getStorage: GetStorage): { saved: boolean; history: ResultHistory; notice: string | null } {
+  const restored = readHistory(history.testId, getStorage)
+  if (restored.status === 'unavailable' || restored.status === 'invalid') {
+    return { saved: false, history, notice: restored.notice }
+  }
+  let merged: ResultHistory
+  try {
+    merged = mergeHistories(restored.history, history)
+  } catch (error) {
+    return { saved: false, history, notice: error instanceof Error ? error.message : 'Completed history could not be merged safely. Existing results have not been overwritten.' }
+  }
+  try {
+    getStorage().setItem(historyStorageKey(history.testId), JSON.stringify(merged))
+    return { saved: true, history: merged, notice: null }
+  } catch {
+    return { saved: false, history, notice: 'Completed history could not be saved. Keep this tab open and retry saving before starting another attempt.' }
+  }
+}
+
+export function readPracticeView(getStorage: StorageReader): { view: PracticeView; notice: string | null } {
+  try {
+    const value = getStorage().getItem(PRACTICE_VIEW_STORAGE_KEY)
+    if (value === null || value === 'practice' || value === 'tests') return { view: value ?? 'practice', notice: null }
+    return { view: 'practice', notice: 'The saved page preference was unavailable. Your attempts and completed history have not been cleared.' }
+  } catch {
+    return { view: 'practice', notice: 'This browser is blocking saved navigation. Your page choice may not survive refresh.' }
+  }
+}
+
+export function writePracticeView(view: PracticeView, getStorage: GetStorage): boolean {
+  try {
+    getStorage().setItem(PRACTICE_VIEW_STORAGE_KEY, view)
     return true
   } catch {
     return false

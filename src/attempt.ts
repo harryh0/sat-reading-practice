@@ -3,6 +3,7 @@ import type { ChoiceId, TestContent } from './content.ts'
 
 export interface Attempt {
   version: 1
+  id?: string
   testId: string
   startedAt: number | null
   submittedAt: number | null
@@ -45,6 +46,7 @@ function isBaseAttempt(value: unknown, content: TestContent): value is BaseAttem
   if (
     !isRecord(value) ||
     value.version !== 1 ||
+    !(value.id === undefined || (typeof value.id === 'string' && value.id.trim().length > 0 && value.id.length <= 200)) ||
     value.testId !== content.test.id ||
     !(value.startedAt === null || isTimestamp(value.startedAt)) ||
     !(value.submittedAt === null || (isTimestamp(value.submittedAt) && isTimestamp(value.startedAt) && value.submittedAt >= value.startedAt)) ||
@@ -103,7 +105,7 @@ export function restoreAttempt(value: unknown, content: TestContent): Attempt | 
 export function startAttempt(attempt: Attempt, now = Date.now()): Attempt {
   if (attempt.startedAt !== null) return attempt
   if (!isTimestamp(now)) throw new Error('The test cannot start with an invalid timestamp.')
-  return { ...attempt, startedAt: now }
+  return { ...attempt, id: attempt.id ?? crypto.randomUUID(), startedAt: now }
 }
 
 function requireActive(attempt: Attempt): asserts attempt is Attempt & { startedAt: number; submittedAt: null } {

@@ -18,7 +18,6 @@ const { PracticeWorkspace, QuestionView, TestLoadingView, SubmitDialog, RestartD
 const start = 1_700_000_000_000
 const content = fixtureContent('domain-ui', [1, 4, 2], 'B')
 const entry = fixtureEntry(content, 4)
-const catalog = [entry, fixtureEntry(fixtureContent('domain-ui-other'), 11)]
 const noop = () => {}
 
 function plain(html: string) {
@@ -28,13 +27,13 @@ function plain(html: string) {
 function workspace(attempt: Attempt, selected: TestContent = content, notice: string | null = null, failed = false) {
   return renderToStaticMarkup(createElement(PracticeWorkspace, {
     selectedTest: selected === content ? entry : fixtureEntry(selected, 4),
-    catalog,
     content: selected,
     attempt,
     notice,
     saveState: failed ? 'failed' : 'saved',
-    onSelectTest: noop,
-    onUpdateAttempt: noop,
+    onShowTests: noop,
+    onShowPractice: noop,
+    onUpdateAttempt: () => true,
     onDismissNotice: noop,
     onRetrySaving: noop,
   }))
@@ -51,11 +50,13 @@ function question(attempt: Attempt, selected: TestContent = content) {
   }))
 }
 
-test('the fresh/refreshed introduction identifies the selected test, has a labelled selector and derived heterogeneous counts, and hides every question/timer/navigation surface', () => {
+test('the fresh/refreshed introduction identifies the selected test, has Tests/Practice navigation and derived counts, and hides every question/timer/navigation surface', () => {
   const html = workspace(createAttempt(content))
   const text = plain(html)
-  assert.match(html, /<label for="test-select">Choose test<\/label>/)
-  assert.match(html, /<option value="domain-ui" selected="">Practice Test 4<\/option>/)
+  assert.match(html, /<nav class="main-navigation" aria-label="Practice navigation">/)
+  assert.match(html, /class="navigation-tab"[^>]*>Tests<\/button>/)
+  assert.match(html, /aria-current="page"[^>]*>Practice<\/button>/)
+  assert.doesNotMatch(html, /test-select|Choose test/)
   assert.match(text, /Practice Test 4/)
   assert.match(text, /Start test/)
   assert.match(text, /7 questions/)
@@ -95,7 +96,7 @@ test('pause hides prose, prompts, graphs, options, explanations, module/question
   assert.match(text, /Practice paused/)
   assert.match(text, /Resume practice/)
   assert.match(text, /00:12/)
-  assert.match(html, /id="test-select"/)
+  assert.match(html, /aria-label="Practice navigation"/)
   assert.doesNotMatch(html, /A uniquely described domain graph|domain-only-graph|Domain passage|Domain prompt|Domain option|Supplied explanation|<img|answer-options|question-prompt|module-select|question-jump|page-navigation/)
   assert.equal(question(paused, graph), '')
   assert.deepEqual(paused.answers, { 'm1-q1': 'D' })
@@ -121,6 +122,7 @@ test('results use selected dataset totals and module sizes, identify the test, a
   assert.match(text, /1 out of 7/)
   assert.match(text, /2 answered/)
   assert.match(text, /5 unanswered/)
+  assert.match(text, /Right 1 Wrong 1 Skipped 5/)
   assert.match(text, /Module 1 1 \/ 1 correct/)
   assert.match(text, /Module 2 0 \/ 4 correct/)
   assert.match(text, /Module 3 0 \/ 2 correct/)
@@ -180,11 +182,12 @@ test('supplied graph tables render accessible captions and row/column headers; o
 test('loading/error views keep the requested test selected and accessible without leaking another dataset or exposing Start', () => {
   for (const error of [null, 'Practice Test 4 could not be loaded. Check your connection and try again.']) {
     const html = renderToStaticMarkup(createElement(TestLoadingView, {
-      selectedTest: entry, catalog, error, notice: null, saveState: 'saved',
-      onSelectTest: noop, onRetry: noop, onDismissNotice: noop, onRetrySaving: noop,
+      selectedTest: entry, error, notice: null, saveState: 'saved',
+      onShowTests: noop, onShowPractice: noop, onRetry: noop, onDismissNotice: noop, onRetrySaving: noop,
     }))
     assert.match(plain(html), /Practice Test 4/)
-    assert.match(html, /id="test-select"/)
+    assert.match(html, /aria-label="Practice navigation"/)
+    assert.match(html, />Tests<\/button>/)
     assert.doesNotMatch(html, /Domain passage|Domain prompt|Domain option|Supplied explanation|role="timer"|<img|class="start-button"/)
     if (error) {
       assert.match(html, /role="alert"/)
@@ -218,7 +221,7 @@ test('submission requires an explicit confirmation surface with selected-test un
   assert.match(text, /3 modules/)
   assert.match(text, /6 questions are unanswered/)
   assert.match(text, /1 question is marked for review/)
-  assert.match(text, /Unanswered questions count as incorrect/)
+  assert.match(text, /Unanswered questions are recorded as skipped and do not count as correct/)
   assert.match(text, /Review unanswered/)
   assert.match(text, /Submit and see score/)
   assert.doesNotMatch(html, /Supplied explanation|Correct answer:|Domain passage|out of 7/)
@@ -242,7 +245,7 @@ test('fully answered submission and confirmed restart use selected counts and ex
   }))
   assert.match(plain(restart), /Practice Test 4/)
   assert.match(plain(restart), /same 7 questions/)
-  assert.match(plain(restart), /Your other tests will not be changed/)
+  assert.match(plain(restart), /All completed history and your other tests will be kept/)
   assert.match(plain(restart), /timer will begin only when you select Start test/)
   assert.match(plain(restart), /Keep current attempt/)
   assert.match(plain(restart), /Start new attempt/)
@@ -251,13 +254,13 @@ test('fully answered submission and confirmed restart use selected counts and ex
 function realWorkspace(selectedTest: TestCatalogEntry, selected: TestContent, attempt: Attempt) {
   return renderToStaticMarkup(createElement(PracticeWorkspace, {
     selectedTest,
-    catalog: testCatalog,
     content: selected,
     attempt,
     notice: null,
     saveState: 'saved',
-    onSelectTest: noop,
-    onUpdateAttempt: noop,
+    onShowTests: noop,
+    onShowPractice: noop,
+    onUpdateAttempt: () => true,
     onDismissNotice: noop,
     onRetrySaving: noop,
   }))
@@ -274,7 +277,8 @@ test('all real tests visibly identify the selected catalog title on introduction
       const html = realWorkspace(entry, selected, attempt)
       const text = plain(html)
       assert.ok(html.includes(`<strong>${entry.title}</strong>`), entry.title)
-      assert.ok(html.includes(`<option value="${entry.id}" selected="">${entry.title}</option>`), entry.title)
+      assert.match(html, /aria-label="Practice navigation"/)
+      assert.doesNotMatch(html, /test-select|Choose test/)
       if (selected.test.title !== entry.title) assert.ok(!text.includes(selected.test.title), entry.title)
       assert.doesNotMatch(text, /SAT Practice Test|No time limit\. Work at your pace|source PDF/i)
       if (attempt.startedAt === null) assert.doesNotMatch(html, /answer-options|question-prompt|role="timer"|module-select|<img/)

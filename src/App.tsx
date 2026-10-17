@@ -10,6 +10,8 @@ import { figureUrl, getQuestion, isChoiceId } from './content.ts'
 import type { Question, TestContent } from './content.ts'
 import type { SaveState } from './practiceSession.ts'
 import { usePracticeSession } from './usePracticeSession.ts'
+import type { PracticeView } from './persistence.ts'
+import { ResultCounts, TestLibrary } from './TestLibrary.tsx'
 
 type IconName = 'book' | 'bookmark' | 'left' | 'right' | 'down' | 'grid' | 'check' | 'close' | 'clock' | 'info' | 'pause' | 'play'
 const iconPaths: Record<IconName, string> = {
@@ -34,19 +36,17 @@ function Icon({ name, className = '' }: { name: IconName; className?: string }) 
   )
 }
 
-function PracticeHeader({ selectedTest, catalog, onSelectTest, children }: {
-  selectedTest: TestCatalogEntry; catalog: readonly TestCatalogEntry[]; onSelectTest: (id: string) => void; children?: ReactNode
+function PracticeHeader({ selectedTest, view = 'practice', onShowTests, onShowPractice, children }: {
+  selectedTest: TestCatalogEntry; view?: PracticeView; onShowTests: () => void; onShowPractice: () => void; children?: ReactNode
 }) {
   return (
     <header className="top-bar">
-      <div className="brand"><span className="brand-icon"><Icon name="book" /></span><div><strong>{selectedTest.title}</strong><span>READING AND WRITING</span></div></div>
+      <div className="brand"><span className="brand-icon"><Icon name="book" /></span><div><strong>{view === 'tests' ? 'Practice library' : selectedTest.title}</strong><span>READING AND WRITING</span></div></div>
       <div className="top-controls">
-        <div className="test-control">
-          <label htmlFor="test-select">Choose test</label>
-          <div className="select-wrap"><select id="test-select" value={selectedTest.id} onChange={(event) => onSelectTest(event.target.value)}>
-            {catalog.map((entry) => <option key={entry.id} value={entry.id}>{entry.title}</option>)}
-          </select><Icon name="down" /></div>
-        </div>
+        <nav className="main-navigation" aria-label="Practice navigation">
+          <button className="navigation-tab" aria-current={view === 'tests' ? 'page' : undefined} onClick={onShowTests}>Tests</button>
+          <button className="navigation-tab" aria-current={view === 'practice' ? 'page' : undefined} onClick={onShowPractice}>Practice</button>
+        </nav>
         {children && <div className="top-actions">{children}</div>}
       </div>
     </header>
@@ -346,6 +346,7 @@ function Results({ content, testTitle, attempt, onNavigate, onRestart, onReview 
           <h1 id="results-heading" tabIndex={-1}>Reading and Writing</h1>
           <div className="score"><strong>{summary.correct}</strong><span>out of {summary.total}</span></div>
           <p className="score-caption">questions correct</p>
+          <div className="score-result-counts"><ResultCounts right={summary.correct} wrong={summary.answered - summary.correct} skipped={summary.unanswered} /></div>
           <div className="score-details">
             <span><Icon name="clock" />{formatElapsed(elapsedMilliseconds(attempt))} elapsed</span>
             <span>{summary.answered} answered</span>
@@ -383,7 +384,7 @@ export function SubmitDialog({ content, attempt, testTitle, onDismiss, onReviewU
   return (
     <Dialog title={`Submit ${testTitle}?`} onDismiss={onDismiss}>
       <p className="dialog-intro">You have answered <strong>{summary.answered} of {summary.total}</strong> questions across {content.modules.length} {content.modules.length === 1 ? 'module' : 'modules'} in {testTitle}.</p>
-      {summary.unanswered > 0 ? <div className="unanswered-notice"><Icon name="info" /><div><strong>{summary.unanswered} {summary.unanswered === 1 ? 'question is' : 'questions are'} unanswered.</strong><p>Unanswered questions count as incorrect. You can go back and finish them, or submit now.</p></div></div> : <div className="all-answered"><Icon name="check" />Every question has an answer.</div>}
+      {summary.unanswered > 0 ? <div className="unanswered-notice"><Icon name="info" /><div><strong>{summary.unanswered} {summary.unanswered === 1 ? 'question is' : 'questions are'} unanswered.</strong><p>Unanswered questions are recorded as skipped and do not count as correct. You can go back and finish them, or submit now.</p></div></div> : <div className="all-answered"><Icon name="check" />Every question has an answer.</div>}
       {attempt.marked.length > 0 && <p className="muted">{attempt.marked.length} {attempt.marked.length === 1 ? 'question is' : 'questions are'} marked for review.</p>}
       <p>Submitting stops the timer and locks your answers. Your score and the answer explanations will then be available.</p>
       <div className="dialog-actions">
@@ -399,7 +400,7 @@ export function RestartDialog({ content, testTitle, onDismiss, onConfirm }: {
 }) {
   return (
     <Dialog title="Start a new attempt?" onDismiss={onDismiss}>
-      <p>This will clear the saved answers, review marks, score, and elapsed time for {testTitle} on this device. Your other tests will not be changed.</p>
+      <p>This will clear only the current answers, review marks, and elapsed time for {testTitle}. All completed history and your other tests will be kept.</p>
       <p>You will return to the introduction with the same {content.questions.length} questions. The timer will begin only when you select Start test.</p>
       <div className="dialog-actions"><button className="button button-secondary" onClick={onDismiss}>Keep current attempt</button><button className="button button-primary" onClick={onConfirm}>Start new attempt</button></div>
     </Dialog>
@@ -408,19 +409,19 @@ export function RestartDialog({ content, testTitle, onDismiss, onConfirm }: {
 
 export interface PracticeWorkspaceProps {
   selectedTest: TestCatalogEntry
-  catalog: readonly TestCatalogEntry[]
   content: TestContent
   attempt: Attempt
   notice: string | null
   saveState: SaveState
-  onSelectTest: (id: string) => void
-  onUpdateAttempt: (update: (attempt: Attempt) => Attempt) => void
+  onShowTests: () => void
+  onShowPractice: () => void
+  onUpdateAttempt: (update: (attempt: Attempt) => Attempt) => boolean
   onDismissNotice: () => void
   onRetrySaving: () => void
 }
 
 export function PracticeWorkspace({
-  selectedTest, catalog, content, attempt, notice, saveState, onSelectTest, onUpdateAttempt, onDismissNotice, onRetrySaving,
+  selectedTest, content, attempt, notice, saveState, onShowTests, onShowPractice, onUpdateAttempt, onDismissNotice, onRetrySaving,
 }: PracticeWorkspaceProps) {
   const { questions, modules } = content
   const [screen, setScreen] = useState<'exam' | 'results'>(attempt.submittedAt === null ? 'exam' : 'results')
@@ -485,16 +486,17 @@ export function PracticeWorkspace({
   }
 
   function restart() {
-    shouldFocus.current = true
-    onUpdateAttempt(() => createAttempt(content))
-    setScreen('exam')
+    if (onUpdateAttempt(() => createAttempt(content))) {
+      shouldFocus.current = true
+      setScreen('exam')
+    }
     setModal(null)
   }
 
   return (
     <div className={`app-shell ${unstarted ? 'is-intro' : screen === 'results' ? 'is-results' : ''} ${paused ? 'is-paused' : ''} ${notice ? 'has-notice' : ''}`}>
       <a className="skip-link" href="#main-content">Skip to test content</a>
-      <PracticeHeader selectedTest={selectedTest} catalog={catalog} onSelectTest={onSelectTest}>
+      <PracticeHeader selectedTest={selectedTest} onShowTests={onShowTests} onShowPractice={onShowPractice}>
           <button className="directions-button" aria-label="Directions" onClick={() => setModal('directions')}><Icon name="info" /><span>Directions</span></button>
           {!unstarted && <>
             {submitted && screen === 'exam' && <button className="button button-secondary" onClick={() => { shouldFocus.current = true; setScreen('results') }}>View score</button>}
@@ -549,8 +551,8 @@ export function PracticeWorkspace({
             <p>Use <strong>Prev</strong> and <strong>Next</strong> to move through the section, or open the question navigator to jump directly to a question. You can move freely between modules and mark questions to revisit.</p>
             <p>Use <strong>Pause</strong> to stop the timer and hide the passage, question, and answers. Resume to return to the same question and selections. Your paused state is also saved when you refresh.</p>
             <p>Your answers, current question, and review marks are saved in this browser on this device. While running, the elapsed timer continues across refreshes and while you are away, until you pause or submit. Hiding the timer does not pause it.</p>
-            <p>Choose a test from the header to keep a separate attempt for each test. Switching tests pauses your current attempt; resume it when you return.</p>
-            <p>Submit the whole section when you are ready. Unanswered questions count as incorrect. After submission, you will receive an <strong>X out of {questions.length}</strong> score and can review every question with an explanation of the correct answer.</p>
+            <p>Open <strong>Tests</strong> to choose a test and see all recorded completions. Browsing Tests pauses your current attempt; resume it when you return.</p>
+            <p>Submit the whole section when you are ready. Unanswered questions are recorded as skipped and do not add to your score. You will receive an <strong>X out of {questions.length}</strong> score and can review every question with an explanation of the correct answer.</p>
           </div>
           <div className="dialog-actions"><button className="button button-primary" onClick={() => setModal(null)}>Got it</button></div>
         </Dialog>
@@ -559,19 +561,19 @@ export function PracticeWorkspace({
   )
 }
 
-export function TestLoadingView({ selectedTest, catalog, error, notice, saveState, onSelectTest, onRetry, onDismissNotice, onRetrySaving }: {
-  selectedTest: TestCatalogEntry; catalog: readonly TestCatalogEntry[]; error: string | null; notice: string | null; saveState: SaveState
-  onSelectTest: (id: string) => void; onRetry: () => void; onDismissNotice: () => void; onRetrySaving: () => void
+export function TestLoadingView({ selectedTest, error, notice, saveState, onShowTests, onShowPractice, onRetry, onDismissNotice, onRetrySaving }: {
+  selectedTest: TestCatalogEntry; error: string | null; notice: string | null; saveState: SaveState
+  onShowTests: () => void; onShowPractice: () => void; onRetry: () => void; onDismissNotice: () => void; onRetrySaving: () => void
 }) {
   return (
     <div className={`app-shell is-intro ${notice ? 'has-notice' : ''}`}>
       <a className="skip-link" href="#main-content">Skip to test content</a>
-      <PracticeHeader selectedTest={selectedTest} catalog={catalog} onSelectTest={onSelectTest} />
+      <PracticeHeader selectedTest={selectedTest} onShowTests={onShowTests} onShowPractice={onShowPractice} />
       <StorageNotice notice={notice} saveState={saveState} onDismiss={onDismissNotice} onRetry={onRetrySaving} />
       <main className="intro-content" id="main-content" aria-busy={!error}>
         <section className="intro-card load-card">
           <span className="intro-eyebrow"><Icon name="book" />{selectedTest.title}</span>
-          <h1>{error ? 'Test unavailable' : 'Loading your test'}</h1>
+          <h1 id="loading-heading" tabIndex={-1}>{error ? 'Test unavailable' : 'Loading your test'}</h1>
           <p className="intro-description" role={error ? 'alert' : 'status'}>{error ?? `Loading ${selectedTest.title}. Your test will not start until you select Start test.`}</p>
           {error && <button className="button button-primary" onClick={onRetry}>Try again</button>}
         </section>
@@ -582,26 +584,60 @@ export function TestLoadingView({ selectedTest, catalog, error, notice, saveStat
 
 export default function App() {
   const { session, snapshot } = usePracticeSession()
-  const selectorFocusTarget = useRef<string | null>(null)
+  const navigationRequest = useRef(0)
+  const focusTarget = useRef<PracticeView | null>(null)
+  const [navigationFinished, setNavigationFinished] = useState(0)
+
   useEffect(() => {
-    if (snapshot.status === 'loading' || selectorFocusTarget.current !== snapshot.selectedTest.id) return
-    selectorFocusTarget.current = null
-    // Async selection remounts the header; keep keyboard navigation on its replacement.
-    if (document.activeElement === document.body || document.activeElement?.id === 'test-select') {
-      document.getElementById('test-select')?.focus()
-    }
-  }, [snapshot.selectedTest.id, snapshot.status])
+    if (focusTarget.current !== snapshot.view || (snapshot.view === 'practice' && snapshot.status === 'loading')) return
+    const attempt = snapshot.active?.attempt
+    const id = snapshot.view === 'tests' ? 'tests-heading' : snapshot.status === 'error' ? 'loading-heading'
+      : attempt?.startedAt === null ? 'intro-heading' : attempt?.submittedAt !== null ? 'results-heading'
+        : attempt?.pausedAt !== null ? 'paused-heading' : window.matchMedia('(max-width: 820px)').matches ? 'main-content' : 'question-heading'
+    const target = document.getElementById(id)
+    if (target) { target.focus(); focusTarget.current = null }
+  }, [navigationFinished, snapshot.view, snapshot.selectedTest.id, snapshot.status, snapshot.active])
+
+  function showTests() {
+    focusTarget.current = 'tests'
+    setNavigationFinished(++navigationRequest.current)
+    void session.openTests()
+  }
+
+  async function openPractice(id = snapshot.selectedTest.id, resume = false) {
+    const request = ++navigationRequest.current
+    focusTarget.current = null
+    await session.openPractice(id, resume)
+    if (request !== navigationRequest.current) return
+    focusTarget.current = 'practice'
+    setNavigationFinished(request)
+  }
+
+  function retryLoading() {
+    // Browsers cache failed imports; reload only after all progress is safely saved.
+    if (snapshot.saveState === 'saved') window.location.reload()
+    else if (snapshot.view === 'tests') void session.openTests()
+    else void session.loadSelected()
+  }
+
   const common = {
     selectedTest: snapshot.selectedTest,
-    catalog: session.catalog,
     notice: snapshot.notice,
     saveState: snapshot.saveState,
-    onSelectTest: (id: string) => {
-      selectorFocusTarget.current = document.activeElement?.id === 'test-select' ? id : null
-      void session.selectTest(id)
-    },
+    onShowTests: showTests,
+    onShowPractice: () => { void openPractice() },
     onDismissNotice: session.dismissNotice,
     onRetrySaving: session.retrySaving,
+  }
+  if (snapshot.view === 'tests') {
+    return (
+      <div className={`app-shell is-library ${snapshot.notice ? 'has-notice' : ''}`}>
+        <a className="skip-link" href="#main-content">Skip to practice tests</a>
+        <PracticeHeader selectedTest={snapshot.selectedTest} view="tests" onShowTests={showTests} onShowPractice={common.onShowPractice} />
+        <StorageNotice notice={snapshot.notice} saveState={snapshot.saveState} onDismiss={session.dismissNotice} onRetry={session.retrySaving} />
+        <TestLibrary items={snapshot.library} selectedTestId={snapshot.selectedTest.id} onOpenTest={(id, resume) => { void openPractice(id, resume) }} onRetry={retryLoading} />
+      </div>
+    )
   }
   if (snapshot.status === 'ready' && snapshot.active) {
     return (
@@ -614,9 +650,5 @@ export default function App() {
       />
     )
   }
-  return <TestLoadingView {...common} error={snapshot.error} onRetry={() => {
-    // Browsers cache failed module imports; reload only after all progress is safely saved.
-    if (snapshot.saveState === 'saved') window.location.reload()
-    else void session.loadSelected()
-  }} />
+  return <TestLoadingView {...common} error={snapshot.error} onRetry={retryLoading} />
 }
