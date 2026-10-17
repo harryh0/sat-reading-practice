@@ -1,7 +1,10 @@
 import assert from 'node:assert/strict'
 import { readFileSync, statSync } from 'node:fs'
 import test from 'node:test'
-import { choiceIds, modules, practiceTest, questions } from '../src/content.ts'
+import { choiceIds, parseTestContent } from '../src/content.ts'
+import source from '../src/data/practice-test-11.json' with { type: 'json' }
+
+const { test: practiceTest, modules, questions } = parseTestContent(source)
 
 const sourceKeys = [
   'ACDDABBDDCBDADBADD DDABBADDDAACADB'.replaceAll(' ', ''),
@@ -49,8 +52,10 @@ test('all four original graphs are included as real local image assets with acce
     assert.ok(statSync(path).size > 10_000, question.id)
     assert.equal(readFileSync(path).subarray(1, 4).toString(), 'PNG')
     assert.ok(question.figure.alt.length > 80)
-    assert.ok(question.figure.table.headers.length >= 2)
-    assert.ok(question.figure.table.rows.every((row) => row.length === question.figure?.table.headers.length))
+    const table = question.figure.table
+    assert.ok(table)
+    assert.ok(table.headers.length >= 2)
+    assert.ok(table.rows.every((row) => row.length === table.headers.length))
   }
 })
 

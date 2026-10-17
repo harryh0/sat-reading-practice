@@ -1,7 +1,5 @@
-import { getQuestion, isChoiceId, modules, practiceTest, questionById, questions } from './content.ts'
-import type { ChoiceId, Question } from './content.ts'
-
-export const STORAGE_KEY = 'sat-reading-practice:test-11:v1'
+import { getQuestion, isChoiceId } from './content.ts'
+import type { ChoiceId, TestContent } from './content.ts'
 
 export interface Attempt {
   version: 1
@@ -18,17 +16,17 @@ export interface Attempt {
 
 export type QuestionStatus = 'unanswered' | 'answered' | 'correct' | 'incorrect'
 
-export function createAttempt(): Attempt {
+export function createAttempt(content: TestContent): Attempt {
   return {
     version: 1,
-    testId: practiceTest.id,
+    testId: content.test.id,
     startedAt: null,
     submittedAt: null,
     pausedAt: null,
     pausedDurationMs: 0,
     answers: {},
     marked: [],
-    currentQuestionId: questions[0].id,
+    currentQuestionId: content.questions[0].id,
     timerHidden: false,
   }
 }
@@ -43,30 +41,30 @@ function isTimestamp(value: unknown): value is number {
 
 type BaseAttempt = Omit<Attempt, 'pausedAt' | 'pausedDurationMs'>
 
-function isBaseAttempt(value: unknown): value is BaseAttempt {
+function isBaseAttempt(value: unknown, content: TestContent): value is BaseAttempt {
   if (
     !isRecord(value) ||
     value.version !== 1 ||
-    value.testId !== practiceTest.id ||
+    value.testId !== content.test.id ||
     !(value.startedAt === null || isTimestamp(value.startedAt)) ||
     !(value.submittedAt === null || (isTimestamp(value.submittedAt) && isTimestamp(value.startedAt) && value.submittedAt >= value.startedAt)) ||
     !isRecord(value.answers) ||
     !Array.isArray(value.marked) ||
     typeof value.currentQuestionId !== 'string' ||
-    !questionById.has(value.currentQuestionId) ||
+    !content.questionById.has(value.currentQuestionId) ||
     typeof value.timerHidden !== 'boolean'
   ) return false
 
   return (
-    Object.entries(value.answers).every(([id, answer]) => questionById.has(id) && isChoiceId(answer)) &&
-    value.marked.every((id) => typeof id === 'string' && questionById.has(id)) &&
+    Object.entries(value.answers).every(([id, answer]) => content.questionById.has(id) && isChoiceId(answer)) &&
+    value.marked.every((id) => typeof id === 'string' && content.questionById.has(id)) &&
     new Set(value.marked).size === value.marked.length
   )
 }
 
-export function isAttempt(value: unknown): value is Attempt {
+export function isAttempt(value: unknown, content: TestContent): value is Attempt {
   if (
-    !isBaseAttempt(value) ||
+    !isBaseAttempt(value, content) ||
     !('pausedAt' in value) ||
     !('pausedDurationMs' in value) ||
     typeof value.pausedDurationMs !== 'number' ||
@@ -81,7 +79,7 @@ export function isAttempt(value: unknown): value is Attempt {
       value.pausedDurationMs === 0 &&
       Object.keys(value.answers).length === 0 &&
       value.marked.length === 0 &&
-      value.currentQuestionId === questions[0].id
+      value.currentQuestionId === content.questions[0].id
     )
   }
 
@@ -93,39 +91,13 @@ export function isAttempt(value: unknown): value is Attempt {
   )
 }
 
-interface StorageReader {
-  getItem(key: string): string | null
-}
-
-export function readAttempt(getStorage: () => StorageReader): { attempt: Attempt; notice: string | null } {
-  let saved: string | null
-  try {
-    saved = getStorage().getItem(STORAGE_KEY)
-  } catch {
-    return {
-      attempt: createAttempt(),
-      notice: 'This browser is blocking saved progress. You can practice in this tab, but your answers may be lost when it closes.',
-    }
+export function restoreAttempt(value: unknown, content: TestContent): Attempt | null {
+  if (isAttempt(value, content)) return value
+  if (isBaseAttempt(value, content) && !('pausedAt' in value) && !('pausedDurationMs' in value)) {
+    const migrated = { ...value, pausedAt: null, pausedDurationMs: 0 }
+    if (isAttempt(migrated, content)) return migrated
   }
-  if (saved === null) return { attempt: createAttempt(), notice: null }
-
-  let parsed: unknown
-  try {
-    parsed = JSON.parse(saved)
-  } catch {
-    return {
-      attempt: createAttempt(),
-      notice: 'The saved attempt could not be read. A new attempt is ready to start on this device.',
-    }
-  }
-  if (isAttempt(parsed)) return { attempt: parsed, notice: null }
-  if (isBaseAttempt(parsed) && isTimestamp(parsed.startedAt) && !('pausedAt' in parsed) && !('pausedDurationMs' in parsed)) {
-    return { attempt: { ...parsed, pausedAt: null, pausedDurationMs: 0 }, notice: null }
-  }
-  return {
-    attempt: createAttempt(),
-    notice: 'The saved attempt is damaged or belongs to a different test version. A new attempt is ready to start.',
-  }
+  return null
 }
 
 export function startAttempt(attempt: Attempt, now = Date.now()): Attempt {
@@ -144,40 +116,52 @@ function requireRunning(attempt: Attempt) {
   if (attempt.pausedAt !== null) throw new Error('Resume practice before interacting with questions.')
 }
 
-export function answerQuestion(attempt: Attempt, id: string, answer: ChoiceId | null): Attempt {
+function requireTest(content: TestContent, attempt: Attempt) {
+  if (attempt.testId !== content.test.id) throw new Error('This attempt belongs to a different practice test.')
+}
+
+export function answerQuestion(content: TestContent, attempt: Attempt, id: string, answer: ChoiceId | null): Attempt {
+  requireTest(content, attempt)
   requireRunning(attempt)
-  getQuestion(id)
+  const question = getQuestion(content, id)
+  if (answer !== null && !question.choices.some((choice) => choice.id === answer)) {
+    throw new Error('The selected answer is not a valid option for this question.')
+  }
   const answers = { ...attempt.answers }
   if (answer === null) delete answers[id]
   else answers[id] = answer
   return { ...attempt, answers }
 }
 
-export function markQuestion(attempt: Attempt, id: string): Attempt {
+export function markQuestion(content: TestContent, attempt: Attempt, id: string): Attempt {
+  requireTest(content, attempt)
   requireRunning(attempt)
-  getQuestion(id)
+  getQuestion(content, id)
   return {
     ...attempt,
     marked: attempt.marked.includes(id) ? attempt.marked.filter((marked) => marked !== id) : [...attempt.marked, id],
   }
 }
 
-export function navigateTo(attempt: Attempt, id: string): Attempt {
+export function navigateTo(content: TestContent, attempt: Attempt, id: string): Attempt {
+  requireTest(content, attempt)
   if (attempt.startedAt === null) throw new Error('Start the test before changing questions.')
   if (attempt.pausedAt !== null) throw new Error('Resume practice before changing questions.')
-  getQuestion(id)
+  getQuestion(content, id)
   return { ...attempt, currentQuestionId: id }
 }
 
 export function pauseAttempt(attempt: Attempt, now = Date.now()): Attempt {
   requireActive(attempt)
   if (attempt.pausedAt !== null) return attempt
+  if (!isTimestamp(now)) throw new Error('The test cannot pause with an invalid timestamp.')
   return { ...attempt, pausedAt: Math.max(attempt.startedAt + attempt.pausedDurationMs, now) }
 }
 
 export function resumeAttempt(attempt: Attempt, now = Date.now()): Attempt {
   requireActive(attempt)
   if (attempt.pausedAt === null) return attempt
+  if (!isTimestamp(now)) throw new Error('The test cannot resume with an invalid timestamp.')
   return {
     ...attempt,
     pausedAt: null,
@@ -188,6 +172,7 @@ export function resumeAttempt(attempt: Attempt, now = Date.now()): Attempt {
 export function submitAttempt(attempt: Attempt, now = Date.now()): Attempt {
   if (attempt.startedAt === null) throw new Error('Start the test before submitting.')
   if (attempt.submittedAt !== null) return attempt
+  if (!isTimestamp(now)) throw new Error('The test cannot submit with an invalid timestamp.')
   const submittedAt = Math.max(attempt.startedAt + attempt.pausedDurationMs, attempt.pausedAt ?? 0, now)
   return {
     ...attempt,
@@ -211,15 +196,18 @@ export function formatElapsed(milliseconds: number): string {
   return hours ? `${pad(hours)}:${pad(minutes)}:${pad(remainder)}` : `${pad(minutes)}:${pad(remainder)}`
 }
 
-export function questionStatus(attempt: Attempt, question: Question): QuestionStatus {
+export function questionStatus(content: TestContent, attempt: Attempt, id: string): QuestionStatus {
+  requireTest(content, attempt)
+  const question = getQuestion(content, id)
   const answer = attempt.answers[question.id]
   if (answer === undefined) return 'unanswered'
   if (attempt.submittedAt === null) return 'answered'
   return answer === question.correctAnswer ? 'correct' : 'incorrect'
 }
 
-export function summarize(attempt: Attempt) {
-  const moduleScores = modules.map((module) => ({
+export function summarize(content: TestContent, attempt: Attempt) {
+  requireTest(content, attempt)
+  const moduleScores = content.modules.map((module) => ({
     number: module.number,
     total: module.questions.length,
     answered: module.questions.filter((question) => attempt.answers[question.id] !== undefined).length,
@@ -227,9 +215,9 @@ export function summarize(attempt: Attempt) {
   }))
   const answered = moduleScores.reduce((sum, module) => sum + module.answered, 0)
   return {
-    total: questions.length,
+    total: content.questions.length,
     answered,
-    unanswered: questions.length - answered,
+    unanswered: content.questions.length - answered,
     correct: moduleScores.reduce((sum, module) => sum + module.correct, 0),
     moduleScores,
   }

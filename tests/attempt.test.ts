@@ -1,10 +1,27 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import * as attempts from '../src/attempt.ts'
 import {
-  answerQuestion, createAttempt, elapsedMilliseconds, formatElapsed, isAttempt,
-  markQuestion, navigateTo, pauseAttempt, questionStatus, readAttempt, resumeAttempt, startAttempt, submitAttempt, summarize,
+  elapsedMilliseconds, formatElapsed, pauseAttempt, resumeAttempt, startAttempt, submitAttempt,
 } from '../src/attempt.ts'
-import { isChoiceId, questions } from '../src/content.ts'
+import type { Attempt } from '../src/attempt.ts'
+import { testCatalog } from '../src/catalog.ts'
+import { isChoiceId, parseTestContent } from '../src/content.ts'
+import type { ChoiceId, Question } from '../src/content.ts'
+import source from '../src/data/practice-test-11.json' with { type: 'json' }
+import { readAttempt as readSavedAttempt } from '../src/persistence.ts'
+import { fixtureContent } from './fixtures.ts'
+
+const content = parseTestContent(source)
+const { questions } = content
+const createAttempt = () => attempts.createAttempt(content)
+const isAttempt = (value: unknown) => attempts.isAttempt(value, content)
+const answerQuestion = (attempt: Attempt, id: string, answer: ChoiceId | null) => attempts.answerQuestion(content, attempt, id, answer)
+const markQuestion = (attempt: Attempt, id: string) => attempts.markQuestion(content, attempt, id)
+const navigateTo = (attempt: Attempt, id: string) => attempts.navigateTo(content, attempt, id)
+const questionStatus = (attempt: Attempt, question: Question) => attempts.questionStatus(content, attempt, question.id)
+const summarize = (attempt: Attempt) => attempts.summarize(content, attempt)
+const readAttempt = (getStorage: () => { getItem(key: string): string | null }) => readSavedAttempt(content, getStorage)
 
 const start = 1_700_000_000_000
 
@@ -340,5 +357,81 @@ test('existing started, paused, and completed attempts remain started when resto
 test('Start rejects invalid timestamps instead of creating a broken timer', () => {
   for (const invalid of [0, -1, NaN, Infinity, 1.5]) {
     assert.throws(() => startAttempt(createAttempt(), invalid), /invalid timestamp/)
+  }
+})
+
+test('question lookup, validation, bookmarks, navigation, and scoring reject an attempt from another test even when question IDs repeat', () => {
+  const first = fixtureContent('domain-a', [1, 4, 2], 'A')
+  const second = fixtureContent('domain-b', [3], 'B')
+  const attempt = startAttempt(attempts.createAttempt(first), start)
+  assert.equal(first.questions[0].id, second.questions[0].id)
+  assert.equal(attempts.isAttempt(attempt, second), false)
+  assert.throws(() => attempts.answerQuestion(second, attempt, 'm1-q1', 'B'), /different practice test/)
+  assert.throws(() => attempts.markQuestion(second, attempt, 'm1-q1'), /different practice test/)
+  assert.throws(() => attempts.navigateTo(second, attempt, 'm1-q1'), /different practice test/)
+  assert.throws(() => attempts.questionStatus(second, attempt, 'm1-q1'), /different practice test/)
+  assert.throws(() => attempts.summarize(second, attempt), /different practice test/)
+  const answeredFirst = attempts.answerQuestion(first, attempt, 'm1-q1', 'A')
+  const answeredSecond = attempts.answerQuestion(second, startAttempt(attempts.createAttempt(second), start), 'm1-q1', 'A')
+  assert.equal(attempts.questionStatus(first, submitAttempt(answeredFirst, start + 1_000), 'm1-q1'), 'correct')
+  assert.equal(attempts.questionStatus(second, submitAttempt(answeredSecond, start + 1_000), 'm1-q1'), 'incorrect')
+  assert.deepEqual(attempts.createAttempt(second).answers, {})
+})
+
+test('module totals, navigation, and complete/partial scores derive from heterogeneous selected content', () => {
+  for (const sizes of [[1], [2, 5], [1, 4, 2]]) {
+    const selected = fixtureContent(`domain-${sizes.join('-')}`, sizes, 'D')
+    const total = sizes.reduce((sum, size) => sum + size, 0)
+    let correct = startAttempt(attempts.createAttempt(selected), start)
+    let wrong = startAttempt(attempts.createAttempt(selected), start)
+    for (const question of selected.questions) {
+      correct = attempts.answerQuestion(selected, correct, question.id, question.correctAnswer)
+      wrong = attempts.answerQuestion(selected, wrong, question.id, 'A')
+    }
+    const score = attempts.summarize(selected, submitAttempt(correct, start + 5_000))
+    assert.equal(score.total, total)
+    assert.equal(score.correct, total)
+    assert.equal(score.unanswered, 0)
+    assert.deepEqual(score.moduleScores.map((module) => module.total), sizes)
+    assert.equal(attempts.summarize(selected, submitAttempt(wrong, start + 5_000)).correct, 0)
+    const last = selected.questions.at(-1)!
+    assert.equal(attempts.navigateTo(selected, correct, last.id).currentQuestionId, last.id)
+    const partial = attempts.answerQuestion(selected, startAttempt(attempts.createAttempt(selected), start), last.id, 'D')
+    assert.equal(attempts.summarize(selected, submitAttempt(partial, start + 5_000)).unanswered, total - 1)
+    assert.throws(() => attempts.navigateTo(selected, correct, `m${sizes.length + 1}-q1`), /Unknown question/)
+  }
+})
+
+test('invalid timestamps cannot damage pause, resume, or submission state', () => {
+  const active = startedAttempt()
+  const paused = pauseAttempt(active, start + 1_000)
+  for (const invalid of [0, -1, NaN, Infinity, 1.5]) {
+    assert.throws(() => pauseAttempt(active, invalid), /invalid timestamp/)
+    assert.throws(() => resumeAttempt(paused, invalid), /invalid timestamp/)
+    assert.throws(() => submitAttempt(active, invalid), /invalid timestamp/)
+  }
+})
+
+test('every real dataset scores its own supplied answer key and rejects attempts from another real test', async () => {
+  const contents = await Promise.all(testCatalog.map((entry) => entry.load()))
+  for (const [index, selected] of contents.entries()) {
+    let correct = startAttempt(attempts.createAttempt(selected), start)
+    let wrong = startAttempt(attempts.createAttempt(selected), start)
+    for (const question of selected.questions) {
+      correct = attempts.answerQuestion(selected, correct, question.id, question.correctAnswer)
+      wrong = attempts.answerQuestion(selected, wrong, question.id, question.correctAnswer === 'A' ? 'B' : 'A')
+    }
+    const completed = submitAttempt(correct, start + 1_000)
+    const score = attempts.summarize(selected, completed)
+    assert.equal(score.correct, selected.questions.length, selected.test.id)
+    assert.equal(score.total, selected.questions.length, selected.test.id)
+    assert.equal(score.unanswered, 0, selected.test.id)
+    assert.deepEqual(score.moduleScores.map((module) => module.correct), selected.modules.map((module) => module.questions.length))
+    assert.equal(attempts.summarize(selected, submitAttempt(wrong, start + 1_000)).correct, 0, selected.test.id)
+    const other = contents[(index + 1) % contents.length]
+    assert.equal(selected.questions[0].id, other.questions[0].id)
+    assert.equal(attempts.isAttempt(completed, other), false)
+    assert.throws(() => attempts.summarize(other, completed), /different practice test/)
+    assert.throws(() => attempts.questionStatus(other, completed, selected.questions[0].id), /different practice test/)
   }
 })

@@ -46,6 +46,10 @@ button { touch-action: manipulation; }
 .brand-icon .icon { width: 25px; height: 25px; }
 .brand strong { display: block; font-size: 23px; letter-spacing: -.5px; line-height: 1.2; }
 .brand > div > span { display: block; color: #526982; font-size: 10px; letter-spacing: 2px; font-weight: 700; margin-top: 6px; }
+.top-controls { display: flex; align-items: center; justify-content: flex-end; gap: 24px; min-width: 0; }
+.test-control { display: flex; flex-direction: column; gap: 4px; }
+.test-control > label { color: #526982; font-size: 11px; font-weight: 600; }
+.test-control .select-wrap select { min-width: 164px; background: #f5f9ff; }
 .top-actions { display: flex; align-items: center; gap: 14px; }
 .button { border: 1px solid transparent; border-radius: 7px; min-height: 44px; padding: 11px 21px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; font-size: 15px; font-weight: 600; line-height: 1.2; transition: background-color .12s, border-color .12s; white-space: nowrap; }
 .button-primary { background: var(--blue); color: #fff; }
@@ -154,7 +158,10 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .intro-facts > div { padding: 16px 19px; background: #eef5fb; border-radius: 7px; }
 .intro-facts strong { display: block; font-size: 27px; color: var(--teal); font-variant-numeric: tabular-nums; }
 .intro-facts span { display: block; margin-top: 3px; font-size: 12px; color: #647c90; line-height: 1.6; }
+.intro-module-counts { margin: -8px 0 20px; font-size: 12px; line-height: 1.7; color: #647487; }
 .intro-guidance { margin: 0 0 23px; color: #647487; font-size: 13px; line-height: 1.75; }
+.test-identity { color: var(--teal); font-size: 13px; font-weight: 600; }
+.load-card .button { margin-top: 22px; }
 .start-button { min-width: 170px; min-height: 49px; border-radius: 25px; font-size: 16px; padding-inline: 24px; }
 .start-button .icon { width: 16px; height: 16px; }
 .intro-timer-note { margin: 13px 0 0; font-size: 12px; line-height: 1.7; color: #728294; }
@@ -189,6 +196,7 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .button-next { min-width: 104px; }
 .storage-notice { display: flex; align-items: center; gap: 12px; padding: 8px 24px; background: #fff3dc; color: #795717; font-size: 13px; line-height: 1.5; }
 .storage-notice > span { flex: 1; }
+.storage-notice > .text-button { flex: none; color: #795717; }
 
 .dialog { position: fixed; border: 0; border-radius: 14px; padding: 0; margin: auto; width: min(530px, calc(100% - 32px)); max-height: min(88dvh, 850px); color: #263648; box-shadow: 0 22px 90px #10273b3b; overflow-y: auto; overscroll-behavior: contain; }
 .dialog::backdrop { background: #11263b80; backdrop-filter: blur(2px); }
@@ -275,6 +283,8 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 }
 
 @media (max-width: 1100px) {
+  .top-bar { flex-wrap: wrap; }
+  .top-controls { margin-left: auto; gap: 16px; }
   .passage-pane { padding-inline: 28px; }
   .question-pane { padding-inline: 26px; }
   .passage-text, .question-prompt { font-size: 19px; }
@@ -291,6 +301,10 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .app-shell, .app-shell.has-notice, .app-shell.is-results, .app-shell.is-results.has-notice { display: flex; flex-direction: column; height: auto; min-height: 100dvh; }
   .app-shell:not(.is-results):not(.is-paused):not(.is-intro) { padding-bottom: calc(130px + env(safe-area-inset-bottom)); }
   .top-bar { padding: 14px 22px; min-height: 74px; gap: 14px; }
+  .top-controls { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .top-actions { margin-left: auto; flex-wrap: wrap; justify-content: flex-end; }
+  .test-control { flex-direction: row; align-items: center; gap: 9px; }
+  .test-control .select-wrap select { min-width: 155px; }
   .brand strong { font-size: 20px; }
   .brand > div > span { font-size: 9px; letter-spacing: 1.6px; }
   .brand-icon { width: 37px; height: 37px; border-radius: 9px; }
@@ -350,6 +364,10 @@ u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .top-bar:has(.pause-control) .top-actions { margin-left: auto; }
   .top-actions:has(.button-secondary):not(:has(.pause-control)) .directions-button { display: none; }
   .directions-button { width: 30px; }
+  .test-control > label { font-size: 10px; }
+  .test-control .select-wrap select { min-width: 150px; }
+  .storage-notice { flex-wrap: wrap; gap: 8px; padding-inline: 15px; }
+  .storage-notice > span { min-width: calc(100% - 65px); }
   .intro-content { padding: 24px 17px; }
   .intro-card { padding: 27px 23px; }
   .intro-card h1 { font-size: 27px; }

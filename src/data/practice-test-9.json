@@ -1,0 +1,2288 @@
+{
+  "id": "practice-test-9-rw",
+  "title": "Practice Test 9",
+  "section": "Reading and Writing",
+  "questionCount": 66,
+  "sources": {
+    "test": "https://satsuite.collegeboard.org/media/pdf/sat-practice-test-9-digital.pdf",
+    "answers": "https://satsuite.collegeboard.org/media/pdf/sat-practice-test-9-answers-digital.pdf",
+    "testSha256": "ff929c946ebfa8d8d7f199e52e1eb12d7cf7d68256b894846725df0da87a6d69",
+    "answersSha256": "5c06af4bd2379763fbaabdae16f9cd03e14cabc7ee041131ba6b2837f5bf4696",
+    "testPdfPages": [
+      [
+        4,
+        16
+      ],
+      [
+        18,
+        30
+      ]
+    ],
+    "answerPdfPages": [
+      [
+        2,
+        16
+      ],
+      [
+        17,
+        30
+      ]
+    ],
+    "note": "Imported locally from the supplied PDF pair. Only Reading and Writing modules are included; Math is excluded."
+  },
+  "modules": [
+    {
+      "number": 1,
+      "title": "Module 1",
+      "questions": [
+        {
+          "id": "m1-q1",
+          "module": 1,
+          "number": 1,
+          "sourcePage": 4,
+          "passageHtml": "<p>The following text is adapted from Ida B. Wells’s 1970 autobiography <em>A Crusade for Justice</em>. Mr. Watts is a reference to George Frederic Watts, an English painter.</p><p>[Manchester’s] art galleries are so<u> arranged</u> that the name of every picture is plainly seen and one has no need of a catalogue to pick out the name and the artist. This is a convenience to the general public, which other art galleries, which shall be nameless, might copy to advantage. To her treasure of art Manchester has added Mr. Watts’ latest picture, the Good Samaritan.</p><p class=\"source-credit\">©1970 by the University of Chicago Press</p>",
+          "promptHtml": "As used in the text, what does the word “arranged” most nearly mean?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Organized"
+            },
+            {
+              "id": "B",
+              "html": "Ranked"
+            },
+            {
+              "id": "C",
+              "html": "Scheduled"
+            },
+            {
+              "id": "D",
+              "html": "Discussed"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because as used in the text, “arranged” most nearly means “organized.” The text states that a welcome feature of Manchester’s art galleries (as opposed to others) is that the titles of the paintings are easy to see and that a catalogue is therefore unneeded while visitors browse the art galleries. This suggests that the paintings are displayed in a systematic, or organized, way.</p><p><em>Choice B </em>is incorrect. “Ranked” might mean either classified or placed in orderly rows. Neither of these meanings would necessarily imply that the names of the paintings are easy to see (even if the paintings are placed in rows, their labels might be obscured). <em>Choice C </em>is incorrect because it would not make sense in context to describe the paintings as “scheduled,” or planned to take place at a certain time. <em>Choice D </em>is incorrect because if the paintings were “discussed,” or talked about, this would have no bearing on whether the names of the paintings could be easily seen.</p>",
+          "answerPages": [
+            2
+          ]
+        },
+        {
+          "id": "m1-q2",
+          "module": 1,
+          "number": 2,
+          "sourcePage": 4,
+          "passageHtml": "<p>One challenge of generating electricity from ocean waves is that wave power isn’t _______: it varies in unpredictable ways that pose technological and planning problems for electricity generation.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "accidental"
+            },
+            {
+              "id": "B",
+              "html": "confident"
+            },
+            {
+              "id": "C",
+              "html": "expensive"
+            },
+            {
+              "id": "D",
+              "html": "consistent"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it most logically completes the text’s discussion of the challenge of generating electricity from ocean waves. In this context, “consistent” means steady or unchanging over time. The text introduces a challenge and then explains that wave power varies, or changes, unpredictably in ways that cause problems for electricity generation. This context conveys that the challenge being described is a lack of consistency.</p><p><em>Choice A </em>is incorrect because the text introduces a challenge and then elaborates on it by emphasizing that the unpredictable nature of variations in ocean waves causes problems, which doesn’t indicate that wave power isn’t “accidental,” or isn’t happening unintentionally. It wouldn’t make sense to describe waves—a natural occurrence—as happening intentionally. <em>Choice B </em>is incorrect because “confident” means having a feeling of self-assurance, and it wouldn’t make sense to describe wave power itself in terms of either having or lacking a sense of confidence. <em>Choice C </em>is incorrect because the text introduces a challenge and then elaborates on it by emphasizing that the unpredictable nature of variations in ocean waves causes problems, which doesn’t indicate that wave power isn’t “expensive,” or isn’t costly. If anything, technological and planning problems might actually increase the expense of generating electricity from waves.</p>",
+          "answerPages": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "m1-q3",
+          "module": 1,
+          "number": 3,
+          "sourcePage": 4,
+          "passageHtml": "<p>Due to their often strange images, highly experimental syntax, and opaque subject matter, many of John Ashbery’s poems can be quite difficult to ______ and thus are the object of heated debate among scholars.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "delegate"
+            },
+            {
+              "id": "B",
+              "html": "compose"
+            },
+            {
+              "id": "C",
+              "html": "interpret"
+            },
+            {
+              "id": "D",
+              "html": "renounce"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it most logically completes the text’s discussion of John Ashbery’s poems. As used in this context, “interpret” would mean decipher the meaning of. The text indicates that Ashbery’s poems have many unusual features, that it’s difficult to tell what exactly the poems’ subject matter is, and that scholars strongly disagree about the poems. This context conveys the idea that it’s difficult to interpret Ashbery’s poems.</p><p><em>Choice A </em>is incorrect because “delegate” means to assign someone as a representative of another person or to entrust something to someone else, neither of which would make sense in context. The text is focused only on the difficulty that readers have interpreting Ashbery’s poems due to their many unusual features; it doesn’t suggest anything about the poems being difficult to delegate. <em>Choice B </em>is incorrect because describing Ashbery’s poems as difficult to “compose,” or put together or produce, would make sense only if the text were about Ashbery’s experience of writing the poems. It could be true that it was difficult for Ashbery to compose his poems, but the text doesn’t address this; it instead discusses how readers interpret and engage with the poems. <em>Choice D </em>is incorrect because describing Ashbery’s poems as being difficult to “renounce,” or give up or refuse, wouldn’t make sense in context. The text focuses on the idea that features of Ashbery’s poems are odd or unclear and have caused heated scholarly debate. This context suggests that the poems are difficult to interpret, not that the poems are difficult to renounce.</p>",
+          "answerPages": [
+            3
+          ]
+        },
+        {
+          "id": "m1-q4",
+          "module": 1,
+          "number": 4,
+          "sourcePage": 5,
+          "passageHtml": "<p>Diego Velázquez was the leading artist in the court of King Philip IV of Spain during the seventeenth century, but his influence was hardly _______ Spain: realist and impressionist painters around the world employed his techniques and echoed elements of his style.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "derived from"
+            },
+            {
+              "id": "B",
+              "html": "recognized in"
+            },
+            {
+              "id": "C",
+              "html": "confined to"
+            },
+            {
+              "id": "D",
+              "html": "repressed by"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it most logically completes the discussion of the artist Diego Velázquez’s influence outside Spain. As used in this context, “confined to” means restricted to. The text says that Velázquez was the leading artist in the Spanish court during the seventeenth century, but it also notes that other painters around the world were influenced by his techniques and style. Thus, Velázquez’s influence was hardly (or almost not) confined to, or restricted to, Spain.</p><p><em>Choice A </em>is incorrect because if Velázquez was a leading artist in Spain, it doesn’t make logical sense to claim that his influence was hardly (or almost not) derived from, or obtained from, Spain. Moreover, the other painters around the world who employed Velázquez’s techniques would by definition be influenced by Spanish style. <em>Choice B </em>is incorrect because if Velázquez was a leading artist in the court of King Philip IV of Spain, then his influence must have been widely recognized, or acknowledged, rather than being hardly (or almost not) recognized. <em>Choice D </em>is incorrect because the text gives no indication that deliberately limiting Velázquez’s influence outside Spain was ever considered by anyone. Thus, even if it is true that his influence was not repressed, or restrained, it doesn’t make logical sense to say so in this context.</p>",
+          "answerPages": [
+            3
+          ]
+        },
+        {
+          "id": "m1-q5",
+          "module": 1,
+          "number": 5,
+          "sourcePage": 5,
+          "passageHtml": "<p>Although science fiction was dominated mostly by white male authors when Octavia Butler, a Black woman, began writing, she did not view the genre as _______: Butler broke into the field with the publication of several short stories and her 1976 novel <em>Patternmaster</em>, and she later became the first science fiction writer to win a prestigious MacArthur Fellowship.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "legitimate"
+            },
+            {
+              "id": "B",
+              "html": "impenetrable"
+            },
+            {
+              "id": "C",
+              "html": "compelling"
+            },
+            {
+              "id": "D",
+              "html": "indecipherable"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer because it most logically completes the discussion of Octavia Butler’s career. In this context, “impenetrable” means impossible to enter. The text indicates that the field of science fiction was dominated by white males when Butler, a Black woman, started writing, but she published several science fiction short stories and a novel and later won a prestigious award; that is, Butler pursued science fiction writing and had success. This context suggests that Butler didn’t view the genre as impossible to enter.</p><p><em>Choice A </em>is incorrect. In this context, “legitimate” would mean genuinely good or valid. Nothing in the text suggests that Butler didn’t think the science fiction genre was good or valid; in fact, it indicates that she pursued and made a successful career of publishing work in that field. <em>Choice C </em>is incorrect. In this context, “compelling” would mean attracting or demanding attention. The text indicates that Butler chose to write science fiction, so it wouldn’t make sense to say that she didn’t see the field as drawing her attention. <em>Choice D </em>is incorrect. To say that Butler didn’t consider science fiction “indecipherable,” or impossible to understand, would suggest that Butler did understand it. However, the text doesn’t address Butler’s ability to interpret works in the genre; rather, it focuses on Butler’s successful pursuit of writing science fiction.</p>",
+          "answerPages": [
+            4
+          ]
+        },
+        {
+          "id": "m1-q6",
+          "module": 1,
+          "number": 6,
+          "sourcePage": 5,
+          "passageHtml": "<p>The following text is adapted from Cynthia Kadohata’s 2004 novel <em>Kira-Kira</em>.</p><p><u>[Uncle Katsuhisa] was as loud as my father was</u> <u>quiet.</u> Even when he wasn’t talking, he made a lot of noise, clearing his throat and sniffing and tapping his fingers.</p><p class=\"source-credit\">©2004 by Cynthia Kadohata</p>",
+          "promptHtml": "Which choice best describes the function of the underlined sentence?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "It lists the kinds of topics Uncle Katsuhisa enjoys discussing."
+            },
+            {
+              "id": "B",
+              "html": "It suggests that Uncle Katsuhisa dislikes meeting new people."
+            },
+            {
+              "id": "C",
+              "html": "It contrasts Uncle Katsuhisa with the narrator’s father."
+            },
+            {
+              "id": "D",
+              "html": "It describes a conversation between the narrator and the narrator’s father."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it most accurately describes how the underlined sentence functions in the text as a whole. The underlined sentence establishes a difference between Uncle Katsuhisa and the narrator’s father by describing Uncle Katsuhisa as “loud” and the narrator’s father as “quiet.” The text then elaborates on that contrast, describing some ways Uncle Katsuhisa is very noisy even when he isn’t speaking.</p><p><em>Choice A </em>is incorrect because the text doesn’t indicate what kinds of topics Uncle Katsuhisa enjoys discussing, only that he is loud even when he isn’t speaking. <em>Choice B </em>is incorrect because the text never indicates how Uncle Katsuhisa feels about meeting new people, only how loud he is. <em>Choice D </em>is incorrect because the text never describes a conversation occurring between any people; it refers to talking only when stating that Uncle Katsuhisa is loud even when he isn’t speaking.</p>",
+          "answerPages": [
+            4
+          ]
+        },
+        {
+          "id": "m1-q7",
+          "module": 1,
+          "number": 7,
+          "sourcePage": 5,
+          "passageHtml": "<p>Wakako Yamauchi is best known for <em>And the Soul</em> <em>Shall Dance</em>, her 1977 play about a Japanese American family in Southern California. The play is based on a short story Yamauchi had published three years earlier. Adapting the story wasn’t easy. Theater relies on dialogue between characters, but the original story features little dialogue and instead describes its characters’ silent thoughts.<u> To transform</u> <u>the story into a play, Yamauchi created situations</u> <u>where characters reveal their thoughts by speaking</u> <u>them aloud during conversations with each other.</u></p>",
+          "promptHtml": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "It offers information about how Yamauchi adapted her short story into a play."
+            },
+            {
+              "id": "B",
+              "html": "It argues that Yamauchi’s play influenced later playwrights."
+            },
+            {
+              "id": "C",
+              "html": "It explains why Yamauchi’s short story is better known than the play adaptation is."
+            },
+            {
+              "id": "D",
+              "html": "It describes how Yamauchi chose the actors who performed in the play."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it best describes how the underlined sentence functions in the text as a whole. According to the text, it was hard for Yamauchi to adapt her short story into the play <em>And the Soul Shall Dance</em> because the story had included little dialogue, instead describing the characters’ silent thoughts. The underlined sentence offers information about how Yamauchi ultimately succeeded in adapting the story into a play: it explains that Yamauchi created situations where the characters of the play could reveal their internal thoughts while speaking with each other.</p><p><em>Choice B </em>is incorrect because neither the underlined sentence nor the text as a whole makes any mention of playwrights other than Yamauchi or how the play might have influenced them. <em>Choice C </em>is incorrect because the text states that Yamauchi is best known for her play <em>And the Soul Shall Dance</em>, which conveys that the play is better known than the short story it’s based on is. <em>Choice D </em>is incorrect because neither the underlined sentence nor the text as a whole mentions the actors who performed in the play or Yamauchi’s approach to choosing them.</p>",
+          "answerPages": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "m1-q8",
+          "module": 1,
+          "number": 8,
+          "sourcePage": 6,
+          "passageHtml": "<p>In response to concerns that some recent financial crises were exacerbated by consumers misunderstanding risks associated with credit cards, loans, and other financial products, policymakers in many countries have instituted risk-disclosure requirements on sellers of those products. Enrique Seira et al. investigated a variety of risk-disclosure messages sent to thousands of credit card customers and found that the messages had only small and short-lived effects on behavior. Seira et al. asserted that such effects may nevertheless be worth pursuing, <u>given the negligible cost of messaging</u>.</p>",
+          "promptHtml": "Which choice best describes the function of the underlined portion in the text as a whole?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "It notes a factor that led Seira et al. to not dismiss risk-disclosure messaging altogether despite their evidence of its limited utility."
+            },
+            {
+              "id": "B",
+              "html": "It acknowledges a type of risk-disclosure messaging that Seira et al. may not have fully accounted for in their study."
+            },
+            {
+              "id": "C",
+              "html": "It describes a consideration that explains why Seira et al. recommended risk-disclosure messaging even though its effects may be small relative to its costs."
+            },
+            {
+              "id": "D",
+              "html": "It points out a circumstance that Seira et al. conceded may make risk-disclosure messaging more effective than their study suggests."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it most accurately describes the function of the underlined portion in the text as a whole. The text establishes that many countries have adopted risk-disclosure requirements for financial products due to concerns that consumers don’t understand the risks associated with the products. According to the text, Seira et al. found that the effects of such messaging on consumer behavior were small and temporary. The text then adds that the researchers assert that because the cost of the messaging is negligible, the approach may be worth doing even if the effects are limited. Thus, the underlined portion notes a factor—very low cost—that led the researchers to not completely dismiss risk-disclosure messaging despite their evidence of its limited utility.</p><p><em>Choice B </em>is incorrect because the underlined portion doesn’t refer to a particular type of risk-disclosure messaging, whether Seira et al. considered it or not; the underlined portion simply indicates that the cost of the messaging (broadly) is very low, which makes the approach worth pursuing even if its effects are limited. <em>Choice C </em>is incorrect. Although the underlined portion does describe a consideration that led the researchers to recommend risk-disclosure messaging despite the messaging’s small effects on consumer behavior, it directly states that the cost of such messaging is negligible, or very low—meaning that both the effects and the costs are small, not that the effects are small only relative to the costs. <em>Choice D </em>is incorrect because there’s no indication that Seira et al. suggest that risk-disclosure messaging could be more effective if it had lower costs; rather, the underlined portion indicates that Seira et al. believe the already negligible cost of messaging makes the approach worth pursuing even if its effects are limited.</p>",
+          "answerPages": [
+            5
+          ]
+        },
+        {
+          "id": "m1-q9",
+          "module": 1,
+          "number": 9,
+          "sourcePage": 6,
+          "passageHtml": "<h3 class=\"text-label\"><strong>Text 1</strong></h3><p>When companies in the same industry propose merging with one another, they often claim that the merger will benefit consumers by increasing efficiency and therefore lowering prices. Economist Ying Fan investigated this notion in the context of the United States newspaper market. She modeled a hypothetical merger of Minneapolis-area newspapers and found that subscription prices would rise following a merger.</p><h3 class=\"text-label\"><strong>Text 2</strong></h3><p>Economists Dario Focarelli and Fabio Panetta have argued that research on the effect of mergers on prices has focused excessively on short-term effects, which tend to be adverse for consumers. Using the case of consumer banking in Italy, they show that over the long term (several years, in their study), the efficiency gains realized by merged companies do result in economic benefits for consumers.</p>",
+          "promptHtml": "Based on the texts, how would Focarelli and Panetta (Text 2) most likely respond to Fan’s findings (Text 1)?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "They would recommend that Fan compare the near-term effect of a merger on subscription prices in the Minneapolis area with the effect of a merger in another newspaper market."
+            },
+            {
+              "id": "B",
+              "html": "They would argue that over the long term the expenses incurred by the merged newspaper company will also increase."
+            },
+            {
+              "id": "C",
+              "html": "They would encourage Fan to investigate whether the projected effect on subscription prices persists over an extended period."
+            },
+            {
+              "id": "D",
+              "html": "They would claim that mergers have a different effect on consumer prices in the newspaper industry than in most other industries."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because, based on the information presented in the texts, it represents how Focarelli and Panetta would most likely respond to Fan’s findings. Text 1 indicates that Fan found that a newspaper merger would result in a rise in subscription prices. This rise wouldn’t benefit customers, who would have to pay more for news after a merger. Text 2 presents Focarelli and Panetta’s argument that merger research tends to focus too much on what happens immediately after the merger. Text 2 goes on to describe their finding that mergers can be economically beneficial for consumers over the long term. This suggests that Focarelli and Panetta would encourage Fan to investigate the long-term effect of the hypothetical newspaper merger on subscription prices.</p><p><em>Choice A </em>is incorrect because Text 2 doesn’t indicate that Focarelli and Panetta connect the effects of mergers to specific locations. Instead, Focarelli and Panetta focus on the length of time over which the effects of mergers should be evaluated. <em>Choice B </em>is incorrect because Text 2 indicates that Focarelli and Panetta found that merged companies experience “efficiency gains” over the long term, meaning that their expenses go down relative to their output, not that their expenses increase. <em>Choice D </em>is incorrect because there’s no indication in Text 2 that Focarelli and Panetta believe that the newspaper industry is different from any other industry when it comes to the effects of mergers. Although their own research was about consumer banking, Text 2 suggests that they view their conclusions as applicable to mergers in general.</p>",
+          "answerPages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "m1-q10",
+          "module": 1,
+          "number": 10,
+          "sourcePage": 7,
+          "passageHtml": "<p>Utah is home to Pando, a colony of about 47,000 quaking aspen trees that all share a single root system. Pando is one of the largest single organisms by mass on Earth, but ecologists are worried that its growth is declining in part because of grazing by animals. The ecologists say that strong fences could prevent deer from eating young trees and help Pando start thriving again.</p>",
+          "promptHtml": "According to the text, why are ecologists worried about Pando?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "It isn’t growing at the same rate it used to."
+            },
+            {
+              "id": "B",
+              "html": "It isn’t producing young trees anymore."
+            },
+            {
+              "id": "C",
+              "html": "It can’t grow into new areas because it is blocked by fences."
+            },
+            {
+              "id": "D",
+              "html": "Its root system can’t support many more new trees."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it presents an explanation that is directly stated in the text for why ecologists are worried about Pando. The text states that Pando is a colony of about 47,000 quaking aspen trees that represents one of the largest organisms on Earth. According to the text, ecologists are worried that Pando’s growth is declining, partly because animals are feeding on the trees. In other words, the ecologists are worried that Pando isn’t growing at the same rate it used to.</p><p><em>Choice B </em>is incorrect. Rather than indicating that Pando isn’t producing young trees anymore, the text reveals that Pando is indeed producing young trees, stating that those trees can be protected from grazing deer by strong fences. <em>Choice C </em>is incorrect because the text states that fences can be used to prevent deer from eating Pando’s young trees, not that Pando itself can’t grow in new areas because it’s blocked by fences. <em>Choice D </em>is incorrect because the text offers no evidence that Pando’s root system is incapable of supporting new trees or is otherwise a cause of worry for ecologists.</p>",
+          "answerPages": [
+            6
+          ]
+        },
+        {
+          "id": "m1-q11",
+          "module": 1,
+          "number": 11,
+          "sourcePage": 7,
+          "passageHtml": "<p>In a study of bottlenose dolphins, biologist Laela S. Sayigh and a team of researchers analyzed recordings of female bottlenose dolphins interacting with their calves.</p>",
+          "promptHtml": "According to the table, in which year was the dolphin with the ID FB43 recorded with her calf?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "1999"
+            },
+            {
+              "id": "B",
+              "html": "2012"
+            },
+            {
+              "id": "C",
+              "html": "2020"
+            },
+            {
+              "id": "D",
+              "html": "1992"
+            }
+          ],
+          "figure": {
+            "src": "/figures/test-9/m1-q11.png",
+            "alt": "Table of recordings of four female bottlenose dolphins with their calves, listing dolphin IDs and recording years.",
+            "table": {
+              "caption": "Recordings of Female Bottlenose Dolphins with Their Calves",
+              "headers": [
+                "Dolphin ID",
+                "Recording year"
+              ],
+              "rows": [
+                [
+                  "FB07",
+                  "2012"
+                ],
+                [
+                  "FB25",
+                  "1989"
+                ],
+                [
+                  "FB43",
+                  "1992"
+                ],
+                [
+                  "FB79",
+                  "2018"
+                ]
+              ]
+            }
+          },
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it accurately reflects the data in the table. According to the table, the dolphin with ID FB43 has a recording year of 1992.</p><p><em>Choice A </em>is incorrect. None of the dolphins in the table have a recording year of 1999. <em>Choice B </em>is incorrect. The table shows 2012 as the recording year for the dolphin with ID FB07, not ID FB43. <em>Choice C </em>is incorrect. None of the dolphins in the table have a recording year of 2020.</p>",
+          "answerPages": [
+            6
+          ]
+        },
+        {
+          "id": "m1-q12",
+          "module": 1,
+          "number": 12,
+          "sourcePage": 7,
+          "passageHtml": "<p>For a school project, a forestry student needs to recommend a maple tree that is native to North America and won’t grow more than 60 feet in height. Based on the characteristics of five common maple trees, she has decided to select a _______</p>",
+          "promptHtml": "Which choice most effectively uses data from the table to complete the text?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "silver maple."
+            },
+            {
+              "id": "B",
+              "html": "sugar maple."
+            },
+            {
+              "id": "C",
+              "html": "red maple."
+            },
+            {
+              "id": "D",
+              "html": "Norway maple."
+            }
+          ],
+          "figure": {
+            "src": "/figures/test-9/m1-q12.png",
+            "alt": "Table of the maximum heights of five maple tree types, in feet, and whether each is native to North America.",
+            "table": {
+              "caption": "Maximum Height of Maple Trees When Fully Grown",
+              "headers": [
+                "Tree type",
+                "Maximum height (feet)",
+                "Native to North America"
+              ],
+              "rows": [
+                [
+                  "Sugar maple",
+                  "75",
+                  "yes"
+                ],
+                [
+                  "Silver maple",
+                  "70",
+                  "yes"
+                ],
+                [
+                  "Red maple",
+                  "60",
+                  "yes"
+                ],
+                [
+                  "Japanese maple",
+                  "25",
+                  "no"
+                ],
+                [
+                  "Norway maple",
+                  "50",
+                  "no"
+                ]
+              ]
+            }
+          },
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it most effectively uses data from the table to complete the statement about the forestry student’s project. The table shows five types of maple trees, each tree’s maximum height, and whether each tree is native to North America. The text indicates that the student needs to recommend a maple tree that’s native to North America and won’t reach a height greater than 60 feet. The red maple is the only tree listed in the table that meets these criteria: its maximum height is 60 feet—meaning that it won’t grow higher than 60 feet— and it’s native to North America.</p><p><em>Choice A </em>is incorrect because the text states that the student needs to recommend a tree that’s native to North America and won’t grow higher than 60 feet, but the table shows that the maximum height of the silver maple is 70 feet. <em>Choice B </em>is incorrect because the text states that the student needs to recommend a tree that’s native to North America and won’t grow higher than 60 feet, but the table shows that the maximum height of the sugar maple is 75 feet. <em>Choice D </em>is incorrect because the text states that the student needs to recommend a tree that’s native to North America and won’t grow higher than 60 feet, but the table shows that the Norway maple isn’t native to North America.</p>",
+          "answerPages": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "m1-q13",
+          "module": 1,
+          "number": 13,
+          "sourcePage": 8,
+          "passageHtml": "<p>Many plants lose their leaf color when exposed to kanamycin, an antibiotic produced by some soil microorganisms. Spelman College biologist Mentewab Ayalew and her colleagues hypothesized that plants’ response to kanamycin exposure involves altering their uptake of metals, such as iron and zinc. The researchers grew two groups of seedlings of the plant <em>Arabidopsis thaliana</em>, half of which were exposed to kanamycin and half of which were a control group without exposure to kanamycin, and measured the plants’ metal content five days after germination.</p>",
+          "promptHtml": "Which choice best describes data in the graph that support Ayalew and her colleagues’ hypothesis?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "The control plants contained higher levels of zinc than iron, but plants exposed to kanamycin contained higher levels of iron than zinc."
+            },
+            {
+              "id": "B",
+              "html": "Both groups of plants contained more than 200 parts per million of both iron and zinc."
+            },
+            {
+              "id": "C",
+              "html": "Zinc levels were around 300 parts per million in the control plants but nearly 400 parts per million in the plants exposed to kanamycin."
+            },
+            {
+              "id": "D",
+              "html": "The plants exposed to kanamycin showed lower levels of iron and zinc than the control plants did."
+            }
+          ],
+          "figure": {
+            "src": "/figures/test-9/m1-q13.png",
+            "alt": "Grouped bar graph titled Metal Content of Plants with and without Kanamycin Exposure. It compares zinc and iron concentrations in parts per million under experimental conditions without kanamycin and with kanamycin. The vertical scale runs from 0 to 700.",
+            "table": null
+          },
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it best describes data in the graph supporting Ayalew and her colleagues’ hypothesis that plants’ response to kanamycin exposure involves altering their uptake of metals. The graph compares the metal content of two groups of plants, one with kanamycin exposure and a control group without such exposure. The amount of zinc in plants without kanamycin exposure is around 400 parts per million, while the amount of zinc in plants with kanamycin exposure is lower, at around 300 parts per million. Similarly, the amount of iron in plants without kanamycin exposure is a little over 600 parts per million, while the amount of iron in plants with kanamycin exposure is lower, at a little over 200 parts per million. Thus, the graph shows that plants with kanamycin exposure have significantly lower levels of both iron and zinc than the plants without kanamycin exposure. This is evidence supporting the hypothesis that kanamycin exposure results in plants altering their uptake of metals.</p><p><em>Choice A </em>is incorrect because the graph shows that control plants contained higher levels of iron than zinc, not higher levels of zinc than iron; similarly, the plants exposed to kanamycin contained higher levels of zinc than iron, not higher levels of iron than zinc. <em>Choice B </em>is incorrect. Though the claim that both groups of plants contained more than 200 parts per million of both iron and zinc is supported by the graph, this alone does not state whether plants with kanamycin exposure have a different metal content than plants without kanamycin exposure. <em>Choice C </em>is incorrect. The graph shows that the zinc levels for the control plants (those without kanamycin exposure) were around 400 parts per million, not 300 parts per million, and that the zinc levels for plants with kanamycin exposure were around 300 parts per million, not 400 parts per million.</p>",
+          "answerPages": [
+            7
+          ]
+        },
+        {
+          "id": "m1-q14",
+          "module": 1,
+          "number": 14,
+          "sourcePage": 9,
+          "passageHtml": "<p>When hibernating, Alaska marmots and Arctic ground squirrels enter a state called torpor, which minimizes the energy their bodies need to function. Often a hibernating animal will temporarily come out of torpor (called an arousal episode) and its metabolic rate will rise, burning more of the precious energy the animal needs to survive the winter. Alaska marmots hibernate in groups and therefore burn less energy keeping warm during these episodes than they would if they were alone. A researcher hypothesized that because Arctic ground squirrels hibernate alone, they would likely exhibit longer bouts of torpor and shorter arousal episodes than Alaska marmots.</p>",
+          "promptHtml": "Which choice best describes data from the table that support the researcher’s hypothesis?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "The Alaska marmots’ arousal episodes lasted for days, while the Arctic ground squirrels’ arousal episodes lasted less than a day."
+            },
+            {
+              "id": "B",
+              "html": "The Alaska marmots and the Arctic ground squirrels both maintained torpor for several consecutive days per bout, on average."
+            },
+            {
+              "id": "C",
+              "html": "The Alaska marmots had shorter torpor bouts and longer arousal episodes than the Arctic ground squirrels did."
+            },
+            {
+              "id": "D",
+              "html": "The Alaska marmots had more torpor bouts than arousal episodes, but their arousal episodes were much shorter than their torpor bouts."
+            }
+          ],
+          "figure": {
+            "src": "/figures/test-9/m1-q14.png",
+            "alt": "Table of the average number and duration of torpor bouts and arousal episodes for Alaska marmots and Arctic ground squirrels during 2008-2011.",
+            "table": {
+              "caption": "Average Number and Duration of Torpor Bouts and Arousal Episodes for Alaska Marmots and Arctic Ground Squirrels, 2008-2011",
+              "headers": [
+                "Feature",
+                "Alaska marmots",
+                "Arctic ground squirrels"
+              ],
+              "rows": [
+                [
+                  "torpor bouts",
+                  "12",
+                  "10.5"
+                ],
+                [
+                  "duration per bout",
+                  "13.81 days",
+                  "16.77 days"
+                ],
+                [
+                  "arousal episodes",
+                  "11",
+                  "9.5"
+                ],
+                [
+                  "duration per episode",
+                  "21.2 hours",
+                  "14.2 hours"
+                ]
+              ]
+            }
+          },
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it describes data from the table that support the researcher’s hypothesis. According to the text, the researcher hypothesized that Arctic ground squirrels would exhibit longer torpor bouts and shorter arousal episodes than Alaska marmots do—or, put the other way, that the marmots would show shorter torpor bouts and longer arousal episodes than the ground squirrels do. The table shows data about torpor bouts and arousal episodes for the two species from 2008 to 2011. According to the table, the average duration of torpor bouts was 13.81 days for Alaska marmots, shorter than the average of 16.77 days for Arctic ground squirrels, and the average duration of arousal episodes was 21.2 hours for Alaska marmots, longer than the average of 14.2 hours for Arctic ground squirrels. Thus, the table supports the researcher’s hypothesis by showing that Alaska marmots had shorter bouts of torpor and longer arousal episodes than Arctic ground squirrels did.</p><p><em>Choice A </em>is incorrect because it inaccurately describes data from the table and doesn’t support the researcher’s hypothesis. The table shows that the average duration of arousal episodes was less than a day for both Alaska marmots (21.2 hours) and Arctic ground squirrels (14.2 hours). Additionally, information about arousal episodes for Alaska marmots and Arctic ground squirrels isn’t sufficient to support a hypothesis involving comparisons of both arousal episodes and torpor bouts for those animals. <em>Choice B </em>is incorrect because it doesn’t support the researcher’s hypothesis, which involves comparisons of arousal episodes as well as torpor bouts for Alaska marmots and Arctic ground squirrels. Noting that both animals had torpor bouts lasting several days, on average, doesn’t address arousal episodes at all, nor does it reveal how the animals’ torpor bouts compared. <em>Choice D </em>is incorrect because it doesn’t support the researcher’s hypothesis. Although the table does show that Alaska marmots had more torpor bouts (12) than arousal episodes (11) and that their arousal episodes were much shorter than their torpor bouts (21.2 hours and 13.81 days, respectively), comparing data across only Alaska marmot behaviors isn’t sufficient to support a hypothesis about torpor and arousal behaviors of both Alaska marmots and Arctic ground squirrels.</p>",
+          "answerPages": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "m1-q15",
+          "module": 1,
+          "number": 15,
+          "sourcePage": 10,
+          "passageHtml": "<p>Honeybee hives consist mainly of hexagonal (six-sided) units called cells, in which queens lay eggs. Hexagonal cells for eggs that develop into nonreproductive workers are smaller than those for eggs that develop into reproductive drones, though the size difference varies by species. Difference in cell size results in a construction problem—it’s hard to neatly connect sections of small cells to sections of large cells—that worsens as the difference increases. To fill in gaps between the sections when building a hive, bees rely on cells that have more or fewer than six sides. A student studying beehive structure consults data on three species, concluding that _______</p>",
+          "promptHtml": "Which choice most effectively uses data from the graph to complete the student’s conclusion?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "cells for worker eggs are probably closer in size to cells for drone eggs in the hives of the western honeybee than in the hives of the dwarf honeybee and the black dwarf honeybee."
+            },
+            {
+              "id": "B",
+              "html": "both the western honeybee and the black dwarf honeybee probably reserve eight-sided cells for drone eggs, while the dwarf honeybee likely deposits drone eggs in seven-sided cells."
+            },
+            {
+              "id": "C",
+              "html": "the western honeybee probably relies on many more geometrical shapes when constructing cell s than either the dwarf honeybee or the black dwarf honeybee does."
+            },
+            {
+              "id": "D",
+              "html": "the percentage of hexagonal cells is probably slightly lower in the hives of the western honeybee than in the hives of the dwarf honeybee and the black dwarf honeybee."
+            }
+          ],
+          "figure": {
+            "src": "/figures/test-9/m1-q15.png",
+            "alt": "Grouped bar graph titled Percentage of Nonhexagonal Cells in Hives of Three Honeybee Species. It compares 5-sided, 7-sided, and 8-sided cells for black dwarf honeybee, dwarf honeybee, and western honeybee hives. The vertical axis is average percentage of nonhexagonal cells by shape, from 0 to 3.0.",
+            "table": null
+          },
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it most effectively uses data from the graph to complete the student’s conclusion about beehive structure. The text explains that in the hives of honeybees, the hexagonal cells housing drone eggs are larger than the hexagonal cells housing worker eggs, and that this size difference results in a construction problem that the bees address by using nonhexagonal cells to fill gaps between sections of drone-egg cells and worker-egg cells. The text also states that the size difference between drone-egg cells and worker-egg cells varies by species of honeybee. The graph displays data on the percentage of nonhexagonal cells in the hives of three species. In the hives of the western honeybee, the percentages of five-sided, seven-sided, and eight-sided cells are all less than 0.5%. But in the hives of the black dwarf honeybee, the percentages of five-sided and seven-sided cells are higher than those for the western honeybee: about 2.5% for both. And for the dwarf honeybee, the percentages of five-sided and seven-sided cells are also higher than those for the western honeybee: slightly over 2.5% and slightly over 2.0%, respectively; additionally, the dwarf honeybee possesses a higher percentage of eight-sided cells than the western honeybee does. Taken altogether, the graph shows that the hives of the western honeybee consist of a smaller percentage of nonhexagonal cells than the hives of the two other species do. Since the nonhexagonal cells exist only to solve the construction problem arising from the difference in size between drone-egg cells and worker-egg cells, a smaller percentage of nonhexagonal cells would be associated with a smaller size difference between the two types of cells. Therefore, it can be concluded from the data that worker-egg cells are probably closer in size to drone-egg cells in the hives of the western honeybee than in the hives of the other two species.</p><p><em>Choice B </em>is incorrect because, as the text states, honeybee species deposit their eggs in hexagonal cells, not in nonhexagonal ones. Thus, the western honeybee and black dwarf honeybee wouldn’t deposit drone eggs in eight-sided cells, and the dwarf honeybee wouldn’t deposit drone eggs in seven-sided cells. <em>Choice C </em>is incorrect. The text explains that honeybees rely mainly on one geometric shape, the hexagon, when constructing their hives, and the graph shows that the western honeybee relies on the same nonhexagonal shapes as the dwarf honeybee does: five-sided, seven-sided, and eight-sided cells. In other words, the western honeybee and dwarf honeybee rely on the same number of geometric shapes. For the black dwarf honeybee, the graph displays data only for five-sided and seven-sided cells, which suggests a total absence of eight-sided cells. Yet this would be only one less nonhexagonal shape than is seen in the western honeybee. Thus, based on the graph, it would be inaccurate to say that the western honeybee relies on “many more” geometrical shapes than the other two species do. <em>Choice D </em>is incorrect. As the text explains, honeybee hives consist mainly of hexagonal cells, and sections of nonhexagonal cells are used to connect sections of hexagonal cells of different sizes. Since the graph indicates that the percentage of nonhexagonal cells is lower for the western honeybee than it is for the dwarf honeybee or black dwarf honeybee, the western honeybee would conversely have a higher percentage of hexagonal cells than the either the dwarf honeybee or black dwarf honeybee does, not a lower percentage.</p>",
+          "answerPages": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "m1-q16",
+          "module": 1,
+          "number": 16,
+          "sourcePage": 11,
+          "passageHtml": "<p>ALSOL is a microcredit program in Mexico that makes small loans to female entrepreneurs who lack the collateral and credit history to secure financing from conventional banks. Borrowers use their business proceeds to repay loans in equal weekly installments and incur no penalty for missed payments other than lack of access to larger loans. Economists Gustavo Barboza and Sandra Trejos analyzed ALSOL data and found that rural borrowers, who mostly make and sell handicrafts, miss payments more often than urban borrowers do, partly because they sell their goods less frequently than they could. Barboza and Trejos claim that this behavior reflects strategic decisions that enable rural women to increase their profits per unit sold.</p>",
+          "promptHtml": "Which finding, if true, would most directly support Barboza and Trejos’s claim?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Many marketplaces require entrepreneurs to pay marketplace operators a fixed percentage of each day’s proceeds in exchange for permission to sell goods there."
+            },
+            {
+              "id": "B",
+              "html": "Rural entrepreneurs can typically sell their goods for higher prices in cities than in their home areas, but the number of people selling competing goods tends to be higher in cities."
+            },
+            {
+              "id": "C",
+              "html": "Due to the lower costs they incur, rural entrepreneurs tend to require smaller initial loans than urban entrepreneurs do."
+            },
+            {
+              "id": "D",
+              "html": "The cost to rural entrepreneurs to bring their goods to towns with marketplaces is high but largely independent of the number of goods they bring."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it presents a finding that, if true, would most directly support Barboza and Trejos’s claim that rural female entrepreneurs who have received small loans from ALSOL are strategic in selling their goods less frequently than they could, even if it means missing payments. The text explains that borrowers in the ALSOL program use proceeds from their businesses to repay loans in equal weekly payments, with almost no penalty for missed payments. According to the text, Barboza and Trejos found that rural borrowers miss weekly payments in part because they don’t sell their goods as often as they could, a move the researchers claim allows the entrepreneurs to help increase profits for the goods they sell. Finding that the cost of bringing goods to towns with marketplaces is high for rural entrepreneurs but is largely independent of how many goods are brought would support the researchers’ claim: traveling to marketplaces less frequently would mean that a rural entrepreneur spends less on travel overall, and taking a large load of goods to a marketplace for essentially the same cost as taking a small load would allow the entrepreneur to more substantially offset the cost of travel with greater overall sales at the marketplace, resulting in more profit per good sold—even if those profits are earned less frequently and don’t support weekly loan payments.</p><p><em>Choice A </em>is incorrect because the finding that many marketplaces require entrepreneurs to pay the operators of the marketplace a fixed percentage of proceeds to be able to sell goods there wouldn’t explain why rural entrepreneurs strategically choose to sell their goods less frequently than they could in order to increase their profits per unit sold. With a fixed percentage of proceeds due to operators, the amount entrepreneurs have to pay operators would also be fixed regardless of frequency of selling. <em>Choice B </em>is incorrect because the finding that rural entrepreneurs can usually sell their goods for higher prices in cities than in their local areas but also face higher competition to sell goods in cities wouldn’t explain why rural entrepreneurs strategically choose to sell their goods less frequently than they could in order to increase their profits per unit sold. This is because both the higher prices and higher competition in cities would be stable factors—meaning there would be no clear reason for the rural entrepreneurs not to take every available chance to sell their goods in cities and to instead sell their goods in cities only sometimes. <em>Choice C </em>is incorrect because the finding that rural entrepreneurs have lower costs and thus tend to require smaller initial loans than urban entrepreneurs do has no bearing on rural borrowers strategically choosing to sell their goods less frequently than they could specifically to increase their profits per unit sold. The cost of producing goods doesn’t depend on the frequency with which an entrepreneur sells those goods, so lower frequency alone wouldn’t affect profits, and the initial loan amount is set and has nothing to do with how much profit is earned from each sale.</p>",
+          "answerPages": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "m1-q17",
+          "module": 1,
+          "number": 17,
+          "sourcePage": 11,
+          "passageHtml": "<p>In documents called judicial opinions, judges explain the reasoning behind their legal rulings, and in those explanations they sometimes cite and discuss historical and contemporary philosophers. Legal scholar and philosopher Anita L. Allen argues that while judges are naturally inclined to mention philosophers whose views align with their own positions, the strongest judicial opinions consider and rebut potential objections; discussing philosophers whose views conflict with judges’ views could therefore _______</p>",
+          "promptHtml": "Which choice most logically completes the text?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "allow judges to craft judicial opinions without needing to consult philosophical works."
+            },
+            {
+              "id": "B",
+              "html": "help judges improve the arguments they put forward in their judicial opinions."
+            },
+            {
+              "id": "C",
+              "html": "make judicial opinions more comprehensible to readers without legal or philosophical training."
+            },
+            {
+              "id": "D",
+              "html": "bring judicial opinions in line with views that are broadly held among philosophers."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer because it most logically completes the text’s discussion of Anita Allen’s argument about judges citing philosophers in their judicial opinions. The text indicates that judges sometimes cite philosophers when writing their judicial opinions and that, according to Allen, judges tend to cite philosophers whose views are in agreement with those of the judges themselves. Allen claims, however, that the best judicial opinions consider potential objections and rebut them, which suggests that judges may be able to strengthen their opinions by including discussions of philosophers with views contrary to their own.</p><p><em>Choice A </em>is incorrect because Allen’s claim is that judges could improve their judicial opinions by citing philosophers who disagree with the views expressed in the opinions, which would necessarily require judges to consult philosophical works. <em>Choice C </em>is incorrect because there’s no discussion in the text about making judicial opinions more easily understood by any particular group of readers. The focus of the text is on Allen’s claim that judicial opinions could be strengthened by the inclusion of discussions of philosophers whose views disagree with those of the judges authoring the opinions. <em>Choice D </em>is incorrect because the text presents Allen’s argument that discussing philosophers whose views judges disagree with could strengthen judicial opinions, not that doing so could bring those opinions into line with views that are popular among philosophers.</p>",
+          "answerPages": [
+            10
+          ]
+        },
+        {
+          "id": "m1-q18",
+          "module": 1,
+          "number": 18,
+          "sourcePage": 12,
+          "passageHtml": "<p>Although military veterans make up a small proportion of the total population of the United States, they occupy a significantly higher proportion of the jobs in the civilian government. One possible explanation for this disproportionate representation is that military service familiarizes people with certain organizational structures that are also reflected in the civilian government bureaucracy, and this familiarity thus _______</p>",
+          "promptHtml": "Which choice most logically completes the text?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "makes civilian government jobs especially appealing to military veterans."
+            },
+            {
+              "id": "B",
+              "html": "alters the typical relationship between military service and subsequent career preferences."
+            },
+            {
+              "id": "C",
+              "html": "encourages nonveterans applying for civilian government jobs to consider military service instead."
+            },
+            {
+              "id": "D",
+              "html": "increases the number of civilian government jobs that require some amount of military experience to perform."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it presents the conclusion that most logically follows from the text’s discussion of military veterans working in civilian government jobs in the United States. The text indicates that the proportion of military veterans working in civilian government jobs is considerably higher than the proportion of military veterans in the population as a whole. The text also notes that the unusually high representation of military veterans in these jobs may be a result of the organizational structures shared by civilian government entities and the military. Hence, it’s reasonable to infer that it’s the familiarity of the structures of civilian government that makes jobs there particularly attractive to military veterans.</p><p><em>Choice B </em>is incorrect because the text doesn’t address what a typical relationship between military service and later career preferences would be, and there’s no indication that it’s atypical for veterans to work in civilian government jobs after they’ve left the military. On the contrary, the text suggests that many military veterans are drawn to such jobs. <em>Choice C </em>is incorrect because the text is focused on the high representation of military veterans in civilian government jobs and doesn’t address nonveterans or their possible interest in military service. <em>Choice D </em>is incorrect because the text conveys that military veterans may be particularly interested in civilian government jobs due to the familiarity of organizational structures that are already in place, but there’s no reason to think that this interest would mean that more civilian government jobs will start to require military experience.</p>",
+          "answerPages": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "m1-q19",
+          "module": 1,
+          "number": 19,
+          "sourcePage": 12,
+          "passageHtml": "<p>A member of the Cherokee Nation, Mary Golda Ross is renowned for her contributions to NASA’s Planetary Flight Handbook, which _______ detailed mathematical guidance for missions to Mars and Venus.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "provided"
+            },
+            {
+              "id": "B",
+              "html": "having provided"
+            },
+            {
+              "id": "C",
+              "html": "to provide"
+            },
+            {
+              "id": "D",
+              "html": "providing"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer. The convention being tested is the use of finite verbs in a relative clause. Relative clauses, such as the one beginning with “which,” require a finite verb, a verb that can function as the main verb of a clause. This choice correctly supplies the clause with the finite past tense verb “provided.”</p><p><em>Choice B </em>is incorrect because the non-finite participle “having provided” doesn’t supply the clause with a finite verb. <em>Choice C </em>is incorrect because the non-finite to-infinitive “to provide” doesn’t supply the clause with a finite verb. <em>Choice D </em>is incorrect because the non-finite participle “providing” doesn’t supply the clause with a finite verb.</p>",
+          "answerPages": [
+            11
+          ]
+        },
+        {
+          "id": "m1-q20",
+          "module": 1,
+          "number": 20,
+          "sourcePage": 12,
+          "passageHtml": "<p>The classic children’s board game Chutes and Ladders is a version of an ancient Nepalese game, Paramapada Sopanapata<em>.</em> In both games, players encounter “good” or “bad” spaces while traveling along a path; landing on one of the good spaces _______ a player to skip ahead and arrive closer to the end goal.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "allows"
+            },
+            {
+              "id": "B",
+              "html": "are allowing"
+            },
+            {
+              "id": "C",
+              "html": "have allowed"
+            },
+            {
+              "id": "D",
+              "html": "allow"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer. The convention being tested is subject–verb agreement. The singular verb “allows” agrees in number with the singular subject “landing.”</p><p><em>Choice B </em>is incorrect because the plural verb “are allowing” doesn’t agree in number with the singular subject “landing.” <em>Choice C </em>is incorrect because the plural verb “have allowed” doesn’t agree in number with the singular subject “landing.” <em>Choice D </em>is incorrect because the plural verb “allow” doesn’t agree in number with the singular subject “landing.”</p>",
+          "answerPages": [
+            11
+          ]
+        },
+        {
+          "id": "m1-q21",
+          "module": 1,
+          "number": 21,
+          "sourcePage": 12,
+          "passageHtml": "<p>In 1930, Japanese American artist Chiura Obata depicted the natural beauty of Yosemite National Park in two memorable woodcuts: <em>Evening at Carl</em> <em>Inn</em> and <em>Lake Basin in the High Sierra</em>. In 2019, _______ exhibited alongside 150 of Obata’s other works in a single-artist show at the Smithsonian American Art Museum.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "it was"
+            },
+            {
+              "id": "B",
+              "html": "they were"
+            },
+            {
+              "id": "C",
+              "html": "this was"
+            },
+            {
+              "id": "D",
+              "html": "some were"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. The convention being tested is pronoun–antecedent agreement. The plural pronoun “they” agrees in number with the plural antecedent “woodcuts” and clearly identifies what was exhibited at the Smithsonian American Art Museum.</p><p><em>Choice A </em>is incorrect because the singular pronoun “it” doesn’t agree in number with the plural antecedent “woodcuts.” <em>Choice C </em>is incorrect because the singular pronoun “this” doesn’t agree in number with the plural antecedent “woodcuts.” <em>Choice D </em>is incorrect because the plural pronoun “some” is illogical in this context (referring to “some” of two woodcuts).</p>",
+          "answerPages": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "m1-q22",
+          "module": 1,
+          "number": 22,
+          "sourcePage": 13,
+          "passageHtml": "<p>Journalists have dubbed Gil Scott-Heron the “godfather of rap,” a title that has appeared in hundreds of articles about him since the 1990s. Scott-Heron himself resisted the godfather _______ feeling that it didn’t encapsulate his devotion to the broader African American blues music tradition as well as “bluesologist,” the moniker he preferred.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "nickname, however"
+            },
+            {
+              "id": "B",
+              "html": "nickname, however;"
+            },
+            {
+              "id": "C",
+              "html": "nickname, however,"
+            },
+            {
+              "id": "D",
+              "html": "nickname; however,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is punctuation use between a main clause and two supplementary elements. In this choice, the commas after “nickname” and “however” are correctly used to separate the supplementary adverb “however” from the main clause (“Scott-Heron... nickname”) on one side and the supplementary participial phrase (“feeling... bluesologist”) on the other.</p><p><em>Choice A </em>is incorrect because it fails to mark the boundary between the supplementary adverb “however” and the supplementary phrase (“feeling... bluesologist”). <em>Choice B </em>is incorrect because a semicolon can’t be used in this way to join the supplementary adverb “however” and the supplementary phrase (“feeling...bluesologist”). <em>Choice D </em>is incorrect because a semicolon can’t be used in this way to join the main clause (“Scott-Heron...nickname”) and the supplementary word and phrase (“however” and “feeling...bluesologist”). Moreover, placing the semicolon after “nickname” illogically signals that the following information (Scott-Heron’s feeling that the nickname didn’t encapsulate his devotion to the blues tradition) is contrary to the information in the previous clause (Scott-Heron’s resistance to the nickname).</p>",
+          "answerPages": [
+            12
+          ]
+        },
+        {
+          "id": "m1-q23",
+          "module": 1,
+          "number": 23,
+          "sourcePage": 13,
+          "passageHtml": "<p>Stomata, tiny pore structures in a leaf that absorb gases needed for plant growth, open when guard cells surrounding each pore swell with water. In a pivotal 2007 article, plant cell _______ showed that lipid molecules called phosphatidylinositol phosphates are responsible for signaling guard cells to open stomata.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "biologist, Yuree Lee"
+            },
+            {
+              "id": "B",
+              "html": "biologist Yuree Lee,"
+            },
+            {
+              "id": "C",
+              "html": "biologist Yuree Lee"
+            },
+            {
+              "id": "D",
+              "html": "biologist, Yuree Lee,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is the use of punctuation between titles and proper nouns. No punctuation is needed to offset the proper noun “Yuree Lee” from the title “plant cell biologist” that describes Lee.</p><p><em>Choice A </em>is incorrect because no punctuation is needed. <em>Choice B </em>is incorrect because no punctuation is needed. <em>Choice D </em>is incorrect because no punctuation is needed around the proper noun “Yuree Lee.” Setting the phrase off with punctuation suggests that it could be removed without affecting the coherence of the sentence, which isn’t the case.</p>",
+          "answerPages": [
+            12
+          ]
+        },
+        {
+          "id": "m1-q24",
+          "module": 1,
+          "number": 24,
+          "sourcePage": 13,
+          "passageHtml": "<p>As cheesemaking practices spread throughout Europe and Asia during and after the Neolithic, divergent strategies for preserving milk _______ whereas rennet-coagulated cheesemaking became key to milk preservation in Europe and Southwest Asia, acid-heat coagulation methods became common among nomadic herding populations of the northeastern Eurasian steppe.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "emerged"
+            },
+            {
+              "id": "B",
+              "html": "emerged and"
+            },
+            {
+              "id": "C",
+              "html": "emerged:"
+            },
+            {
+              "id": "D",
+              "html": "emerged,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is punctuation use within a sentence. A colon can be used between two main clauses to signal that what follows is an elaboration of what came before. In this choice, the colon correctly introduces the following explanation of the divergent milk preservation strategies that emerged.</p><p><em>Choice A </em>is incorrect because it results in a run-on sentence. The main clause (“As...emerged”) and the subordinate clause followed by another main clause (“whereas...steppe”) are fused without punctuation and/or a conjunction. <em>Choice B </em> is incorrect. Without a comma preceding it, the conjunction “and” can’t be used in this way to join a main clause (“As...emerged”) and a subordinate clause followed by another main clause (“whereas...steppe”). <em>Choice D </em>is incorrect because it results in a comma splice. A comma can’t be used in this way to join a main clause (“As...emerged”) and a subordinate clause followed by another main clause (“whereas...steppe”).</p>",
+          "answerPages": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "m1-q25",
+          "module": 1,
+          "number": 25,
+          "sourcePage": 13,
+          "passageHtml": "<p>Recent pollen analyses of the Aran Islands have led some researchers to propose that the now treeless islands were once wooded. This hypothesis _______ that certain trees, such as <em>P. sylvestris</em>, survived without interruption or human intervention throughout the Holocene cannot stand, researchers Michael O’Connell and Karen Molloy counter, unless other explanations can first be ruled out.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "suggesting"
+            },
+            {
+              "id": "B",
+              "html": "suggested"
+            },
+            {
+              "id": "C",
+              "html": "suggests"
+            },
+            {
+              "id": "D",
+              "html": "has suggested"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer. The convention being tested is the use of verb forms within a sentence. The nonfinite present participle “suggesting” is correctly used to form a restrictive participial phrase (“suggesting...Holocene”) within the main clause (“This hypothesis...cannot stand...”). This participial phrase functions as part of the sentence’s subject (“This...Holocene”), providing essential identifying information about what the hypothesis states—namely, that certain trees survived without interruption or human intervention throughout the Holocene.</p><p><em>Choice B </em>is incorrect because it results in an ungrammatical sentence. The finite verb “suggested” can’t be used in this way within the subject of the sentence. <em>Choice C </em>is incorrect because it results in an ungrammatical sentence. The finite verb “suggests” can’t be used in this way within the subject of the sentence. <em>Choice D </em>is incorrect because it results in an ungrammatical sentence. The finite verb “has suggested” can’t be used in this way within the subject of the sentence.</p>",
+          "answerPages": [
+            13
+          ]
+        },
+        {
+          "id": "m1-q26",
+          "module": 1,
+          "number": 26,
+          "sourcePage": 14,
+          "passageHtml": "<p>Researchers studying the “terra-cotta army,” the thousands of life-size statues of warriors found interred near the tomb of Emperor Qin Shi Huang of China, were shocked to realize that the shape of each statue’s ears, like the shape of each person’s ears, _______ unique.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "are"
+            },
+            {
+              "id": "B",
+              "html": "is"
+            },
+            {
+              "id": "C",
+              "html": "were"
+            },
+            {
+              "id": "D",
+              "html": "have been"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. The convention being tested is subject-verb agreement. The singular verb “is” agrees in number with the singular subject “the shape.”</p><p><em>Choice A </em>is incorrect because the plural verb “are” doesn’t agree in number with the singular subject “the shape.” <em>Choice C </em>is incorrect because the plural verb “were” doesn’t agree in number with the singular subject “the shape.” <em>Choice D </em>is incorrect because the plural verb “have been” doesn’t agree in number with the singular subject “the shape.”</p>",
+          "answerPages": [
+            13
+          ]
+        },
+        {
+          "id": "m1-q27",
+          "module": 1,
+          "number": 27,
+          "sourcePage": 14,
+          "passageHtml": "<p>Chimamanda Ngozi Adichie’s 2013 novel <em>Americanah</em> chronicles the divergent experiences of Ifemelu and Obinze, a young Nigerian couple, after high school. Ifemelu moves to the United States to attend a prestigious university. ______ Obinze travels to London, hoping to start a career there. However, frustrated with the lack of opportunities, he soon returns to Nigeria.</p>",
+          "promptHtml": "Which choice completes the text with the most logical transition?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Meanwhile,"
+            },
+            {
+              "id": "B",
+              "html": "Nevertheless,"
+            },
+            {
+              "id": "C",
+              "html": "Secondly,"
+            },
+            {
+              "id": "D",
+              "html": "In fact,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer. “Meanwhile” logically signals that the action described in this sentence (Obinze’s move to London to pursue a career) is simultaneous with the action described in the previous sentence (Ifemelu’s move to the United States). The first sentence establishes that the actions take place around the same time, referring to the characters’ “divergent experiences” following high school.</p><p><em>Choice B </em>is incorrect because “nevertheless” illogically signals that the information in this sentence about Obinze’s move to London is true despite the previous information about Ifemelu’s move to the United States. Instead, as the first sentence establishes, Obinze’s move and Ifemelu’s move are related, parallel experiences that occur around the same time. <em>Choice C </em>is incorrect because “secondly” illogically signals that the information in this sentence is a second point or reason separate from the previous information about Ifemelu’s move to the United States. Instead, as the first sentence establishes, Obinze’s move and Ifemelu’s move are related, parallel experiences that occur around the same time. <em>Choice D </em>is incorrect because “in fact” illogically signals that the information in this sentence emphasizes, modifies, or contradicts the previous information about Ifemelu’s move to the United States. Instead, as the first sentence establishes, Obinze’s move and Ifemelu’s move are related, parallel experiences that occur around the same time.</p>",
+          "answerPages": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "m1-q28",
+          "module": 1,
+          "number": 28,
+          "sourcePage": 14,
+          "passageHtml": "<p>Some members of the US Supreme Court have resisted calls to televise the court’s oral arguments, concerned that the participants would be tempted to perform for the cameras (and thus lower the quality of the discourse). _______ the justices worry that most viewers would not even watch the full deliberations, only short clips that could be misinterpreted and mischaracterized.</p>",
+          "promptHtml": "Which choice completes the text with the most logical transition?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "However,"
+            },
+            {
+              "id": "B",
+              "html": "Additionally,"
+            },
+            {
+              "id": "C",
+              "html": "In comparison,"
+            },
+            {
+              "id": "D",
+              "html": "For example,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. “Additionally” logically signals that the claim in this sentence—that some Supreme Court justices worry that viewers (of televised court arguments) would watch only short, misleading clips—adds to the information in the previous sentence. Specifically, the previous sentence indicates one concern raised by those opposed to televising the court’s oral arguments, and the claim that follows indicates a second, additional concern.</p><p><em>Choice A </em>is incorrect because “however” illogically signals that the claim in this sentence contrasts with the information in the previous sentence. Instead, the claim adds to the information, indicating a second, additional concern that some Supreme Court justices have about televising the court’s arguments. <em>Choice C </em>is incorrect because “in comparison” illogically signals that the claim in this sentence is being compared to the information in the previous sentence. Instead, the claim adds to the information, indicating a second, additional concern that some Supreme Court justices have about televising the court’s arguments. <em>Choice D </em>is incorrect because “for example” illogically signals that the claim in this sentence exemplifies the information in the previous sentence. Instead, the claim adds to the information, indicating a second, additional concern that some Supreme Court justices have about televising the court’s arguments.</p>",
+          "answerPages": [
+            14
+          ]
+        },
+        {
+          "id": "m1-q29",
+          "module": 1,
+          "number": 29,
+          "sourcePage": 14,
+          "passageHtml": "<p>The more diverse and wide ranging an animal’s behaviors, the larger and more energy demanding the animal’s brain tends to be. ______ from an evolutionary perspective, animals that perform only basic actions should allocate fewer resources to growing and maintaining brain tissue. The specialized subtypes of ants within colonies provide an opportunity to explore this hypothesis.</p>",
+          "promptHtml": "Which choice completes the text with the most logical transition?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Subsequently,"
+            },
+            {
+              "id": "B",
+              "html": "Besides,"
+            },
+            {
+              "id": "C",
+              "html": "Nevertheless,"
+            },
+            {
+              "id": "D",
+              "html": "Thus,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer. “Thus” logically signals that the claim in this sentence—that animals performing only basic actions should allocate relatively few resources to their brain tissue—is a consequence of the previous sentence’s claim about the energy demands of animal brains (namely, that the more diverse an animal’s behaviors, the more energy its brain needs).</p><p><em>Choice A </em>is incorrect because “subsequently” illogically signals that the claim in this sentence occurs later in a chronological sequence of events than the previous sentence’s claim about the energy demands of animal brains. Instead, the second claim is a consequence of the first. <em>Choice B </em>is incorrect because “besides” illogically signals that the claim in this sentence provides a separate point in addition to, or apart from, the previous sentence’s claim about the energy demands of animal brains. Instead, the second claim is a consequence of the first. <em>Choice C </em>is incorrect because “nevertheless” illogically signals that the claim in this sentence is true in spite of the previous sentence’s claim about the energy demands of animal brains. Instead, the second claim is a consequence of the first.</p>",
+          "answerPages": [
+            14
+          ]
+        },
+        {
+          "id": "m1-q30",
+          "module": 1,
+          "number": 30,
+          "sourcePage": 15,
+          "passageHtml": "<p>A firefly uses specialized muscles to draw oxygen into its lower abdomen through narrow tubes, triggering a chemical reaction whereby the oxygen combines with chemicals in the firefly’s abdomen to produce a glow. _______ when the firefly stops drawing in oxygen, the reaction—and the glow—cease.</p>",
+          "promptHtml": "Which choice completes the text with the most logical transition?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "For instance,"
+            },
+            {
+              "id": "B",
+              "html": "By contrast,"
+            },
+            {
+              "id": "C",
+              "html": "Specifically,"
+            },
+            {
+              "id": "D",
+              "html": "In conclusion,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. “By contrast” logically signals that the information in this sentence—that a firefly’s glow ceases when it stops drawing in oxygen— contrasts with the previous sentence’s discussion of the processes that cause a firefly to begin to glow.</p><p><em>Choice A </em>is incorrect because “for instance” illogically signals that the information in the sentence exemplifies the previous sentence’s discussion of how a firefly begins to glow. Instead, it contrasts with the previous sentence’s discussion. <em>Choice C </em>is incorrect because “specifically” illogically signals that the information in the sentence provides specific details elaborating on the previous sentence’s discussion of how a firefly begins to glow. Instead, it contrasts with the previous sentence’s discussion. <em>Choice D </em>is incorrect because “in conclusion” illogically signals that the information in the sentence sums up the previous sentence’s discussion of how a firefly begins to glow. Instead, it contrasts with the previous sentence’s discussion.</p>",
+          "answerPages": [
+            15
+          ]
+        },
+        {
+          "id": "m1-q31",
+          "module": 1,
+          "number": 31,
+          "sourcePage": 15,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>NASA uses rovers, large remote vehicles with wheels, to explore the surface of Mars.</li><li>NASA’s rovers can’t explore regions inaccessible to wheeled vehicles.</li><li>Rovers are also heavy, making them difficult to land on the planet’s surface.</li><li>Microprobes, robotic probes that weigh as little as 50 milligrams, could be deployed virtually anywhere on the surface of Mars.</li><li>Microprobes have been proposed as an alternative to rovers.</li></ul>",
+          "promptHtml": "The student wants to explain an advantage of microprobes. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Despite being heavy, NASA’s rovers can land successfully on the surface of Mars."
+            },
+            {
+              "id": "B",
+              "html": "Microprobes, which weigh as little as 50 milligrams, could explore areas of Mars that are inaccessible to NASA’s heavy, wheeled rovers."
+            },
+            {
+              "id": "C",
+              "html": "NASA currently uses its rovers on Mars, but microprobes have been proposed as an alternative."
+            },
+            {
+              "id": "D",
+              "html": "Though they are different sizes, both microprobes and rovers can be used to explore the surface of Mars."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. The sentence explains an advantage of microprobes, noting that because microprobes weigh as little as 50 milligrams, they can explore areas inaccessible to rovers.</p><p><em>Choice A </em>is incorrect. The sentence indicates that rovers can land successfully on Mars despite their weight; it doesn’t explain an advantage of microprobes. <em>Choice C </em>is incorrect. While the sentence mentions that microprobes have been proposed as an alternative to rovers, it doesn’t explain an advantage of microprobes. <em>Choice D </em>is incorrect. The sentence emphasizes a similarity between microprobes and rovers; it doesn’t explain an advantage of microprobes.</p>",
+          "answerPages": [
+            15
+          ]
+        },
+        {
+          "id": "m1-q32",
+          "module": 1,
+          "number": 32,
+          "sourcePage": 16,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>Severo Ochoa discovered the enzyme PNPase in 1955.</li><li>PNPase is involved in both the creation and degradation of mRNA.</li><li>Ochoa incorrectly hypothesized that PNPase provides the genetic blueprints for mRNA.</li><li>The discovery of PNPase proved critical to deciphering the human genetic code.</li><li>Deciphering the genetic code has led to a better understanding of how genetic variations affect human health.</li></ul>",
+          "promptHtml": "The student wants to emphasize the significance of Ochoa’s discovery. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Ochoa’s 1955 discovery of PNPase proved critical to deciphering the human genetic code, leading to a better understanding of how genetic variations affect human health."
+            },
+            {
+              "id": "B",
+              "html": "Ochoa first discovered PNPase, an enzyme that he hypothesized contained the genetic blueprints for mRNA, in 1955."
+            },
+            {
+              "id": "C",
+              "html": "In 1955, Ochoa discovered the PNPase enzyme, which is involved in both the creation and degradation of mRNA."
+            },
+            {
+              "id": "D",
+              "html": "Though his discovery of PNPase was critical to deciphering the human genetic code, Ochoa incorrectly hypothesized that the enzyme was the source of mRNA’s genetic blueprints."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer. The sentence emphasizes the significance of Ochoa’s discovery, noting that it proved critical to deciphering the human genetic code, which resulted in a better understanding of how genetic variations affect human health.</p><p><em>Choice B </em>is incorrect. While the sentence explains what Ochoa discovered, it doesn’t emphasize the significance of the discovery. <em>Choice C </em>is incorrect. While the sentence explains what Ochoa discovered, it doesn’t emphasize the significance of the discovery. <em>Choice D </em>is incorrect. While the sentence mentions that Ochoa’s discovery was crucial, it emphasizes Ochoa’s incorrect hypothesis, not the significance of the discovery.</p>",
+          "answerPages": [
+            15
+          ]
+        },
+        {
+          "id": "m1-q33",
+          "module": 1,
+          "number": 33,
+          "sourcePage": 16,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>Cecilia Vicuña is a multidisciplinary artist.</li><li>In 1971, her first solo art exhibition, <em>Pinturas,</em> <em>poemas y explicaciones,</em> was shown at the Museo Nacional de Bellas Artes in Santiago, Chile.</li><li>Her poetry collection <em>Precario/Precarious</em> was published in 1983 by Tanam Press.</li><li>Her poetry collection <em>Instan</em> was published in 2002 by Kelsey St. Press.</li><li>She lives part time in Chile, where she was born, and part time in New York.</li></ul>",
+          "promptHtml": "The student wants to introduce the artist’s 1983 poetry collection. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Before she published the books <em>Precario/Precarious</em> (1983) and <em>Instan</em> (2002), Cecilia Vicuña exhibited visual art at the Museo Nacional de Bellas Artes in Santiago, Chile."
+            },
+            {
+              "id": "B",
+              "html": "Cecilia Vicuña is a true multidisciplinary artist whose works include numerous poetry collections and visual art exhibitions."
+            },
+            {
+              "id": "C",
+              "html": "Published in 1983 by Tanam Press, <em>Precario/Precarious</em> is a collection of poetry by the multidisciplinary artist Cecilia Vicuña."
+            },
+            {
+              "id": "D",
+              "html": "In 1971, Cecilia Vicuña exhibited her first solo art exhibition, <em>Pinturas, poemas y explicaciones</em>, in Chile, her country of birth."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The sentence effectively introduces the poetry collection <em>Precario/Precarious</em>, noting that it is a collection by Vicuña that was published in 1983 by Tanam Press.</p><p><em>Choice A </em>is incorrect. While the sentence mentions the 1983 poetry collection <em>Precario/Precarious</em>, it focuses mainly on Vicuña’s visual art. <em>Choice B </em>is incorrect. The sentence doesn’t introduce the 1983 poetry collection <em>Precario/Precarious</em>; instead, it introduces Vicuña. <em>Choice D </em>is incorrect. The sentence emphasizes the location of Vicuña’s 1971 exhibition <em>Pinturas, poemas y explicaciones</em>; it doesn’t introduce the 1983 poetry collection <em>Precario/Precarious</em>.</p>",
+          "answerPages": [
+            15,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Module 2",
+      "questions": [
+        {
+          "id": "m2-q1",
+          "module": 2,
+          "number": 1,
+          "sourcePage": 18,
+          "passageHtml": "<p>The following text is from Anita Desai’s 2011 novella <em>Translator Translated</em>. While working on her translation of a novel written in Odia (a language of India) into English, the narrator looks out her window at night to clear her mind.</p><p>I tried to distract myself with these sights of the ordinary world, but in my mind it was the lines I had been translating and the lines that I had been writing that remained in the forefront. I longed for sleep to obliterate them but it eluded me. Perhaps everything would be normal again once I had sent off the manuscript, I thought, and looked forward to<u> completing</u> the work.</p><p class=\"source-credit\">©2011 by Anita Desai</p>",
+          "promptHtml": "As used in the text, what does the word “completing” most nearly mean?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Destroying"
+            },
+            {
+              "id": "B",
+              "html": "Finishing"
+            },
+            {
+              "id": "C",
+              "html": "Advertising"
+            },
+            {
+              "id": "D",
+              "html": "Rejecting"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer because as used in the text, “completing” most nearly means finishing. In the text, the narrator conveys that the task of translating a novel has been an all-consuming one and that she hopes things will “be normal again” once she has “sent off the manuscript.” In other words, the narrator is looking forward to finishing her work on the manuscript and returning to other things.</p><p><em>Choice A </em>is incorrect because in this context, “completing” doesn’t mean destroying, or ruining. The narrator addresses her desire to send off the manuscript she’s focused on and her hope that things will be “normal again” once she does, conveying that she is looking forward to finishing the work, not to ruining it. <em>Choice C </em>is incorrect because in this context, “completing” doesn’t mean advertising, or publicly promoting. The narrator addresses her complete focus on the translation and her hope that things will be “normal again” once she has “sent off the manuscript,” conveying that she is looking forward to finishing the task, not to promoting the resulting manuscript. <em>Choice D </em>is incorrect because in this context, “completing” doesn’t mean rejecting, or refusing or repelling. The narrator makes it clear that she is absorbed in working on the translation and plans to send off the manuscript, suggesting that instead of refusing to do the work, she is continuing to do it (even if she looks forward to things being “normal again” when she’s done).</p>",
+          "answerPages": [
+            17
+          ]
+        },
+        {
+          "id": "m2-q2",
+          "module": 2,
+          "number": 2,
+          "sourcePage": 18,
+          "passageHtml": "<p>Predatory animals differ widely in how they _______ food for their young. Some leave dead prey nearby for their young to consume, some bring live prey to their young, and some feed their young directly from their own mouths.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "avoid"
+            },
+            {
+              "id": "B",
+              "html": "guess"
+            },
+            {
+              "id": "C",
+              "html": "provide"
+            },
+            {
+              "id": "D",
+              "html": "describe"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it most logically completes the text’s discussion of how predators feed their young. As used in this context, “provide” means supply or make something that’s needed available. The text indicates that some predators supply prey for their young by either leaving dead prey nearby or by bringing live prey to them. Other predators, the text states, feed their young directly from their own mouths. This context supports the idea that predatory animals have various ways to provide food for their young.</p><p><em>Choice A </em>is incorrect because in this context, “avoid” would mean keep away from or refrain from, neither of which would make sense in context. Nothing in the text suggests that predators refrain from food for their young. <em>Choice B </em>is incorrect because in this context, “guess” would mean speculate or suppose, and it’s unclear what it would mean for predators to speculate food for their young. <em>Choice D </em>is incorrect because in this context, “describe” would mean explain, and it’s unclear what it would mean for predators to explain food for their young.</p>",
+          "answerPages": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "m2-q3",
+          "module": 2,
+          "number": 3,
+          "sourcePage": 18,
+          "passageHtml": "<p>Nigerian American author Teju Cole’s ______ his two passions—photography and the written word—culminates in his 2017 book, <em>Blind Spot</em>, which evocatively combines his original photographs from his travels with his poetic prose.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "indifference to"
+            },
+            {
+              "id": "B",
+              "html": "enthusiasm for"
+            },
+            {
+              "id": "C",
+              "html": "concern about"
+            },
+            {
+              "id": "D",
+              "html": "surprise at"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer because it most logically completes the text’s discussion of Cole’s book <em>Blind Spot</em>. In this context, “enthusiasm for” means excitement about. The text explains that <em>Blind Spot</em> consists of original photographs as well as poetic prose—two elements that correspond to Cole’s passions, identified in the text, for photography and the written word. This context suggests that Cole’s excitement about photography and writing led him to create a book that successfully combines the two mediums.</p><p><em>Choice A </em>is incorrect because describing Cole as feeling “indifference to” his two passions wouldn’t make sense in context. If Cole is indifferent to his passions, that would mean he doesn’t care about photography or writing—in which case they wouldn’t be his passions at all. <em>Choice C </em>is incorrect because there’s nothing in the text to suggest that Cole feels “concern about,” or uneasiness about, his passions. The text’s use of the word “culminates” indicates that <em>Blind Spot</em> represents a triumphant climax of Cole’s passions, not a work that results from his sense of discomfort with photography and writing. <em>Choice D </em>is incorrect because there’s nothing in the text to suggest that Cole feels “surprise at,” or astonished by, his passions. The text indicates that Cole’s feeling about his passions “culminates” in a book that “evocatively” combines photographs and writing, suggesting that Cole has a long-standing and skillful relationship to his passions, not that he is startled by them.</p>",
+          "answerPages": [
+            18
+          ]
+        },
+        {
+          "id": "m2-q4",
+          "module": 2,
+          "number": 4,
+          "sourcePage": 19,
+          "passageHtml": "<p>Artist Marilyn Dingle’s intricate, coiled baskets are _______ sweetgrass and palmetto palm. Following a Gullah technique that originated in West Africa, Dingle skillfully winds a thin palm frond around a bunch of sweetgrass with the help of a “sewing bone” to create the basket’s signature look that no factory can reproduce.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "indicated by"
+            },
+            {
+              "id": "B",
+              "html": "handmade from"
+            },
+            {
+              "id": "C",
+              "html": "represented by"
+            },
+            {
+              "id": "D",
+              "html": "collected with"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer because it most logically completes the text’s discussion of Marilyn Dingle’s baskets. In this context, to say that Dingle’s baskets are “handmade from” particular plants means that Dingle creates baskets herself using those plants but without using machines. The text says that Dingle “skillfully winds” parts of palmetto palm plants around sweetgrass plants to make baskets with an appearance that “no factory can reproduce.” This context suggests that Dingle’s baskets are handmade from sweetgrass and palmetto palm.</p><p><em>Choice A </em>is incorrect because the text describes how Dingle uses sweetgrass and palmetto palm to create her baskets, not how her baskets are “indicated by,” or signified by, sweetgrass and palmetto palm. <em>Choice C </em>is incorrect. Although Dingle’s baskets are described as being made using sweetgrass and palm, there’s nothing in the text to suggest that the baskets are “represented by,” or exemplified or portrayed by, sweetgrass and palmetto palm. Instead, the focus of the text is on Dingle’s use of sweetgrass and palmetto palm and the impossibility of replicating the appearance of her baskets using machines. <em>Choice D </em>is incorrect because there’s nothing in the text to suggest that Dingle’s baskets are “collected with,” or brought together in a group with, sweetgrass and palmetto palm. Instead, the text describes how Dingle uses those plants to make her baskets.</p>",
+          "answerPages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "m2-q5",
+          "module": 2,
+          "number": 5,
+          "sourcePage": 19,
+          "passageHtml": "<p>Beginning in the 1950s, Navajo Nation legislator Annie Dodge Wauneka continuously worked to promote public health; this _______ effort involved traveling throughout the vast Navajo homeland and writing a medical dictionary for speakers of <em>Diné bizaad</em>, the Navajo language.</p>",
+          "promptHtml": "Which choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "impartial"
+            },
+            {
+              "id": "B",
+              "html": "offhand"
+            },
+            {
+              "id": "C",
+              "html": "persistent"
+            },
+            {
+              "id": "D",
+              "html": "mandatory"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it most logically completes the text’s discussion of Annie Dodge Wauneka’s work as a Navajo Nation legislator. As used in this context, “persistent” means existing continuously. The text states that Wauneka “continuously worked to promote public health,” traveling extensively and authoring a medical dictionary; this indicates that Wauneka’s effort was persistent.</p><p><em>Choice A </em>is incorrect because describing Wauneka’s effort related to public health as “impartial,” or not partial or biased and treating all things equally, wouldn’t make sense in context. The text suggests that Wauneka’s continuous work was partial in one way, as she focused specifically on promoting public health throughout the Navajo homeland and to speakers of the Navajo language. <em>Choice B </em>is incorrect because the text emphasizes that Wauneka’s effort to promote public health as a Navajo Nation legislator was continuous and extensive, involving wide travels and the authoring of a medical dictionary. Because this work clearly involved care and dedication, it wouldn’t make sense to describe it as “offhand,” or casual and informal. <em>Choice D </em>is incorrect because nothing in the text suggests that Wauneka’s effort to promote public health was “mandatory,” or required by law or rule, even though Wauneka was a Navajo Nation legislator. Rather than suggesting that Wauneka’s effort was required for any reason, the text emphasizes the continuous and extensive nature of her work.</p>",
+          "answerPages": [
+            19
+          ]
+        },
+        {
+          "id": "m2-q6",
+          "module": 2,
+          "number": 6,
+          "sourcePage": 19,
+          "passageHtml": "<p>Oral histories—whether they consist of interviews or recordings of songs and stories—can offer researchers a rich view of people’s everyday experiences. For her book about coal mining communities in Kentucky during the twentieth century, Karida Brown therefore relied in part on interviews with coal miners and their families.<u> By</u> <u>doing so, she gained valuable insights into her</u> <u>subjects’ day-to-day lives.</u></p>",
+          "promptHtml": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "It provides a little-known geographical fact about Kentucky."
+            },
+            {
+              "id": "B",
+              "html": "It argues that Karida Brown is an expert on United States politics."
+            },
+            {
+              "id": "C",
+              "html": "It presents a major historical event that took place in the twentieth century."
+            },
+            {
+              "id": "D",
+              "html": "It describes how Karida Brown benefited from incorporating oral history in her book."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it most accurately describes how the underlined sentence functions in the text as a whole. The text begins by pointing out one of the advantages of oral histories: that they allow researchers to document the daily experiences of people. The text then goes on to describe how Karida Brown utilized interviews with coal miners and their families for her book about twentieth-century coal mining in Kentucky. The underlined sentence affirms that the general advantages of oral histories mentioned earlier in the text were also benefits in Brown’s particular case. Thus, the underlined sentence describes how Karida Brown benefited from incorporating oral history in her book.</p><p><em>Choice A </em>is incorrect because though the text mentions coal miners who live in Kentucky, the underlined sentence does not offer a geographical fact about Kentucky. <em>Choice B </em>is incorrect because the underlined sentence does not mention United States politics or that Brown is an expert in this particular area. <em>Choice C </em>is incorrect. Although the text mentions that Brown’s book revolved around coal miners during the twentieth century, the underlined sentence does not focus on a major historical event during this time.</p>",
+          "answerPages": [
+            19
+          ]
+        },
+        {
+          "id": "m2-q7",
+          "module": 2,
+          "number": 7,
+          "sourcePage": 20,
+          "passageHtml": "<p>The following text is from Georgia Douglas Johnson’s 1922 poem “Benediction.”</p><blockquote class=\"verse\">Go forth, my son,<br>Winged by my heart’s desire!<br>Great reaches, yet unknown,<br>Await<br>For your possession.<br>I may not, if I would,<br>Retrace the way with you,<br>My pilgrimage is through,<br>But life is calling you!</blockquote>",
+          "promptHtml": "Which choice best states the main purpose of the text?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "To express hope that a child will have the same accomplishments as his parent did"
+            },
+            {
+              "id": "B",
+              "html": "To suggest that raising a child involves many struggles"
+            },
+            {
+              "id": "C",
+              "html": "To warn a child that he will face many challenges throughout his life"
+            },
+            {
+              "id": "D",
+              "html": "To encourage a child to embrace the experiences life will offer"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it accurately states the text’s main purpose. The poem begins with the speaker urging a child to “go forth” with her encouragement (“my heart’s desire”). The speaker goes on to suggest that new experiences (“Great reaches, yet unknown”) lie ahead for the son that “life is calling” him to seek out. Thus, the main purpose is to encourage a child to embrace the experiences available to him in his life.</p><p><em>Choice A </em>is incorrect because the speaker encourages the child to pursue new experiences (“Great reaches”) without knowing exactly what those experiences will be (“yet unknown”) or suggesting that they should match the speaker’s own accomplishments. <em>Choice B </em>is incorrect because the speaker focuses on positive possibilities for her son (“Great reaches, yet unknown”) and her enthusiastic encouragement to embrace those possibilities (“life is calling you!”), while there is no mention of raising a child or associated struggles. <em>Choice C </em>is incorrect because the speaker frames the possibilities for her son in a positive light when she says that “great reaches, yet unknown” are waiting for him, and this positive outlook for the son is consistent throughout the text.</p>",
+          "answerPages": [
+            20
+          ]
+        },
+        {
+          "id": "m2-q8",
+          "module": 2,
+          "number": 8,
+          "sourcePage": 20,
+          "passageHtml": "<p>The following text is from Edith Wharton’s 1905 novel <em>The House of Mirth</em>. Lily Bart and a companion are walking through a park.</p><p>Lily had no real intimacy with nature, but she had a passion for the appropriate and could be keenly sensitive to a scene which was the fitting background of her own sensations.<u> The</u> <u>landscape outspread below her seemed an</u> <u>enlargement of her present mood, and she found</u> <u>something of herself in its calmness, its breadth,</u> <u>its long free reaches.</u> On the nearer slopes the sugar-maples wavered like pyres of light; lower down was a massing of grey orchards, and here and there the lingering green of an oak-grove.</p>",
+          "promptHtml": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "It creates a detailed image of the physical setting of the scene."
+            },
+            {
+              "id": "B",
+              "html": "It establishes that a character is experiencing an internal conflict."
+            },
+            {
+              "id": "C",
+              "html": "It makes an assertion that the next sentence then expands on."
+            },
+            {
+              "id": "D",
+              "html": "It illustrates an idea that is introduced in the previous sentence."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it best describes how the underlined sentence functions in the text as a whole. The first sentence of the text establishes that Lily can be “keenly sensitive to” scenes that serve as a “fitting background” for her feelings—that is, she’s very aware of when a setting seems to reflect her mood. The next sentence, which is underlined, then demonstrates this awareness: Lily views the landscape she’s in as a large-scale reflection of her current mood, identifying with elements such as its calmness. Thus, the function of the underlined sentence is to illustrate an idea introduced in the previous sentence.</p><p><em>Choice A </em>is incorrect because the underlined sentence describes the scene only in very general terms, referring to its calmness, breadth, and long stretches of land. It’s the next sentence that adds specific details about colors, light, and various trees nearby. <em>Choice B </em>is incorrect because nothing in the underlined sentence suggests that Lily is experiencing an internal conflict. In fact, the sentence indicates that Lily thinks the landscape reflects her own feeling of calmness. <em>Choice C </em>is incorrect because the only assertion in the underlined sentence is that Lily feels that broad aspects of the landscape, such as its calmness, reflect her current mood, and that assertion isn’t expanded on in the next sentence. Instead, the next sentence describes specific details of the scene without connecting them to Lily’s feelings.</p>",
+          "answerPages": [
+            20
+          ]
+        },
+        {
+          "id": "m2-q9",
+          "module": 2,
+          "number": 9,
+          "sourcePage": 21,
+          "passageHtml": "<p><u>Individual elephants and Arctic herbivores such</u> <u>as caribou tend to have fixed geographic ranges</u> <u>throughout their lifetimes,</u> which had prompted some researchers to speculate that the Arctic woolly mammoth, an extinct elephantid, might have exhibited similar behavior. Mammoth tusks grew in sequential layers, incorporating ingested minerals and organics, and so each ivory stratum reflects the ratio of strontium isotopes (<sup>87</sup>Sr/<sup>86</sup>Sr) in the local environment; thus, the sequence of strata shows where the animal roamed during life. Recent analysis of the strontium ratios in the strata of one Arctic woolly mammoth tusk in relation to the geographic distribution of strontium ratios in the environment shows the animal’s range begin to expand as it reached sexual maturity, only to contract again in its final 1.5 years.</p>",
+          "promptHtml": "Which choice best describes the function of the underlined statement in the text as a whole?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "It discusses a characteristic shared by certain animals in order to explain why researchers raised a possibility that turned out not to be supported by data described later in the text."
+            },
+            {
+              "id": "B",
+              "html": "It illustrates a pattern of behavior among certain animals in order to present a theory about exceptions to that pattern that is weakened by a finding described later in the text."
+            },
+            {
+              "id": "C",
+              "html": "It describes a similarity in the behavior of certain animals in order to show why a method described later in the text did not reveal whether another animal also showed that behavior."
+            },
+            {
+              "id": "D",
+              "html": "It introduces a trait shared by certain animals in order to contextualize a hypothesis about the origin of that trait that is advanced later in the text."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it most accurately describes how the underlined statement functions in the text as a whole. The underlined statement mentions a category of animals that have a feature in common: they tend to have fixed geographic ranges throughout their lifetimes. The text then presents the speculation of some researchers that the Arctic woolly mammoth might also share this characteristic. However, an examination of the content of strontium in the strata (or layers) of a woolly mammoth tusk indicated that contrary to the researchers’ hypothesis, the mammoth had an expanding range in its environment that contracted in its last 1.5 years of life. Thus, the underlined statement discusses a characteristic shared by certain animals in order to explain why researchers raised a possibility that turned out not to be supported by data described later in the text.</p><p><em>Choice B </em>is incorrect. Though the underlined statement presents a pattern of behavior (the habit of certain animals of staying within a fixed geographic range), the rest of the text does not present a theory of exceptions to that pattern; rather, the researchers are merely concerned with whether one particular animal has behavior consistent with the pattern. <em>Choice C </em>is incorrect. Though the underlined statement does describe a similarity in the behavior of certain animals (their tendency to stay within a fixed geographic range), this is not done in order to show why a method described later in the text failed to show whether another animal showed that behavior; rather, the method of analysis of strata of a woolly mammoth tusk showed that the mammoth’s behavior was different from that of the animals mentioned in the underlined statement. <em>Choice D </em>is incorrect. Though the underlined statement mentions a trait shared by a number of animals (their fixed geographic range), the rest of the text does not present a hypothesis regarding the origin of that trait; rather, the researchers are concerned with whether another particular animal shares that trait.</p>",
+          "answerPages": [
+            20,
+            21
+          ]
+        },
+        {
+          "id": "m2-q10",
+          "module": 2,
+          "number": 10,
+          "sourcePage": 21,
+          "passageHtml": "<p>In the 1960s, Gloria Richardson led a movement to promote racial equality. Her involvement in this effort was inspired by her daughter, Donna Richardson. In 1961, Donna joined protests organized by the Student Nonviolent Coordinating Committee in Cambridge, Maryland. Following her daughter, Gloria joined these protests too. Gloria soon became the cochair of the Cambridge Nonviolent Action Committee. She was also the leader of what became known as the Cambridge movement.</p>",
+          "promptHtml": "According to the text, what did Gloria Richardson lead?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "The Cambridge movement"
+            },
+            {
+              "id": "B",
+              "html": "Her daughter Donna’s high school"
+            },
+            {
+              "id": "C",
+              "html": "Protests to support environmental protections"
+            },
+            {
+              "id": "D",
+              "html": "A new business in Cambridge, Maryland"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it presents information about Gloria Richardson that is supported by the text. The text provides a number of details about Gloria’s involvement in efforts to promote racial equality, including that she was the leader of what became known as the Cambridge movement.</p><p><em>Choice B </em>is incorrect because the text never indicates that Gloria Richardson led her daughter Donna’s high school. The text says only that Gloria was inspired by her daughter to become involved in efforts to promote racial equality. <em>Choice C </em>is incorrect because the text doesn’t mention protests related to environmental protections. Rather, the text discusses Gloria Richardson’s involvement in efforts to promote racial equality. <em>Choice D </em>is incorrect because the text doesn’t indicate that Gloria Richardson led a new business in Cambridge, Maryland. Rather, the text states that she led what became known as the Cambridge movement.</p>",
+          "answerPages": [
+            21
+          ]
+        },
+        {
+          "id": "m2-q11",
+          "module": 2,
+          "number": 11,
+          "sourcePage": 22,
+          "passageHtml": "<p>The following text is from Jane Austen’s 1811 novel <em>Sense and Sensibility</em>. Elinor lives with her younger sisters and her mother, Mrs. Dashwood.</p><p>Elinor, this eldest daughter, whose advice was so effectual, possessed a strength of understanding, and coolness of judgment, which qualified her, though only nineteen, to be the counsellor of her mother, and enabled her frequently to counteract, to the advantage of them all, that eagerness of mind in Mrs. Dashwood which must generally have led to imprudence. She had an excellent heart;—her disposition was affectionate, and her feelings were strong; but she knew how to govern them: it was a knowledge which her mother had yet to learn; and which one of her sisters had resolved never to be taught.</p>",
+          "promptHtml": "According to the text, what is true about Elinor?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Elinor often argues with her mother but fails to change her mind."
+            },
+            {
+              "id": "B",
+              "html": "Elinor can be overly sensitive with regard to family matters."
+            },
+            {
+              "id": "C",
+              "html": "Elinor thinks her mother is a bad role model."
+            },
+            {
+              "id": "D",
+              "html": "Elinor is remarkably mature for her age."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it provides a detail about Elinor that is established in the text. The text indicates that although Elinor is “only nineteen,” she gives good advice and exhibits such a high level of understanding and judgment that she serves as “the counsellor of her mother.” Thus, Elinor is mature beyond her years.</p><p><em>Choice A </em>is incorrect because it isn’t supported by the text: although the text says that Elinor advises her mother and often counteracts her mother’s impulses, there’s no mention of Elinor arguing with her mother or failing to change her mother’s mind. <em>Choice B </em>is incorrect because it isn’t supported by the text: although the text mentions that Elinor has strong feelings, it doesn’t indicate that she’s excessively sensitive when it comes to family issues. <em>Choice C </em>is incorrect because it isn’t supported by the text: there’s no mention of what Elinor thinks about her mother and no suggestion that she thinks her mother is a bad role model. Because she’s described as having “an excellent heart,” Elinor likely doesn’t think ill of her mother.</p>",
+          "answerPages": [
+            21,
+            22
+          ]
+        },
+        {
+          "id": "m2-q12",
+          "module": 2,
+          "number": 12,
+          "sourcePage": 22,
+          "passageHtml": "<p>Culinary anthropologist Vertamae Smart-Grosvenor may be known for her decades of work in national public television and radio, but her book <em>Vibration</em> <em>Cooking: or, the Travel Notes of a Geechee Girl</em> is likely her most influential project. The 1970 book, whose title refers to Smart-Grosvenor’s roots in the Low Country of South Carolina, was unusual for its time. It combined memoir, recipes, travel writing, and social commentary and challenged notions about conventions of food and cooking. Long admired by many, the book and its author have shaped contemporary approaches to writing about cuisine.</p>",
+          "promptHtml": "Which choice best describes the main idea of the text?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Smart-Grosvenor’s unconventional book <em>Vibration Cooking: or, the Travel Notes of a</em> <em>Geechee Girl</em> is an important contribution to food writing."
+            },
+            {
+              "id": "B",
+              "html": "Smart-Grosvenor held many different positions over her life, including reporter and food writer."
+            },
+            {
+              "id": "C",
+              "html": "Smart-Grosvenor’s groundbreaking book <em>Vibration Cooking: or, the Travel Notes of a</em> <em>Geechee Girl</em> didn’t receive the praise it deserved when it was first published in 1970."
+            },
+            {
+              "id": "D",
+              "html": "Smart-Grosvenor was a talented chef whose work inspired many people to start cooking for themselves."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer because it most accurately states the main idea of the text. The text describes the book <em>Vibration Cooking: or, the Travel Notes of a </em> <em>Geechee Girl</em> as Smart-Grosvenor’s “most influential project” and as “unusual for its time.” The text also notes that the book and author have influenced contemporary approaches to writing about food and cooking. Therefore, the text mainly conveys that <em>Vibration Cooking: or, the Travel Notes of a Geechee Girl</em> is an unconventional and important contribution to food writing.</p><p><em>Choice B </em>is incorrect. Although the text mentions that Smart-Grosvenor worked in national public television and radio and was a food writer, these details aren’t the main focus. Rather than focusing on Smart-Grosvenor’s various jobs, the text focuses specifically on one specific book she wrote. <em>Choice C </em>is incorrect. Although the text suggests that <em>Vibration Cooking: or, the Travel Notes of a </em> <em>Geechee Girl</em> was groundbreaking, it doesn’t suggest that the book didn’t receive praise when it was published. In fact, the text states that the book is “long admired.” <em>Choice D </em>is incorrect because the text states that Smart-Grosvenor was a culinary anthropologist and that her book influenced later approaches to food writing but doesn’t indicate that Smart-Grosvenor or her book influenced people to begin cooking for themselves.</p>",
+          "answerPages": [
+            22
+          ]
+        },
+        {
+          "id": "m2-q13",
+          "module": 2,
+          "number": 13,
+          "sourcePage": 23,
+          "passageHtml": "<p>The following text is adapted from Charles W. Chesnutt’s 1901 novel <em>The Marrow of Tradition</em>.</p><p>Mrs. Ochiltree was a woman of strong individuality, whose comments upon her acquaintance[s], present or absent, were marked by a frankness at times no less than startling. This characteristic caused her to be more or less avoided. Mrs. Ochiltree was aware of this sentiment on the part of her acquaintance[s], and rather exulted in it.</p>",
+          "promptHtml": "Based on the text, what is true about Mrs. Ochiltree’s acquaintances?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "They try to refrain from discussing topics that would upset Mrs. Ochiltree."
+            },
+            {
+              "id": "B",
+              "html": "They are unable to spend as much time with Mrs. Ochiltree as she would like."
+            },
+            {
+              "id": "C",
+              "html": "They are too preoccupied with their own concerns to speak with Mrs. Ochiltree."
+            },
+            {
+              "id": "D",
+              "html": "They are likely offended by what Mrs. Ochiltree has said about them."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it presents a statement about Mrs. Ochiltree’s acquaintances that is supported by the text. The text indicates that Mrs. Ochiltree makes comments about her acquaintances that are frank, or direct and blunt, and sometimes startling. It also states that because of this behavior, the acquaintances tend to avoid Mrs. Ochiltree. Together, these details suggest that the acquaintances choose not to be around Mrs. Ochiltree because they are offended by the things she has said about them.</p><p><em>Choice A </em>is incorrect because the text doesn’t suggest that Mrs. Ochiltree’s acquaintances avoid discussing topics that would upset Mrs. Ochiltree; instead, it states that they avoid being around Mrs. Ochiltree at all. <em>Choice B </em>is incorrect because the text makes it clear that Mrs. Ochiltree knows her acquaintances often avoid her and is pleased about it (she “rather exulted in it”), not that she wants to spend more time with them. <em>Choice C </em>is incorrect because the text doesn’t suggest that Mrs. Ochiltree’s acquaintances don’t speak with Mrs. Ochiltree because they are too focused on their own concerns, but rather because they don’t like the frank comments she makes.</p>",
+          "answerPages": [
+            22
+          ]
+        },
+        {
+          "id": "m2-q14",
+          "module": 2,
+          "number": 14,
+          "sourcePage": 23,
+          "passageHtml": "<p>“Mrs. Spring Fragrance” is a 1912 short story by Sui Sin Far. In the story, Mrs. Spring Fragrance, a Chinese immigrant living in Seattle, is traveling in California. In letters to her husband and friend, she demonstrates her concern for what’s happening at her home in Seattle while she is away: _______</p>",
+          "promptHtml": "Which quotation from Mrs. Spring Fragrance’s letters most effectively illustrates the claim?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "“My honorable cousin is preparing for the Fifth Moon Festival, and wishes me to compound for the occasion some American ‘fudge,’ for which delectable sweet, made by my clumsy hands, you have sometimes shown a slight prejudice.”"
+            },
+            {
+              "id": "B",
+              "html": "“Next week I accompany Ah Oi to the beauteous town of San José. There will we be met by the son of the Illustrious Teacher.”"
+            },
+            {
+              "id": "C",
+              "html": "“Forget not to care for the cat, the birds, and the flowers. Do not eat too quickly nor fan too vigorously now that the weather is warming.”"
+            },
+            {
+              "id": "D",
+              "html": "“I am enjoying a most agreeable visit, and American friends, as also our own, strive benevolently for the accomplishment of my pleasure.”"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it presents a quotation that illustrates the claim that Mrs. Spring Fragrance demonstrates concern for what’s happening at home while she’s in California. By giving reminders to “care for the cat, the birds, and the flowers,” “not eat too quickly,” and avoid engaging in strenuous activity in the heat, Mrs. Spring Fragrance shows that she’s thinking about what’s happening at home and wants to ensure everything is taken care of.</p><p><em>Choice A </em>is incorrect because the quotation, while it does suggest that Mrs. Spring Fragrance has made fudge at home before, is focused on preparations for an upcoming festival, not on concerns for anything happening at home while Mrs. Spring Fragrance is away. <em>Choice B </em>is incorrect because the quotation has to do with an upcoming event during Mrs. Spring Fragrance’s trip—visiting San José and meeting someone new—rather than her concern for what’s happening at home. <em>Choice D </em>is incorrect because the quotation is focused on how Mrs. Spring Fragrance feels about her trip and the friends she’s seeing, not on her concern for what’s happening at home.</p>",
+          "answerPages": [
+            23
+          ]
+        },
+        {
+          "id": "m2-q15",
+          "module": 2,
+          "number": 15,
+          "sourcePage": 24,
+          "passageHtml": "<p>When digging for clams, their primary food, sea otters damage the roots of eelgrass plants growing on the seafloor. Near Vancouver Island in Canada, the otter population is large and well established, yet the eelgrass meadows are healthier than those found elsewhere off Canada’s coast. To explain this, conservation scientist Erin Foster and colleagues compared the Vancouver Island meadows to meadows where otters are absent or were reintroduced only recently. Finding that the Vancouver Island meadows have a more diverse gene pool than the others do, Foster hypothesized that damage to eelgrass roots increases the plant’s rate of sexual reproduction; this, in turn, boosts genetic diversity, which benefits the meadows’ health overall.</p>",
+          "promptHtml": "Which finding, if true, would most directly undermine Foster’s hypothesis?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "At some sites in the study, eelgrass meadows are found near otter populations that are small and have only recently been reintroduced."
+            },
+            {
+              "id": "B",
+              "html": "At several sites not included in the study, there are large, well-established sea otter populations but no eelgrass meadows."
+            },
+            {
+              "id": "C",
+              "html": "At several sites not included in the study, eelgrass meadows’ health correlates negatively with the length of residence and size of otter populations."
+            },
+            {
+              "id": "D",
+              "html": "At some sites in the study, the health of plants unrelated to eelgrass correlates negatively with the length of residence and size of otter populations."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer because it presents a finding that, if true, would weaken Foster’s hypothesis that damage to eelgrass roots improves the health of eelgrass meadows by boosting genetic diversity. The text indicates that sea otters damage eelgrass roots but that eelgrass meadows near Vancouver Island, where there’s a large otter population, are comparatively healthy. When Foster and her colleagues compared the Vancouver Island eelgrass meadows to those that don’t have established otter populations, the researchers found that the Vancouver Island meadows are more genetically diverse than the other meadows are. This finding led Foster to hypothesize that damage to the eelgrass roots encourages eelgrass reproduction, thereby improving genetic diversity and the health of the meadows. If, however, other meadows not included in the study are less healthy the larger the local otter population is and the longer the otters have been in residence, that would suggest that damage to the eelgrass roots, which would be expected to increase with the size and residential duration of the otter population, isn’t leading meadows to be healthier. Such a finding would therefore weaken Foster’s hypothesis.</p><p><em>Choice A </em>is incorrect because finding that small, recently introduced otter populations are near other eelgrass meadows in the study wouldn’t weaken Foster’s hypothesis. If otter populations were small and only recently established, they wouldn’t be expected to have caused much damage to eelgrass roots, so even if those eelgrass meadows were less healthy than the Vancouver Island meadows, that wouldn’t undermine Foster’s hypothesis. In fact, it would be consistent with Foster’s hypothesis since it would suggest that the greater damage caused by larger, more established otter populations is associated with healthier meadows. <em>Choice B </em>is incorrect because the existence of areas with otters but without eelgrass meadows wouldn’t reveal anything about whether the damage that otters cause to eelgrass roots ultimately benefits eelgrass meadows. <em>Choice D </em>is incorrect because the health of plants other than eelgrass would have no bearing on Foster’s hypothesis that damage to eelgrass roots leads to greater genetic diversity and meadow health. It would be possible for otters to have a negative effect on other plants while nevertheless improving the health of eelgrass meadows by damaging eelgrass roots.</p>",
+          "answerPages": [
+            23,
+            24
+          ]
+        },
+        {
+          "id": "m2-q16",
+          "module": 2,
+          "number": 16,
+          "sourcePage": 24,
+          "passageHtml": "<p>In the twentieth century, ethnographers made a concerted effort to collect Mexican American folklore, but they did not always agree about that folklore’s origins. Scholars such as Aurelio Espinosa claimed that Mexican American folklore derived largely from the folklore of Spain, which ruled Mexico and what is now the southwestern United States from the sixteenth to early nineteenth centuries. Scholars such as Américo Paredes, by contrast, argued that while some Spanish influence is undeniable, Mexican American folklore is mainly the product of the ongoing interactions of various cultures in Mexico and the United States.</p>",
+          "promptHtml": "Which finding, if true, would most directly support Paredes’s argument?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "The folklore that the ethnographers collected included several songs written in the form of a <em>décima</em>, a type of poem originating in late sixteenth-century Spain."
+            },
+            {
+              "id": "B",
+              "html": "Much of the folklore that the ethnographers collected had similar elements from region to region."
+            },
+            {
+              "id": "C",
+              "html": "Most of the folklore that the ethnographers collected was previously unknown to scholars."
+            },
+            {
+              "id": "D",
+              "html": "Most of the folklore that the ethnographers collected consisted of <em>corridos</em>—ballads about history and social life—of a clearly recent origin."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it presents a finding that, if true, would support Paredes’s argument about the origin of Mexican American folklore. The text describes a disagreement among scholars about whether Mexican American folklore mostly derived from the folklore of Spain (the view held by Espinosa and others) or originated in Mexico and the United States through ongoing cultural interactions there (the view held by Paredes and others). If Mexican American folklore collected in the twentieth century mostly consists of ballads about history and social life that originated recently, then that would support Paredes’s argument by suggesting that the folklore mostly arose after Spanish rule ended in the early nineteenth century and that the folklore reflects cultural interactions in Mexico and the United States rather than traditions from Spain.</p><p><em>Choice A </em>is incorrect because the inclusion of songs influenced by sixteenth-century Spanish poetry among Mexican American folklore collected in the twentieth century would not support Paredes’s view that the folklore was the result of cultural interactions in Mexico and the United States rather than an offshoot of Spanish folklore. If anything, the presence of such songs among the folklore collected in the twentieth century would weaken Paredes’s argument, since it would reflect the influence of Spanish culture on the folklore. <em>Choice B </em>is incorrect because the mere presence of similarities in Mexican American folklore across regions would not be sufficient to draw a conclusion about where the folklore originated, let alone to support Paredes’s argument that the folklore reflects various cultural interactions in Mexico and the United States. In fact, Paredes would likely expect there to be regional variations in folklore as different cultures have interacted in different places. <em>Choice C </em>is incorrect because scholars’ previous ignorance of the folklore would have no bearing on Paredes’s argument that Mexican American folklore mostly reflects cultural interactions in Mexico and the United States; the folklore’s actual origins exist regardless of the scholars’ awareness.</p>",
+          "answerPages": [
+            24
+          ]
+        },
+        {
+          "id": "m2-q17",
+          "module": 2,
+          "number": 17,
+          "sourcePage": 25,
+          "passageHtml": "<p>Among social animals that care for their young, such as chickens, macaque monkeys, and humans, newborns appear to show an innate attraction to faces and face-like stimuli. Elisabetta Versace and her colleagues used an image of three black dots arranged in the shape of eyes and a nose or mouth to test whether this trait also occurs in <em>Testudo</em> tortoises, which live alone and do not engage in parental care. They found that tortoise hatchlings showed a significant preference for the image, suggesting that ______</p>",
+          "promptHtml": "Which choice most logically completes the text?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "face-like stimuli are likely perceived as harmless by newborns of social species that practice parental care but as threatening by newborns of solitary species without parental care."
+            },
+            {
+              "id": "B",
+              "html": "researchers should not assume that an innate attraction to face-like stimuli is necessarily an adaptation related to social interaction or parental care."
+            },
+            {
+              "id": "C",
+              "html": "researchers can assume that the attraction to face-like stimuli that is seen in social species that practice parental care is learned rather than innate."
+            },
+            {
+              "id": "D",
+              "html": "newly hatched <em>Testudo </em>tortoises show a stronger preference for face-like stimuli than adult <em>Testudo </em>tortoises do."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer because it presents the conclusion that most logically follows from the text’s discussion of the study by Versace and colleagues. The text indicates that newborn animals of some species are attracted to faces and to stimuli that resemble faces. These species, the text says, share two characteristics: they’re social and they practice parental care, meaning that parents care for their young. The text goes on to describe Versace and colleagues’ experiment, which showed that <em>Testudo</em> tortoises, which aren’t social and don’t practice parental care, were attracted to a stimulus that resembles a face. Since Versace and colleagues have shown that a species that isn’t social and doesn’t practice parental care nevertheless has the innate characteristic of being attracted to face-like stimuli, it follows that this characteristic shouldn’t be assumed to be an adaptation related to social interaction or parental care.</p><p><em>Choice A </em>is incorrect because the text indicates that the tortoise hatchlings, which are solitary and don’t practice parental care, were attracted to the face-like stimuli, not that they perceived the stimuli as threatening. <em>Choice C </em>is incorrect because the phenomenon discussed in the text is an attraction to faces and face-like stimuli on the part of newborn animals, which can’t show any learned characteristics since they were just born. Additionally, the text tells us that the tortoises Versace and colleagues studied aren’t social and don’t practice parental care, so any findings about those tortoises wouldn’t be relevant to the question of whether an attraction to faces in social species that practice parental care is innate or learned. <em>Choice D </em>is incorrect because the text gives no indication that adult tortoises were tested on face-like stimuli and, if adults were in fact tested, no information about how they responded is provided. Since no information about adult tortoises’ responses is provided, no conclusion comparing those responses to the responses of newly hatched tortoises can be supported.</p>",
+          "answerPages": [
+            24,
+            25
+          ]
+        },
+        {
+          "id": "m2-q18",
+          "module": 2,
+          "number": 18,
+          "sourcePage": 25,
+          "passageHtml": "<p>Aptamers—synthetic DNA or RNA molecules that bind to target molecules—can be used to test for foodborne bacterial pathogens, though their specificity (the probability of returning a negative result in the absence of the focal pathogen) in real-world foods has been unclear. Sandeep Somvanshi et al. fabricated test paper incorporating aptamers targeting strain O157:H7 of the bacteria <em>Escherichia coli</em>; the paper shifts from pink to purple as the aptamers bind to target molecules. Somvanshi et al. tested the paper in store-bought pear juice they treated with <em>E. coli</em> O157:H7, other strains of <em>E. coli</em>, or other bacteria species. Following exposure, the paper from the O157:H7 test was purple while papers from the other tests were pink, suggesting that _______</p>",
+          "promptHtml": "Which choice most logically completes the text?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "aptamer-based tests in real-world foods are more likely to show a high degree of specificity if the focal pathogen is <em>E. coli</em> O157:H7 than if the focal pathogen is another strain of <em>E. coli</em> or another species."
+            },
+            {
+              "id": "B",
+              "html": "uncertainty about the specificity of aptamer-based tests for pathogens in real-world foods may be due to the similarity between <em>E. coli</em> O157:H7 and other <em>E. coli</em> strains."
+            },
+            {
+              "id": "C",
+              "html": "the specificity of the tests in a real-world food was unaffected by the aptamers’ tendency to bind to different strains of <em>E. coli</em>."
+            },
+            {
+              "id": "D",
+              "html": "the aptamers successfully bound to<em> E. coli</em> O157:H7 and the tests displayed a high degree of specificity in a real-world food."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer because it most logically completes the text’s discussion of aptamers’ capacity to test for pathogens in food. The text explains that although synthetic aptamer molecules can be used to test for foodborne bacterial pathogens because they bind to target molecules, it hasn’t been clear how likely it is that they will indicate a negative result when a target pathogen is absent in real-world foods. The text then indicates that Somvanshi et al. created test paper that changes from pink to purple when aptamers in it bind to a particular strain of <em>E. coli</em> bacteria, O157:H7, and tested it with store-bought pear juice (that is, a real-world food); the paper changed to purple when exposed to juice to which the target pathogen <em>E. coli</em> O157:H7 had been added, but it remained pink when exposed to juice treated with other <em>E. coli</em> strains or other bacteria species. Based on this result, it seems the aptamers in the paper successfully bound to the target (O157:H7) and the tests had a high degree of specificity (providing negative results for samples where the target was absent even though other bacteria were present) when applied to a real-world food.</p><p><em>Choice A </em>is incorrect because nothing in the text suggests that <em>E. coli</em> O157:H7 differs from other pathogens in a way that makes it more suitable for aptamer-based testing of any kind and that specificity is likely to be lower when aptamer-based tests target other bacteria; the text simply indicates that Somvanshi et al. used O157:H7 as the target for aptamer-based test paper in their study and suggests that the paper had a high degree of specificity. <em>Choice B </em>is incorrect because the text indicates that the specificity of aptamer-based tests in real-world foods is uncertain for pathogens broadly, not just for <em>E. coli</em>, and similarity between strains (of <em>E. coli</em> or of other pathogens) isn’t mentioned. Moreover, the results presented in the text suggest that aptamers are actually capable of distinguishing between strains of <em>E. coli</em>, since Somvanshi et al.’s paper turned purple when exposed to <em>E. coli</em> O157:H7 and remained pink when exposed to other strains. <em>Choice C </em>is incorrect because the text suggests that the aptamers in the test papers didn’t bind to different strains of <em>E. coli</em>. The text explains that the test papers turn purple when the aptamers bind to the targeted pathogen and that in the pear juice tests, the test papers turned purple when exposed to samples with the targeted strain of <em>E. coli</em> (O157:H7) but remained pink when exposed to samples with other strains of <em>E. coli</em>. In other words, the aptamers bound only to the targeted strain, not to the other strains. Further, specificity would be affected if the aptamers had bound to multiple strains and not just the targeted one; that result would cause the specificity to be low.</p>",
+          "answerPages": [
+            25,
+            26
+          ]
+        },
+        {
+          "id": "m2-q19",
+          "module": 2,
+          "number": 19,
+          "sourcePage": 26,
+          "passageHtml": "<p>British scientists James Watson and Francis Crick won the Nobel Prize in part for their 1953 paper announcing the double helix structure of DNA, but it is misleading to say that Watson and Crick discovered the double helix. _______ findings were based on a famous X-ray image of DNA fibers, “Photo 51,” developed by X-ray crystallographer Rosalind Franklin and her graduate student Raymond Gosling.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "They’re"
+            },
+            {
+              "id": "B",
+              "html": "It’s"
+            },
+            {
+              "id": "C",
+              "html": "Their"
+            },
+            {
+              "id": "D",
+              "html": "Its"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is the use of possessive determiners. The plural possessive determiner “their” agrees in number with the plural conjoined noun phrase “Watson and Crick” and thus indicates that the findings were those of Watson and Crick.</p><p><em>Choice A </em>is incorrect because “they’re” is the contraction for “they are,” not a possessive determiner. <em>Choice B </em>is incorrect because “it’s” is the contraction for “it is” or “it has,” not a possessive determiner. <em>Choice D </em>is incorrect because the singular possessive determiner “its” doesn’t agree in number with the plural conjoined noun phrase “Watson and Crick.”</p>",
+          "answerPages": [
+            26
+          ]
+        },
+        {
+          "id": "m2-q20",
+          "module": 2,
+          "number": 20,
+          "sourcePage": 26,
+          "passageHtml": "<p>In the historical novel <em>The Surrender Tree</em>, Cuban American author Margarita Engle uses poetry rather than prose _______ the true story of Cuban folk hero Rosa La Bayamesa.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "tells"
+            },
+            {
+              "id": "B",
+              "html": "told"
+            },
+            {
+              "id": "C",
+              "html": "is telling"
+            },
+            {
+              "id": "D",
+              "html": "to tell"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer. The convention being tested is the use of finite and nonfinite verb forms within a sentence. The nonfinite to-infinitive “to tell” is correctly used to form a nonfinite (infinitive) clause that explains the reason Engle uses poetry in her novel.</p><p><em>Choice A </em>is incorrect because the finite present tense verb “tells” can’t be used in this way to explain the reason that Engle uses poetry in her novel. <em>Choice B </em>is incorrect because the finite past tense verb “told” can’t be used in this way to explain the reason that Engle uses poetry in her novel. <em>Choice C </em>is incorrect because the finite present progressive tense verb “is telling” can’t be used in this way to explain the reason that Engle uses poetry in her novel.</p>",
+          "answerPages": [
+            26
+          ]
+        },
+        {
+          "id": "m2-q21",
+          "module": 2,
+          "number": 21,
+          "sourcePage": 26,
+          "passageHtml": "<p>Interest in mechanotransduction, the mechanism by which cells sense and convert mechanical stimuli into biochemical signals, is expanding because of innovative work by biomedical scientists—many of whom, like neuroscience and biophysics expert Elba Serrano, _______ this mechanism to better understand how the body’s neurological and biomechanical systems interact.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "is studying"
+            },
+            {
+              "id": "B",
+              "html": "has studied"
+            },
+            {
+              "id": "C",
+              "html": "study"
+            },
+            {
+              "id": "D",
+              "html": "studies"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is the use of verb forms within a sentence. The plural verb “study” agrees in number with the plural subject “many.”</p><p><em>Choice A </em>is incorrect because the singular verb “is studying” doesn’t agree in number with the plural subject “many.” <em>Choice B </em>is incorrect because the singular verb “has studied” doesn’t agree in number with the plural subject “many.” <em>Choice D </em>is incorrect because the singular verb “studies” doesn’t agree in number with the plural subject “many.”</p>",
+          "answerPages": [
+            26
+          ]
+        },
+        {
+          "id": "m2-q22",
+          "module": 2,
+          "number": 22,
+          "sourcePage": 26,
+          "passageHtml": "<p>In crafting her fantasy fiction, Nigerian-born British author Helen Oyeyemi has drawn inspiration from the classic nineteenth-century fairy tales of the Brothers Grimm. Her 2014 novel <em>Boy, Snow, Bird</em>, for instance, is a complex retelling of the story of Snow White, while her 2019 novel ______ offers a delicious twist on the classic tale of Hansel and Gretel.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "<em>Gingerbread</em>—"
+            },
+            {
+              "id": "B",
+              "html": "<em>Gingerbread</em>,"
+            },
+            {
+              "id": "C",
+              "html": "<em>Gingerbread</em>"
+            },
+            {
+              "id": "D",
+              "html": "<em>Gingerbread</em>:"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is punctuation between a subject and a verb. When, as in this case, a subject (“her 2019 novel <em>Gingerbread</em>”) is immediately followed by a verb (“offers”), no punctuation is needed.</p><p><em>Choice A </em>is incorrect because no punctuation is needed between the subject and the verb. <em>Choice B </em>is incorrect because no punctuation is needed between the subject and the verb. <em>Choice D </em>is incorrect because no punctuation is needed between the subject and the verb.</p>",
+          "answerPages": [
+            26,
+            27
+          ]
+        },
+        {
+          "id": "m2-q23",
+          "module": 2,
+          "number": 23,
+          "sourcePage": 27,
+          "passageHtml": "<p>Sociologist Todd Gitlin co-opted the term “recombinant,” normally used in reference to genetic engineering, to describe serialized television shows of the 1980s. Gitlin’s use of the term referenced TV studios’ practice of repackaging successful narrative formulas as new _______ even shows that varied only slightly from other shows still attracted sizeable audiences.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "content, in that era"
+            },
+            {
+              "id": "B",
+              "html": "content; in that era,"
+            },
+            {
+              "id": "C",
+              "html": "content in that era,"
+            },
+            {
+              "id": "D",
+              "html": "content, in that era,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. The convention being tested is the use of punctuation within a sentence. This choice uses a semicolon in a conventional way to join the first main clause (“Gitlin’s...content”) and the second main clause beginning with a supplementary phrase (“in...audiences”). Further, placing a comma after “era” separates the supplementary phrase “in that era” from the rest of the main clause that follows (“even...audiences”).</p><p><em>Choice A </em>is incorrect because it results in a comma splice. Without a conjunction following it, a comma can’t be used in this way to join two main clauses. Further, this choice fails to mark the boundary between the supplementary phrase “in that era” and the rest of the main clause that follows (“even...audiences”). <em>Choice C </em>is incorrect because it results in a run-on sentence. The two main clauses (“Gitlin’s... content” and “in...audiences”) are fused without punctuation and/or a conjunction. <em>Choice D </em>is incorrect because it results in a comma splice. Without a conjunction following it, a comma can’t be used in this way to join two main clauses.</p>",
+          "answerPages": [
+            27
+          ]
+        },
+        {
+          "id": "m2-q24",
+          "module": 2,
+          "number": 24,
+          "sourcePage": 27,
+          "passageHtml": "<p>When external forces are applied to common glass made from silicates, energy builds up around minuscule defects in the material, resulting in fractures. Recently, engineer Erkka Frankberg of Tampere University in Finland used the chemical ______ to make a glassy solid that can withstand higher strain than silicate glass can before fracturing.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "compound, aluminum oxide"
+            },
+            {
+              "id": "B",
+              "html": "compound aluminum oxide,"
+            },
+            {
+              "id": "C",
+              "html": "compound, aluminum oxide,"
+            },
+            {
+              "id": "D",
+              "html": "compound aluminum oxide"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer. The convention being tested is the use of punctuation around noun phrases. No punctuation is needed because the noun phrase “aluminum oxide” is a restrictive appositive, meaning that it provides essential identifying information about the noun phrase before it, “the chemical compound,” and thus doesn’t require punctuation around it.</p><p><em>Choice A </em>is incorrect because no punctuation is needed. <em>Choice B </em>is incorrect because no punctuation is needed. <em>Choice C </em>is incorrect because the noun phrase “aluminum oxide” is a restrictive appositive. Setting the phrase off with punctuation suggests that it could be removed without affecting the coherence of the sentence, which isn’t the case.</p>",
+          "answerPages": [
+            27
+          ]
+        },
+        {
+          "id": "m2-q25",
+          "module": 2,
+          "number": 25,
+          "sourcePage": 27,
+          "passageHtml": "<p>In the late nineteenth and early twentieth centuries, automobiles were commonly referred to as horseless carriages after the older technology they still resembled. Known as the Brass Era, this period in automotive design is remembered for its grandeur and artistry, its vehicles _______ by collectors for their ornate detailing and gleaming brass fittings.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "are highly prized"
+            },
+            {
+              "id": "B",
+              "html": "had been highly prized"
+            },
+            {
+              "id": "C",
+              "html": "highly prized"
+            },
+            {
+              "id": "D",
+              "html": "were highly prized"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is the use of verb forms in a sentence. The nonfinite past participle phrase “highly prized” is correctly used to form a supplementary element that modifies the main clause “this...artistry,” describing memorable features of Brass Era automotive design.</p><p><em>Choice A </em>is incorrect because it results in a comma splice. Using the finite present tense verb phrase “are highly prized” creates a second main clause in the sentence, and two main clauses can’t be joined in this way with only a comma after “artistry.” <em>Choice B </em>is incorrect because it results in a comma splice. Using the finite past perfect tense verb phrase “had been highly prized” creates a second main clause in the sentence, and two main clauses can’t be joined in this way with only a comma after “artistry.” <em>Choice D </em>is incorrect because it results in a comma splice. Using the finite past tense verb phrase “were highly prized” creates a second main clause in the sentence, and two main clauses can’t be joined in this way with only a comma after “artistry.”</p>",
+          "answerPages": [
+            27,
+            28
+          ]
+        },
+        {
+          "id": "m2-q26",
+          "module": 2,
+          "number": 26,
+          "sourcePage": 27,
+          "passageHtml": "<p>With the development of new technologies that use natural resources more efficiently, the overall consumption of those resources might be expected to decrease. Economists have observed that improvements in efficiency often correlate negatively with resource _______ efficiency gains, lowering the cost of use, may increase demand to the extent that resource consumption ultimately rises.</p>",
+          "promptHtml": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "conservation, though,"
+            },
+            {
+              "id": "B",
+              "html": "conservation; though"
+            },
+            {
+              "id": "C",
+              "html": "conservation, though;"
+            },
+            {
+              "id": "D",
+              "html": "conservation, though"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The convention being tested is the use of punctuation within a sentence. This choice correctly uses a comma to separate the supplementary adverb “though” from the preceding main clause (“Economists...conservation”) and uses a semicolon to join the next main clause (“efficiency gains...rises”) to the rest of the sentence. Further, placing the semicolon after “though” indicates that the information in the preceding main clause (“improvements in efficiency often correlate negatively with resource conservation”) is contrary to what might be assumed from the information in the previous sentence (resource consumption would be expected to decrease with the development of new, more efficient technologies).</p><p><em>Choice A </em>is incorrect because it results in a comma splice. Commas can’t be used in this way to punctuate a supplementary word or phrase between two main clauses. <em>Choice B </em>is incorrect because it fails to mark the boundary between the two main clauses (“Economists...though” and “efficiency gains...rises”) with appropriate punctuation. Moreover, placing the semicolon after “conservation” illogically indicates that the information in the next clause (gains in efficiency may lead to an increase in resource consumption) is contrary to the information in the previous clause (“improvements in efficiency often correlate negatively with resource conservation”). <em>Choice D </em>is incorrect because placing a comma after “conservation” illogically indicates that the information in the next clause (gains in efficiency may lead to an increase in resource consumption) is contrary to the information in the previous clause (“improvements in efficiency often correlate negatively with resource conservation”).</p>",
+          "answerPages": [
+            28
+          ]
+        },
+        {
+          "id": "m2-q27",
+          "module": 2,
+          "number": 27,
+          "sourcePage": 28,
+          "passageHtml": "<p>Before California’s 1911 election to approve a proposition granting women the right to vote, activists across the state sold tea to promote the cause of suffrage. In San Francisco, the Woman’s Suffrage Party sold Equality Tea at local fairs. _______ in Los Angeles, activist Nancy Tuttle Craig, who ran one of California’s largest grocery store firms, distributed Votes for Women Tea.</p>",
+          "promptHtml": "Which choice completes the text with the most logical transition?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "For example,"
+            },
+            {
+              "id": "B",
+              "html": "To conclude,"
+            },
+            {
+              "id": "C",
+              "html": "Similarly,"
+            },
+            {
+              "id": "D",
+              "html": "In other words,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. “Similarly” logically signals that the activity described in this sentence (Nancy Tuttle Craig distributing Votes for Women Tea in her Los Angeles grocery stores) is like the activity described in the previous sentence (the Woman’s Suffrage Party selling Equality Tea at fairs in San Francisco). Together, the two examples support the preceding claim that “activists across the state sold tea to promote the cause of suffrage.”</p><p><em>Choice A </em>is incorrect because “for example” illogically signals that the activity described in this sentence exemplifies the activity described in the previous sentence. Instead, the two activities are similar, and both support the preceding claim about selling tea to promote women’s right to vote. <em>Choice B </em>is incorrect because “to conclude” illogically signals that the activity described in this sentence concludes or summarizes the information in the previous sentences. Instead, the activity is similar to the one described in the previous sentence, and both support the preceding claim about selling tea to promote women’s right to vote. <em>Choice D </em>is incorrect because “in other words” illogically signals that the activity described in this sentence paraphrases the activity described in the previous sentence. Instead, the two activities are similar, and both support the preceding claim about selling tea to promote women’s right to vote.</p>",
+          "answerPages": [
+            28
+          ]
+        },
+        {
+          "id": "m2-q28",
+          "module": 2,
+          "number": 28,
+          "sourcePage": 28,
+          "passageHtml": "<p>Earth’s auroras—colorful displays of light seen above the northern and southern poles—result, broadly speaking, from the Sun’s activity. _______ the Sun releases charged particles that are captured by Earth’s magnetic field and channeled toward the poles. These particles then collide with atoms in the atmosphere, causing the atoms to emit auroral light.</p>",
+          "promptHtml": "Which choice completes the text with the most logical transition?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Specifically,"
+            },
+            {
+              "id": "B",
+              "html": "Similarly,"
+            },
+            {
+              "id": "C",
+              "html": "Nevertheless,"
+            },
+            {
+              "id": "D",
+              "html": "Hence,"
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "A",
+          "explanationHtml": "<p><strong>Choice A </strong>is the best answer. “Specifically” logically signals that the information in this sentence—that the Sun releases charged particles that later collide with atoms, resulting in auroral light—provides specific, precise details about how auroras result from the Sun’s activity.</p><p><em>Choice B </em>is incorrect because “similarly” illogically signals that the information in this sentence is similar to the general information about auroras in the previous sentence. Instead, this sentence provides specific, precise details about how auroras form. <em>Choice C </em>is incorrect because “nevertheless” illogically signals that the information in this sentence is despite the general information about auroras in the previous sentence. Instead, this sentence provides specific, precise details about how auroras form. <em>Choice D </em>is incorrect because “hence” illogically signals that the information in this sentence is a result of the general information about auroras in the previous sentence. Instead, this sentence provides specific, precise details about how auroras form.</p>",
+          "answerPages": [
+            29
+          ]
+        },
+        {
+          "id": "m2-q29",
+          "module": 2,
+          "number": 29,
+          "sourcePage": 28,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>The Seikan Tunnel is a rail tunnel in Japan.</li><li>It connects the island of Honshu to the island of Hokkaido.</li><li>It is roughly 33 miles long.</li><li>The Channel Tunnel is a rail tunnel in Europe.</li><li>It connects Folkestone, England, to Coquelles, France.</li><li>It is about 31 miles long.</li></ul>",
+          "promptHtml": "The student wants to compare the lengths of the two rail tunnels. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Some of the world’s rail tunnels, including one tunnel that extends from Folkestone, England, to Coquelles, France, are longer than 30 miles."
+            },
+            {
+              "id": "B",
+              "html": "The Seikan Tunnel is roughly 33 miles long, while the slightly shorter Channel Tunnel is about 31 miles long."
+            },
+            {
+              "id": "C",
+              "html": "The Seikan Tunnel, which is roughly 33 miles long, connects the Japanese islands of Honshu and Hokkaido."
+            },
+            {
+              "id": "D",
+              "html": "Both the Seikan Tunnel, which is located in Japan, and the Channel Tunnel, which is located in Europe, are examples of rail tunnels."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. The sentence compares the lengths of the two rail tunnels, noting that the Channel Tunnel (about 31 miles long) is slightly shorter than the Seikan Tunnel (roughly 33 miles long).</p><p><em>Choice A </em>is incorrect. The sentence makes a generalization about the length of some rail tunnels; it doesn’t compare the lengths of the two rail tunnels. <em>Choice C </em> is incorrect. The sentence describes a single rail tunnel; it doesn’t compare the lengths of the two rail tunnels. <em>Choice D </em>is incorrect. While the sentence mentions the two rail tunnels, it doesn’t compare their lengths.</p>",
+          "answerPages": [
+            29
+          ]
+        },
+        {
+          "id": "m2-q30",
+          "module": 2,
+          "number": 30,
+          "sourcePage": 29,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>Pinnipeds, which include seals, sea lions, and walruses, live in and around water.</li><li>Pinnipeds are descended not from sea animals but from four-legged, land-dwelling carnivores.</li><li>Canadian paleobiologist Natalia Rybczynski recently found a fossil with four legs, webbed toes, and the skull and teeth of a seal.</li><li>Rybczynski refers to her rare find as a “transitional fossil.”</li><li>The fossil illustrates an early stage in the evolution of pinnipeds from their land-dwelling ancestors.</li></ul>",
+          "promptHtml": "The student wants to emphasize the fossil’s significance. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "Canadian paleobiologist Natalia Rybczynski’s fossil has the skull and teeth of a seal, which, like sea lions and walruses, is a pinniped."
+            },
+            {
+              "id": "B",
+              "html": "Pinnipeds are descended from four-legged, land-dwelling carnivores; a fossil that resembles both was recently found."
+            },
+            {
+              "id": "C",
+              "html": "Having four legs but the skull and teeth of a seal, the rare fossil illustrates an early stage in the evolution of pinnipeds from their land-dwelling ancestors."
+            },
+            {
+              "id": "D",
+              "html": "A “transitional fossil” was recently found by paleobiologist Natalia Rybczynski."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The sentence effectively emphasizes the fossil’s significance, explaining that the fossil is rare and illustrates an early stage in the evolution of pinnipeds from their land-dwelling ancestors.</p><p><em>Choice A </em>is incorrect. The sentence describes the fossil Rybczynski found; it doesn’t emphasize the fossil’s significance. <em>Choice B </em>is incorrect. The sentence mentions that a fossil resembling both pinnipeds and their ancestors was found; it doesn’t emphasize the fossil’s significance. <em>Choice D </em>is incorrect. The sentence notes a term used to describe the fossil Rybczynski found; it doesn’t emphasize the fossil’s significance.</p>",
+          "answerPages": [
+            29
+          ]
+        },
+        {
+          "id": "m2-q31",
+          "module": 2,
+          "number": 31,
+          "sourcePage": 29,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>Physicist Muluneh Abebe was working on a garment suited for both warm and cold conditions.</li><li>He analyzed the emissivity, or ability to emit heat, of the materials he planned to use.</li><li>Abebe found that reflective metal fibers emitted almost no heat and had an emissivity of 0.02.</li><li>He found that silicon carbide fibers absorbed large amounts of heat and had an emissivity of 0.74.</li><li>The amount of heat a material absorbs is equal to the amount of heat it emits.</li></ul>",
+          "promptHtml": "The student wants to contrast the emissivity of reflective metal fibers with that of silicon carbide fibers. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "The ability of reflective metal fibers and silicon carbide fibers to emit heat was determined by an analysis of each material’s emissivity."
+            },
+            {
+              "id": "B",
+              "html": "The amount of heat a material absorbs is equal to the amount it emits, as evidenced in Abebe’s analyses."
+            },
+            {
+              "id": "C",
+              "html": "Though the reflective metal fibers and silicon carbide fibers had different rates of emissivity, Abebe planned to use both in a garment."
+            },
+            {
+              "id": "D",
+              "html": "Whereas the reflective metal fibers had an emissivity of just 0.02, the silicon carbide fibers absorbed large amounts of heat, resulting in an emissivity of 0.74."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "D",
+          "explanationHtml": "<p><strong>Choice D </strong>is the best answer. The sentence uses “whereas” to contrast the emissivities of the two fibers, noting that the emissivity of the reflective metal fibers was just 0.02, far lower than that of the silicon carbide fibers (0.74).</p><p><em>Choice A </em>is incorrect. The sentence emphasizes the ability of reflective metal fibers and silicon carbide fibers to emit heat; it doesn’t contrast the emissivities of the two fibers. <em>Choice B </em>is incorrect. The sentence states a law of thermodynamics: the amount of heat a material absorbs is equal to the amount it emits. The sentence doesn’t contrast the emissivity of reflective metal fibers with that of silicon carbide fibers. <em>Choice C </em>is incorrect. While the sentence includes a generalization about the emissivities of reflective metal fibers and silicon carbide fibers, it emphasizes Abebe’s plans for their use in a garment; it doesn’t contrast the emissivities of the two fibers.</p>",
+          "answerPages": [
+            29,
+            30
+          ]
+        },
+        {
+          "id": "m2-q32",
+          "module": 2,
+          "number": 32,
+          "sourcePage": 30,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>In 2020, theater students at Radford and Virginia Tech chose an interactive, online format to present a play about woman suffrage activists.</li><li>Their “Women and the Vote” website featured an interactive digital drawing of a Victorian-style house.</li><li>Audiences were asked to focus on a room of their choice and select from that room an artifact related to the suffrage movement.</li><li>One click took them to video clips, songs, artwork, and texts associated with the artifact.</li><li>The play was popular with audiences because the format allowed them to control the experience.</li></ul>",
+          "promptHtml": "The student wants to explain an advantage of the “Women and the Vote” format. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "“Women and the Vote” featured a drawing of a Victorian-style house with several rooms, each containing suffrage artifacts."
+            },
+            {
+              "id": "B",
+              "html": "To access video clips, songs, artwork, and texts, audiences had to first click on an artifact."
+            },
+            {
+              "id": "C",
+              "html": "The “Women and the Vote” format appealed to audiences because it allowed them to control the experience."
+            },
+            {
+              "id": "D",
+              "html": "Using an interactive format, theater students at Radford and Virginia Tech created “Women and the Vote,” a play about woman suffrage activists."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "C",
+          "explanationHtml": "<p><strong>Choice C </strong>is the best answer. The sentence explains an advantage of the “Women and the Vote” format, noting that the format appealed to audiences because it allowed them to control the experience.</p><p><em>Choice A </em>is incorrect. The sentence describes a digital drawing on the “Women and the Vote” website; it doesn’t explain an advantage of the play’s format. <em>Choice B </em>is incorrect. The sentence explains how audiences interacted with the “Women and the Vote” website; it doesn’t explain an advantage of the play’s format. <em>Choice D </em>is incorrect. While the sentence mentions that “Women and the Vote” had an interactive format, it doesn’t explain what advantage this format might have.</p>",
+          "answerPages": [
+            30
+          ]
+        },
+        {
+          "id": "m2-q33",
+          "module": 2,
+          "number": 33,
+          "sourcePage": 30,
+          "passageHtml": "<p>While researching a topic, a student has taken the following notes:</p><ul class=\"source-notes\"><li>Ducklings expend up to 62.8% less energy when swimming in a line behind their mother than when swimming alone.</li><li>The physics behind this energy savings hasn’t always been well understood.</li><li>Naval architect Zhiming Yuan used computer simulations to study the effect of the mother duck’s wake.</li><li>The study revealed that ducklings are pushed in a forward direction by the wake’s waves.</li><li>Yuan determined this push reduces the effect of wave drag on the ducklings by 158%.</li></ul>",
+          "promptHtml": "The student wants to present the study and its methodology. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "choices": [
+            {
+              "id": "A",
+              "html": "A study revealed that ducklings, which expend up to 62.8% less energy when swimming in a line behind their mother, also experience 158% less drag."
+            },
+            {
+              "id": "B",
+              "html": "Seeking to understand how ducklings swimming in a line behind their mother save energy, Zhiming Yuan used computer simulations to study the effect of the mother duck’s wake."
+            },
+            {
+              "id": "C",
+              "html": "Zhiming Yuan studied the physics behind the fact that by being pushed in a forward direction by waves, ducklings save energy."
+            },
+            {
+              "id": "D",
+              "html": "Naval architect Zhiming Yuan discovered that ducklings are pushed in a forward direction by the waves of their mother’s wake, reducing the effect of drag by 158%."
+            }
+          ],
+          "figure": null,
+          "correctAnswer": "B",
+          "explanationHtml": "<p><strong>Choice B </strong>is the best answer. The sentence presents both the study and its methodology (that is, the researcher’s approach to the problem), explaining that Yuan used computer simulations to study the effect of the mother duck’s wake on the ducklings’ energy expenditure.</p><p><em>Choice A </em>is incorrect. The sentence describes the findings of Yuan’s study; it doesn’t present the study and its methodology. <em>Choice C </em>is incorrect. While the sentence provides general information about Yuan’s study, it doesn’t present the study’s methodology. <em>Choice D </em>is incorrect. The sentence describes the findings of Yuan’s study; it doesn’t present the study and its methodology.</p>",
+          "answerPages": [
+            30
+          ]
+        }
+      ]
+    }
+  ]
+}

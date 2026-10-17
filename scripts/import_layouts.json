@@ -1,0 +1,306 @@
+{
+  "4": {
+    "number": 4,
+    "id": "practice-test-4-rw",
+    "moduleQuestionCounts": [33, 33],
+    "figures": {
+      "m1-q13": {
+        "page": 10, "rect": [35.92, 130.03, 290.39, 391.91],
+        "alt": "Bar graph titled US States with the Greatest Number of Organic Farms in 2016. The states are California, Wisconsin, New York, Pennsylvania, Iowa, and Washington. The vertical axis is number of organic farms, from 0 to 2,800."
+      },
+      "m1-q15": {
+        "page": 11, "rect": [53.88, 130.03, 308.35, 220.78],
+        "alt": "Table of ablation rates for iron, potassium, and sodium in cosmic dust from SPC, AST, HTC, and OCC sources.",
+        "table": {
+          "caption": "Ablation Rates for Three Elements in Cosmic Dust, by Dust Source",
+          "headers": ["Element", "SPC", "AST", "HTC", "OCC"],
+          "rows": [["iron", "20%", "28%", "90%", "98%"], ["potassium", "44%", "74%", "97%", "100%"], ["sodium", "45%", "75%", "99%", "100%"]]
+        }
+      },
+      "m1-q17": {
+        "page": 12, "rect": [35.92, 130.03, 368.64, 244.73],
+        "alt": "Table of mycorrhizal host status and average plant mass for corn, marigold, and broccoli in soil containing mycorrhizal fungi and soil treated to kill fungi.",
+        "table": {
+          "caption": "Effects of Mycorrhizal Fungi on 3 Plant Species",
+          "headers": ["Plant species", "Mycorrhizal host", "Average mass with mycorrhizal fungi (grams)", "Average mass in soil treated to kill fungi (grams)"],
+          "rows": [["Corn", "yes", "15.1", "3.8"], ["Marigold", "yes", "10.2", "2.4"], ["Broccoli", "no", "7.5", "7"]]
+        }
+      },
+      "m2-q13": {
+        "page": 23, "rect": [53.88, 130.03, 308.35, 380.93],
+        "alt": "Grouped bar graph titled Economic Policy Uncertainty in the United Kingdom, 2005-2010. The three series are tax and public spending policy, trade policy, and general economic policy. The vertical axis shows uncertainty, with larger values indicating more uncertainty."
+      }
+    }
+  },
+  "5": {
+    "number": 5,
+    "id": "practice-test-5-rw",
+    "moduleQuestionCounts": [33, 33],
+    "figures": {
+      "m1-q14": {
+        "page": 9, "rect": [53.88, 130.11, 307.67, 294.7],
+        "alt": "Table listing five candidate species for de-extinction, their scientific names, and when they became extinct.",
+        "table": {
+          "caption": "Partial List of Candidate Species for De-extinction",
+          "headers": ["Common name", "Scientific name", "Became extinct"],
+          "rows": [["Huia", "Heteralocha acutirostris", "1907"], ["Caribbean monk seal", "Monachus tropicalis", "1952"], ["Passenger pigeon", "Ectopistes migratorius", "1914"], ["Saber-toothed cat", "Smilodon", "11,000 years before present"], ["Woolly mammoth", "Mammuthus primigenius", "6,400 years before present"]]
+        }
+      },
+      "m1-q16": {
+        "page": 10, "rect": [35.92, 130.11, 289.71, 379.02],
+        "alt": "Line graph titled Ratio of Manganese to Calcium in Samples from Alboran Sea and Mauritanian Coast. The horizontal axis is approximate years before present, in thousands, from 2 to 20. The vertical axis is manganese to calcium ratio, in micromoles per mole, from 0 to 100. Separate lines identify Alboran Sea and Mauritanian coast."
+      },
+      "m2-q12": {
+        "page": 23, "rect": [53.88, 130.11, 307.67, 388.0],
+        "alt": "Line graph of total science research submissions by topic from 2016 through 2019. The four series are cellular and molecular biology, physics and space science, medicine and health, and animal science. The vertical axis shows number of submissions from 0 to 350."
+      },
+      "m2-q14": {
+        "page": 24, "rect": [35.92, 130.11, 289.71, 398.98],
+        "alt": "Grouped bar graph titled Modeled Radial Growth of Sugar Maple Trees. It compares radial growth in centimeters per year under current, moderate climate change, and extreme climate change scenarios, with nitrogen and without nitrogen. The vertical scale ranges from 0 to 0.25."
+      }
+    }
+  },
+  "6": {
+    "number": 6,
+    "id": "practice-test-6-rw",
+    "moduleQuestionCounts": [33, 33],
+    "figures": {
+      "m1-q14": {
+        "page": 10, "rect": [35.92, 130.11, 290.32, 374.03],
+        "alt": "Grouped bar graph titled Mean Attentiveness Scores by Leave Time Condition. It compares the first, second, and third test administrations for no leave, 2-4 days leave, and 1-5 weeks leave. Higher scores indicate greater attentiveness; the vertical scale runs from 0 to 600."
+      },
+      "m1-q15": {
+        "page": 11, "rect": [53.88, 130.11, 308.28, 363.05],
+        "alt": "Grouped bar graph of number of lizard species by average percent of maximal speed used when pursuing prey or escaping predators. The horizontal categories are 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, and 90-100 percent. The two series are escaping and pursuing, and the vertical scale runs from 0 to 9 species."
+      },
+      "m2-q13": {
+        "page": 23, "rect": [53.88, 130.11, 308.28, 444.87],
+        "alt": "Line graph titled Recreation Visits by Month to Four US National Parks during the Peak Season in 2021. It compares Yellowstone, Zion, Grand Canyon, and Rocky Mountain during June, July, and August. The vertical axis shows recreation visits in thousands, from 0 to 1,100."
+      },
+      "m2-q15": {
+        "page": 24, "rect": [35.92, 130.11, 414.25, 220.86],
+        "alt": "Table comparing mean patient ratings after 21 days for participants aware of taking a placebo and participants in the control group.",
+        "table": {
+          "caption": "Mean Ratings for Patients after 21 Days",
+          "headers": ["Measure", "Mean rating for participants aware of taking a placebo", "Mean rating for participants in the control group"],
+          "rows": [["Global improvement", "5.0", "3.9"], ["Symptom severity reduction", "92.00", "46.00"], ["Quality of life improvement", "11.4", "5.4"]]
+        }
+      }
+    }
+  },
+  "7": {
+    "number": 7,
+    "id": "practice-test-7-rw",
+    "moduleQuestionCounts": [33, 33],
+    "figures": {
+      "m1-q12": {
+        "page": 8, "rect": [314.31, 130.11, 568.71, 371.04],
+        "alt": "Bar graph titled Percentage of Participants Who Mentioned Factors. It shows convenience, costs, and established behaviors as factors, with percent on the vertical axis from 0 to 80."
+      },
+      "m1-q15": {
+        "page": 11, "rect": [53.88, 130.11, 308.28, 424.9],
+        "alt": "Grouped bar graph titled Percentage of ULE Attributed to Population Growth and GDP per Capita Growth in Two World Regions. It compares urban population growth and GDP per capita growth for Region 1 and Region 2 during 1970-2000 and 2000-2014. The vertical axis is percentage attribution from 0 to 90."
+      },
+      "m1-q16": {
+        "page": 12, "rect": [35.92, 130.11, 290.32, 386.0],
+        "alt": "Grouped bar graph titled China's Imports by Type, 2000-2006. It compares ordinary imports, processing with assembly, and processing with inputs for 2000, 2003, and 2006. The vertical axis is imports in hundreds of millions of dollars, from 0 to 3,500."
+      },
+      "m2-q12": {
+        "page": 24, "rect": [314.31, 130.11, 568.71, 279.24],
+        "alt": "Table of the percentage of bus stops with shaded shelters in areas with different highest average summer surface temperatures.",
+        "table": {
+          "caption": "Percentage of Bus Shelters with Shade in a County by Areas' Highest Average Summer Surface Temperature",
+          "headers": ["Highest average surface temperature (Fahrenheit)", "Percentage of bus stops with shaded shelter"],
+          "rows": [["90.2°", "15%"], ["97.7°", "22%"], ["102.7°", "24%"], ["111.2°", "28%"], ["125.6°", "29%"]]
+        }
+      },
+      "m2-q13": {
+        "page": 25, "rect": [53.88, 130.11, 308.28, 240.82],
+        "alt": "Table listing total areas in square miles and 2022 populations of Kuwait, Bahrain, and Qatar.",
+        "table": {
+          "caption": "Total Areas and 2022 Populations of Smallest Arabian Peninsula Countries",
+          "headers": ["Country", "Total area (square miles)", "Population"],
+          "rows": [["Kuwait", "6,880", "4,268,873"], ["Bahrain", "304", "1,472,233"], ["Qatar", "4,471", "2,695,122"]]
+        }
+      }
+    }
+  },
+  "8": {
+    "number": 8,
+    "id": "practice-test-8-rw",
+    "moduleQuestionCounts": [33, 33],
+    "figures": {
+      "m1-q11": {
+        "page": 8, "rect": [35.92, 130.11, 290.32, 241.82],
+        "alt": "Table of video game availability grouped by their initial release years, from 1975-1979 through 1995-1999.",
+        "table": {
+          "caption": "Video Game Availability by Initial Release Years",
+          "headers": ["Initial release years", "Percentage of games still available"],
+          "rows": [["1975–1979", "0.89"], ["1980–1984", "3.65"], ["1985–1989", "15.38"], ["1990–1994", "19.33"], ["1995–1999", "14.22"]]
+        }
+      },
+      "m1-q12": {
+        "page": 8, "rect": [35.92, 445.9, 290.32, 557.12],
+        "alt": "Table of the depths below the ocean surface at which footballfish, southern stoplight loosejaw, black seadevil, and Bollons' rattail live.",
+        "table": {
+          "caption": "Depths at Which Four Deep-Sea Fish Species Live",
+          "headers": ["Species", "Depth below the ocean surface"],
+          "rows": [["Footballfish", "200–1,000 meters"], ["Southern stoplight loosejaw", "500–2,000 meters"], ["Black seadevil", "250–2,000 meters"], ["Bollons’ rattail", "300–800 meters"]]
+        }
+      },
+      "m1-q13": {
+        "page": 8, "rect": [314.31, 130.14, 568.71, 242.19],
+        "alt": "Table of US housing starts during January, February, March, and April 2022, in thousands.",
+        "table": {
+          "caption": "Housing Starts in the US, January-April 2022 (in thousands)",
+          "headers": ["Month", "Housing starts"],
+          "rows": [["January", "1,669"], ["February", "1,771"], ["March", "1,713"], ["April", "1,803"]]
+        }
+      },
+      "m2-q14": {
+        "page": 23, "rect": [53.88, 130.11, 308.28, 276.74],
+        "alt": "Table comparing approximate rates of speech, in syllables per second, and rates of information conveyed, in bits per second, for five languages.",
+        "table": {
+          "caption": "Approximate Rates of Speech and Information Conveyed for Five Languages",
+          "headers": ["Language", "Rate of speech (syllables per second)", "Rate of information conveyed (bits per second)"],
+          "rows": [["Serbian", "7.2", "39.1"], ["Spanish", "7.7", "42.0"], ["Vietnamese", "5.3", "42.5"], ["Thai", "4.7", "33.8"], ["Hungarian", "5.9", "34.6"]]
+        }
+      },
+      "m2-q15": {
+        "page": 24, "rect": [35.92, 130.11, 405.45, 233.84],
+        "alt": "Table listing four studies, years, estimation methods, and approximate bite forces in newtons for tyrannosaurids.",
+        "table": {
+          "caption": "Estimates of Tyrannosaurid Bite Force",
+          "headers": ["Study", "Year", "Estimation method", "Approximate bite force (newtons)"],
+          "rows": [["Cost et al.", "2019", "muscular and skeletal modeling", "35,000–63,000"], ["Gignac and Erickson", "2017", "tooth-bone interaction analysis", "8,000–34,000"], ["Meers", "2002", "body-mass scaling", "183,000–235,000"], ["Bates and Falkingham", "2012", "muscular and skeletal modeling", "35,000–57,000"]]
+        }
+      }
+    }
+  },
+  "9": {
+    "number": 9,
+    "id": "practice-test-9-rw",
+    "moduleQuestionCounts": [33, 33],
+    "figures": {
+      "m1-q11": {
+        "page": 7, "rect": [53.88, 396.52, 308.28, 507.73],
+        "alt": "Table of recordings of four female bottlenose dolphins with their calves, listing dolphin IDs and recording years.",
+        "table": {
+          "caption": "Recordings of Female Bottlenose Dolphins with Their Calves",
+          "headers": ["Dolphin ID", "Recording year"],
+          "rows": [["FB07", "2012"], ["FB25", "1989"], ["FB43", "1992"], ["FB79", "2018"]]
+        }
+      },
+      "m1-q12": {
+        "page": 7, "rect": [332.27, 130.11, 586.67, 266.77],
+        "alt": "Table of the maximum heights of five maple tree types, in feet, and whether each is native to North America.",
+        "table": {
+          "caption": "Maximum Height of Maple Trees When Fully Grown",
+          "headers": ["Tree type", "Maximum height (feet)", "Native to North America"],
+          "rows": [["Sugar maple", "75", "yes"], ["Silver maple", "70", "yes"], ["Red maple", "60", "yes"], ["Japanese maple", "25", "no"], ["Norway maple", "50", "no"]]
+        }
+      },
+      "m1-q13": {
+        "page": 8, "rect": [35.92, 130.11, 290.32, 394.98],
+        "alt": "Grouped bar graph titled Metal Content of Plants with and without Kanamycin Exposure. It compares zinc and iron concentrations in parts per million under experimental conditions without kanamycin and with kanamycin. The vertical scale runs from 0 to 700."
+      },
+      "m1-q14": {
+        "page": 9, "rect": [53.88, 130.11, 308.28, 257.79],
+        "alt": "Table of the average number and duration of torpor bouts and arousal episodes for Alaska marmots and Arctic ground squirrels during 2008-2011.",
+        "table": {
+          "caption": "Average Number and Duration of Torpor Bouts and Arousal Episodes for Alaska Marmots and Arctic Ground Squirrels, 2008-2011",
+          "headers": ["Feature", "Alaska marmots", "Arctic ground squirrels"],
+          "rows": [["torpor bouts", "12", "10.5"], ["duration per bout", "13.81 days", "16.77 days"], ["arousal episodes", "11", "9.5"], ["duration per episode", "21.2 hours", "14.2 hours"]]
+        }
+      },
+      "m1-q15": {
+        "page": 10, "rect": [35.92, 130.11, 290.32, 428.91],
+        "alt": "Grouped bar graph titled Percentage of Nonhexagonal Cells in Hives of Three Honeybee Species. It compares 5-sided, 7-sided, and 8-sided cells for black dwarf honeybee, dwarf honeybee, and western honeybee hives. The vertical axis is average percentage of nonhexagonal cells by shape, from 0 to 3.0."
+      }
+    }
+  },
+  "10": {
+    "number": 10,
+    "id": "practice-test-10-rw",
+    "moduleQuestionCounts": [33, 33],
+    "figures": {
+      "m1-q17": {
+        "page": 11, "rect": [53.88, 130.11, 308.28, 397.98],
+        "alt": "Line graph titled Average Survival of Fruit Flies following Infection. Survival rate in percent alive is plotted against 0, 2, 6, 10, and 14 days after infection, with separate series for type A flies, type AB flies, and type B flies."
+      },
+      "m2-q11": {
+        "page": 22, "rect": [314.31, 130.13, 568.71, 401.97],
+        "alt": "Bar graph titled Top Four Species of Wild Land Mammals by Global Biomass. It compares African bush elephant, eastern gray kangaroo, wild boar, and white-tailed deer. The vertical axis is global biomass in millions of metric tons, from 0 to 3.0."
+      },
+      "m2-q12": {
+        "page": 23, "rect": [53.88, 130.11, 435.24, 258.78],
+        "alt": "Table of clamshell tools found at five depths below the surface of a Neanderthal cave, distinguishing shells collected from the beach and harvested from the seafloor.",
+        "table": {
+          "caption": "Number and Origin of Clamshell Tools Found at Different Levels Below the Surface in Neanderthal Cave",
+          "headers": ["Depth below surface in cave (meters)", "Clamshells collected from the beach", "Clamshells harvested from the seafloor"],
+          "rows": [["3–4", "99", "33"], ["6–7", "1", "0"], ["4–5", "2", "0"], ["2–3", "7", "0"], ["5–6", "18", "7"]]
+        }
+      },
+      "m2-q13": {
+        "page": 24, "rect": [35.92, 130.11, 290.32, 406.96],
+        "alt": "Grouped bar graph of power conversion efficiency for the lowest and highest performing spin-coated and spray-coated electron transport layers. The vertical axis is power conversion efficiency in percent, from 0 to 18. The series distinguish spray coating and spin coating."
+      },
+      "m2-q14": {
+        "page": 25, "rect": [53.88, 130.11, 414.65, 272.25],
+        "alt": "Table of employment percentages by agriculture, manufacturing, and services sectors in France and the United States for 1800, 1900, 1950, and 2012. Rows may not total 100 because of rounding.",
+        "table": {
+          "caption": "Employment by Sector in France and the United States, 1800-2012 (% of total employment)",
+          "headers": ["Year", "Agriculture in France", "Manufacturing in France", "Services in France", "Agriculture in US", "Manufacturing in US", "Services in US"],
+          "rows": [["1800", "64", "22", "14", "68", "18", "13"], ["1900", "43", "29", "28", "41", "28", "31"], ["1950", "32", "33", "35", "14", "33", "53"], ["2012", "3", "21", "76", "2", "18", "80"]]
+        }
+      }
+    }
+  },
+  "11": {
+    "number": 11,
+    "id": "sat-practice-test-11-rw-2026",
+    "title": "SAT Practice Test 11",
+    "figureNamespace": "",
+    "separateCredits": false,
+    "moduleQuestionCounts": [33, 33],
+    "note": "Imported locally from the two user-provided PDFs. Nondigital-format test: two modules of 33 questions. Math excluded.",
+    "figures": {
+      "m1-q15": {
+        "rect": [53, 130, 280, 346],
+        "alt": "Energy Density of Four Fuels. Bar graph with fuels gasoline, ethanol, POP biofuel, and jet fuel on the horizontal axis, and energy density from 0 to 45 megajoules per liter on the vertical axis.",
+        "table": {
+          "caption": "Values read from the graph (approximately, in MJ/L)",
+          "headers": ["Fuel", "Energy density"],
+          "rows": [["Gasoline", "36"], ["Ethanol", "23"], ["POP biofuel", "40"], ["Jet fuel", "34"]]
+        }
+      },
+      "m2-q11": {
+        "rect": [53, 130, 281, 382],
+        "alt": "Census Data for Four Canadian Cities, 1871-1901. Line graph of population in thousands for Halifax, Montreal, Quebec City, and Toronto, with a key identifying each line.",
+        "table": {
+          "caption": "Populations read from the graph (approximately, in thousands)",
+          "headers": ["City", "1871", "1881", "1891", "1901"],
+          "rows": [["Halifax", "30", "40", "40", "40"], ["Montréal", "105", "140", "220", "270"], ["Québec City", "60", "60", "65", "70"], ["Toronto", "55", "85", "180", "210"]]
+        }
+      },
+      "m2-q12": {
+        "rect": [332, 130, 560, 365],
+        "alt": "Percent of Drawings Containing an Example of Each Animal Group. Bar graph with mammals, birds, and insects on the horizontal axis, and percent of drawings from 0 to 90 on the vertical axis.",
+        "table": {
+          "caption": "Percentages read from the graph (approximately)",
+          "headers": ["Animal group", "Percent of drawings"],
+          "rows": [["Mammals", "80"], ["Birds", "68"], ["Insects", "54"]]
+        }
+      },
+      "m2-q13": {
+        "rect": [71, 130, 297, 361],
+        "alt": "Percentage of US Congress Members Who Self-Identified as Veterans, 1953-2023. Line graph for the House of Representatives and Senate, with percent on the vertical axis and years on the horizontal axis.",
+        "table": {
+          "caption": "Percentages read from the graph (approximately)",
+          "headers": ["Year", "House of Representatives", "Senate"],
+          "rows": [["1953", "62", "74"], ["1973", "74", "79"], ["1993", "40", "63"], ["2003", "23", "35"], ["2013", "17", "18"], ["2023", "19", "17"]]
+        }
+      }
+    }
+  }
+}
